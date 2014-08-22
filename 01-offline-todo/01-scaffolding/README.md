@@ -1,6 +1,6 @@
-# Scaffolding The Application And Opening A Database
+# Scaffolding the application
 
-We will create the following files in a single directory:
+we will create the following files in a single directory:
 
 - `/index.html`
 - `/application.js`
@@ -8,7 +8,7 @@ We will create the following files in a single directory:
 - `/styles.css`
 - `/offline.appcache`
 
-## `/INDEX.HTML`
+## `/index.html`
 
 ```html
 <!DOCTYPE html>
@@ -31,12 +31,12 @@ We will create the following files in a single directory:
 
 Nothing surprising here: just a standard HTML web page, with an input field to add to-do items, and an empty unordered list that will be filled with those items.
 
-- `/INDEXEDDB.SHIM.MIN.JS`
+## `/indexeddb.shim.min.js`
 
 Download the contents of [the minified IndexedDB polyfill](https://raw.githubusercontent.com/matthew-andrews/offline-todo/gh-pages/indexeddb.shim.min.js)
 , and put it in this file.
 
-- `/STYLES.CSS`
+## `/styles.css`
 
 ```css
 body {
