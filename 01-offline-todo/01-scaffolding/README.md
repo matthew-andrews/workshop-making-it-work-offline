@@ -8,7 +8,7 @@ we will create the following files in a single directory:
 - `/styles.css`
 - `/offline.appcache`
 
-## `/index.html`
+### `/index.html`
 
 ```html
 <!DOCTYPE html>
@@ -31,12 +31,12 @@ we will create the following files in a single directory:
 
 Nothing surprising here: just a standard HTML web page, with an input field to add to-do items, and an empty unordered list that will be filled with those items.
 
-## `/indexeddb.shim.min.js`
+### `/indexeddb.shim.min.js`
 
 Download the contents of [the minified IndexedDB polyfill](https://raw.githubusercontent.com/matthew-andrews/offline-todo/gh-pages/indexeddb.shim.min.js)
 , and put it in this file.
 
-## `/styles.css`
+### `/styles.css`
 
 ```css
 body {
