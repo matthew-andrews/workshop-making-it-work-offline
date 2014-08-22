@@ -1,5 +1,5 @@
-workshop-making-it-work-offline
-===============================
+Making it work offline
+======================
 
 Making it work offline, the workshop.
 
