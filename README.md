@@ -10,7 +10,7 @@ Contents
 - Start with a Promise
   - Explainer
   - Worksheet
-- Offline Todo with IndexedDB
+- [Offline Todo with IndexedDB](https://github.com/matthew-andrews/workshop-making-it-work-offline/tree/master/01-offline-todo)
   - Opening an IndexedDB database
   - Using Dev Tools with Safari, Chrome, IE and Firefox
   - Adding data
