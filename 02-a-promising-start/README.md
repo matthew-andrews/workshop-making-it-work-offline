@@ -71,3 +71,30 @@ try {
   alert('something failed');
 }
 ```
+
+### Promises let us write code like this.
+
+```js
+Promise.all([
+    request({
+      url: "https://offline-todo-api.herokuapp.com/todos",
+      body: {
+        _id: 'my-first-todo',
+        text: 'Buy some bread'
+      },
+      method: 'POST'
+    }),
+    request({
+      url: "https://offline-todo-api.herokuapp.com/todos",
+      body: {
+        _id: 'my-second-todo',
+        text: 'Buy some bread'
+      },
+      method: 'POST'
+    })
+  ]).then(function success() {
+    alert('success!');
+  }, function failure() {
+    alert('something failed');
+  });
+```
