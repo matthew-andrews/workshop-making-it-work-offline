@@ -1,4 +1,4 @@
-# Adding Items
+# Adding items
 
 The next step is to enable the user to add items.
 
