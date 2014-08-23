@@ -22,4 +22,4 @@ Safari is also a little different because it does not yet support IndexedDB in s
 
 ![Safari IndexedDB Dev Tools](./safari.png)
 
-[Continue to *using dev tools* →](../04-adding-data)
+[Continue to *adding data* →](../04-adding-data)
