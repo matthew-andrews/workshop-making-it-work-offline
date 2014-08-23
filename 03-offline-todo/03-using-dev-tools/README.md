@@ -1,12 +1,10 @@
 # Using dev tools
 
-To check that it’s working, open the application in the browser, open up “Developer Tools” and click on the “Resources” tab.
+### Chrome
+
+To check that it’s working, open the application in the browser, open up **Developer Tools** and click on the **Resources** tab.
 
 ![Screenshot of the IndexedDB in Chrome Dev Tools](./chrome.jpg)
-
-## Challenge
-
-Verify the database has been correctly created and is version 1 in Firefox, Chrome, IE (if you are using Windows) and Safari.
 
 ### Firefox
 
