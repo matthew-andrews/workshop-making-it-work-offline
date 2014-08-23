@@ -86,3 +86,5 @@ request.onsucess = function(e) {
 ```
 
 \* Again, may be subject to change, [see MDN](https://developer.mozilla.org/en-US/docs/Web/API/IDBFactory.deleteDatabase).
+
+[Continue to *using dev tools* →](../03-using-dev-tools)
