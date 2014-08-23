@@ -8,8 +8,8 @@ To check that the database has been succesfully created open the application in 
 
 ### Firefox
 
-- download [the IndexedDB browser](https://addons.mozilla.org/en-us/firefox/addon/indexeddb-browser/),
-- find your profile folder, `cd ~/Library/Application\ Support/Firefox/Profiles/1yj54vgo.default/`.
+- Download [the IndexedDB browser](https://addons.mozilla.org/en-us/firefox/addon/indexeddb-browser/),
+- Find your profile folder, `cd ~/Library/Application\ Support/Firefox/Profiles/1yj54vgo.default/`.
 - Create a symbolic link: `ln -s ./storage/persistent/ ./indexedDB`
 
 ![Firefox IndexedDB Dev Tools](./firefox.png)
