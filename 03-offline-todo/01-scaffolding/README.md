@@ -99,4 +99,4 @@ containing these files and verify the website matches the screenshot below.
 
 ---
 
-[Continue to *opening a database* →](../02-opening-a-database)
+[← Back to *Offline todo with IndexedDB*](../) | [Continue to *opening a database* →](../02-opening-a-database)
