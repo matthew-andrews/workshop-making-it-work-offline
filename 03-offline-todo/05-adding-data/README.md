@@ -45,7 +45,7 @@ We’ve added two bits of code here:
 - The event listener responds to every `submit` event, prevents that event’s default action (which would otherwise refresh the page), calls `databasesTodosPut` with the value of the `input` element, and (if the item is successfully added) sets the value of the `input` element to be empty.
 - A function named `databasesTodosPut` returns a promise, stores the to-do item in the local database, along with a timestamp, and then resolves the promise.
 
-To test that this works, open up the web app again. Type some words into the `input` element and press “Enter.” Repeat this a few times, and then open up “Developer Tools” to the “Resources” tab again. You should see the items that you typed now appear in the todo object store.
+To test that this works, open up the web app again. Type some words into the `input` element and press **Enter**. Repeat this a few times, and then open up **Developer Tools** to the **Resources** tab again. You should see the items that you typed now appear in the todo object store.
 
 ![After adding a few items, they should appear in the todo object store](./screenshot.jpg)
 
