@@ -51,4 +51,4 @@ To test that this works, open up the web app again. Type some words into the `in
 
 After adding a few items, they should appear in the todo object store.
 
-[Continue to *updating data* →](../06-updating-data)
+[Continue to *updating data* →](../06-getting-data)
