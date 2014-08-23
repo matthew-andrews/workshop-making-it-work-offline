@@ -8,7 +8,7 @@ technology.  Here is what the app will do:
 - store all data locally, with no back end;</li>
 - run on the first- and second-most recent versions of all major desktop and mobile browsers.
 
-## Which Technologies To Use
+## Which technologies to use
 
 In an ideal world, we’d use just one client database technology. Unfortunately, we’ll have to use two:
 
