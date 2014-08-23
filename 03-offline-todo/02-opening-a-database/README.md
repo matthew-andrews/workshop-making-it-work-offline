@@ -35,10 +35,6 @@
 
 All this code does is create a database with indexedDB.open and then show the user an old-fashioned alert if it is successful. Every IndexedDB database needs a name (in this case, todos) and a version number (which I’ve set to 1).
 
-To check that it’s working, open the application in the browser, open up “Developer Tools” and click on the “Resources” tab.
-
-![Screenshot of the IndexedDB in Dev Tools](./screenshot.jpg)
-
 ### What's going on here?
 
 Everything related to **IndexedDB** is accessed either directly or indirectly through `window.indexedDB`\*.

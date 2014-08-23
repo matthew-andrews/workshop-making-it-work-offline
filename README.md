@@ -1,3 +1,4 @@
+
 Making it work offline
 ======================
 
@@ -11,11 +12,11 @@ Contents
   - Meet the dysfunctional family
 2. A promising start
   - Explainer
-  - Worksheet
+  - Exercises
 3. [Offline Todo with IndexedDB](03-offline-todo)
   - [Scaffolding the application](03-offline-todo/01-scaffolding)
   - [Opening an IndexedDB database](03-offline-todo/02-opening-a-database)
-  - Using Dev Tools with Safari, Chrome, IE and Firefox
+  - [Using Dev Tools with Safari, Chrome, IE and Firefox](03-offline-todo/03-using-dev-tools)
   - Adding data
   - Updating data
   - Getting data
