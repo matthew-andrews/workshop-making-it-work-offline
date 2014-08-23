@@ -1,6 +1,6 @@
 # Truly offline
 
-Have we actually built an offline-first to-do app?  Almost, but not quite.  While we can now store all data offline, if you switch off your device’s Internet connection and try loading the application, it won’t open.  To fix this, we need to use the HTML5 Application Cache.
+Have we actually built an offline-first to-do app?  Almost, but not quite.  While we can now store all data offline, if you switch off your device’s Internet connection and try loading the application, it won’t open.  To fix this, we need to use the **HTML5 Application Cache**.
 
 ## Warning
 
