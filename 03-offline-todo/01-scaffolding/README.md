@@ -77,7 +77,6 @@ ul {
 li {
   padding: 20px;
   border-bottom: solid 1px #DDD;
-  cursor: pointer;
 }
 
 button {
