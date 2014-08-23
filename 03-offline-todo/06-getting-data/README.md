@@ -59,7 +59,7 @@ Notice how the `onsuccess` callback is called after each item is retrieved from 
 
 If you reopen the application again, Dev Tools console should look a bit like this:
 
-![Screenshot of the scaffolded application](./screenshot.jpg)
+![Screenshot of the scaffolded application](./screenshot.png)
 
 ---
 
