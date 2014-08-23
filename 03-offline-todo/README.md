@@ -38,4 +38,4 @@ develop this application using any other modern browser.
 
 ---
 
-[Start by *scaffolding the application* →](./01-scaffolding)
+[← Back to *contents*](../) | [Start by *scaffolding the application* →](./01-scaffolding)
