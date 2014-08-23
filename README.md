@@ -12,7 +12,7 @@ Contents
   - Worksheet
 - [Offline Todo with IndexedDB](01-offline-todo)
   - [Scaffolding the application](01-offline-todo/01-scaffolding)
-  - Opening an IndexedDB database
+  - [Opening an IndexedDB database](02-opening-a-database)
   - Using Dev Tools with Safari, Chrome, IE and Firefox
   - Adding data
   - Updating data
