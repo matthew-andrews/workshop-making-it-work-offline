@@ -50,7 +50,8 @@ If we didn't need to worry about the asynchronous ajax request we'd probably wri
 
 ```js
 try {
-  var response1 = request({
+  var responses = [];
+  responses[0] = request({
     url: "https://offline-todo-api.herokuapp.com/todos",
     body: {
       _id: 'my-first-todo',
@@ -58,7 +59,7 @@ try {
     },
     method: 'POST'
   });
-  var response2 = request({
+  responses[1] = request({
     url: "https://offline-todo-api.herokuapp.com/todos",
     body: {
       _id: 'my-second-todo',
@@ -94,7 +95,7 @@ Promise.all(
       method: 'POST'
     })
   ]
-  ).then(function success() {
+  ).then(function success(responses) {
     alert('success!');
   }, function failure() {
     alert('something failed');
