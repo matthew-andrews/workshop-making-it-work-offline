@@ -1,6 +1,17 @@
 # Rendering todos
 
 ```js
+(function() {
+  var db, input, ul;
+
+  databaseOpen()
+    .then(function() {
+      input = document.getElementsByTagName('input')[0];
+      ul = document.getElementsByTagName('ul')[0];
+      document.body.addEventListener('submit', onSubmit);
+    })
+    .then(refreshView);
+
 […]
 
   function refreshView() {
