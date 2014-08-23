@@ -1,4 +1,4 @@
-# Truly Offline
+# Truly offline
 
 Have we actually built an offline-first to-do app?  Almost, but not quite.  While we can now store all data offline, if you switch off your device’s Internet connection and try loading the application, it won’t open.  To fix this, we need to use the HTML5 Application Cache.
 
@@ -48,4 +48,4 @@ Verify the application works offline by loading it up and then switching off the
 
 We’ve created a quick and simple to-do app that works offline and that runs in all major modern browsers, thanks to both IndexedDB and WebSQL (via a polyfill).
 
-[Back to contents →](../../)
+[Back to contents →](https://github.com/matthew-andrews/workshop-making-it-work-offline)
