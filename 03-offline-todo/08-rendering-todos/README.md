@@ -29,7 +29,7 @@ In this section we will put in the plumbing that will use the methods we've alre
   }
 
   function todoToHtml(todo) {
-    return '<li><button id="'+todo._id+'">delete</button>'+todo.text+'</li>';
+    return '<li>'+todo.text+'</li>';
   }
 
 […]
