@@ -1,4 +1,4 @@
-# Deleting Items
+# Deleting items
 
 To keep things as simple as possible, we will let users delete items by clicking on a delete button next to each of them.
 
