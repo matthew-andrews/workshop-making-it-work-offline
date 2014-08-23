@@ -36,4 +36,4 @@ directly.
 I’ll go through all of the steps using Google Chrome (and its developer tools), but there’s no reason why you couldn’t
 develop this application using any other modern browser.
 
-[Start by *scaffolding the application* →](https://github.com/matthew-andrews/workshop-making-it-work-offline/tree/master/01-offline-todo/01-scaffolding)
+[Start by *scaffolding the application* →](./01-scaffolding)
