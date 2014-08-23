@@ -61,7 +61,7 @@ Because this application doesn’t have any real users yet, we can fix this anot
 indexedDB.deleteDatabase('todos');
 ```
 
-After refreshing, the “Resources” pane of “Developer Tools” should have changed and should now show the object store that we added:
+After refreshing, the **Resources** pane of **Developer Tools** should have changed and should now show the object store that we added:
 The Resources panel should now show the object store that was added.
 
 ![The “Resources” panel should now show the object store that was added](./screenshot.jpg)
