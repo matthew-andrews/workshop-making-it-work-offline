@@ -26,6 +26,18 @@ Note: `upgradeneeded` events will fire when the data is first created **as well 
 than once (for example, if the current verson if 3) your `onupgradeneeded` event handler must be able to handle upgrading databases from version 1 to 3 as well as version 2 to 3.  **This can get
 quite complicated for applications whose database schemas change frequently**.
 
+```js
+var request = window.indexedDB.open("todos", 2);
+
+request.onupgradeneeded = function(e) {
+  alert("Database upgrade needed");
+};
+
+request.onsuccess = function(e) {
+  alert("Database deleted successfully");
+};
+```
+
 \* Documentation for this object is often filed under `IDBFactory`.  `IDBFactory` is an **interface** that `window.indexedDB` *implements* (and indeed the *nly* object that implements this
 interface).
 
@@ -44,8 +56,8 @@ IDBOpenDBRequest deleteDatabase (DOMString name);
 #### Example
 
 ```js
-var request = window.indexedDB.deleteDatabase("toDoList");
-request.onsucess = function(e) {
+var request = window.indexedDB.deleteDatabase("todos");
+request.onsuccess = function(e) {
   alert("Database deleted successfully");
 };
 ```
