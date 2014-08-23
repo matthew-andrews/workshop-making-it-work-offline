@@ -10,7 +10,7 @@ Contents
 1. Introduction
   - Why?
   - Meet the dysfunctional family
-2. A promising start
+2. [A promising start](02-a-promising-start)
   - Explainer
   - Exercises
 3. [Offline Todo with IndexedDB](03-offline-todo)
