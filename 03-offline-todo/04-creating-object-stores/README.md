@@ -70,6 +70,8 @@ The Resources panel should now show the object store that was added.
 
 Everything related to **IndexedDB** is accessed either directly or indirectly through `window.indexedDB`\*.
 
+### Opening databases
+
 In our application, we start by *requesting* an IndexedDB database named `todos` be opened.
 
 ```js
