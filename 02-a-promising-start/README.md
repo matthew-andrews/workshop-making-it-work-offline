@@ -101,3 +101,20 @@ Promise.all(
     alert('something failed');
   });
 ```
+
+### Nice things about promises
+
+- Abstracts the complexity of dealing with asynchronous logic - lets you write performant but (relatively) siple code.
+- Allows you to deal with errors in asynchronous libraries in a sensible way.
+
+### Maybe not so nice things about promises
+
+- Most browser methods were made pre-promises and so need wrapping to be useful.
+- Cannot pipe data.  (eg. it might be nice for ajax request that returned a lot of data to start passing that data to the application as soon as data starts being received.  With promises you must wait until *all the data arrives* before your application will get to see *any of it*.
+
+### Like them or not they're here to stay
+
+- Browsers now support them natively, Node v0.11 ships with them built in.
+- Old familiar APIs (e.g. XMLHttpRequest) may be replaced by new shiny promising versions (e.g. request)
+- They are a fundamental building block to ServiceWorkers (a new browser API that can, among other things enable offline website functionality - which promises are a key component of today's workshop)
+- ReactPHP supports Promises.  Many, many languages support promises (or equivalents - sometimes called futures - promises were actually first proposed in 1976)
