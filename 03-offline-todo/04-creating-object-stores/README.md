@@ -66,7 +66,7 @@ The Resources panel should now show the object store that was added.
 
 ![The “Resources” panel should now show the object store that was added](./screenshot.png)
 
-### What's going on here?
+## What's we have done so far
 
 Everything related to **IndexedDB** is accessed either directly or indirectly through `window.indexedDB`\*.
 
