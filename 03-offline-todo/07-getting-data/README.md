@@ -2,7 +2,7 @@
 
 Now that we’ve stored some data, the next step is to work out how to retrieve it.
 
-##### /application.js
+##### `/application.js`
 
 Again, the ellipses indicate code that we have already implemented in the previous steps.
 
