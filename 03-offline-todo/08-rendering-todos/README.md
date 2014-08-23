@@ -1,5 +1,7 @@
 # Rendering todos
 
+In this section we will put in the plumbing that will use the methods we've already implemented to render the todos on to the page.
+
 ```js
 (function() {
   var db, input, ul;
@@ -33,7 +35,9 @@
 […]
 ```
 
-// TODO - explain
+- `todoToHtml` takes a single todo and converts it to a HTML string.
+- `renderAllTodos` takes an array of todos, converts each of them HTML and then sets the `innerHTML` of the `ul` to those strings concatenated together.
+- `refreshView` returns a promise then gets all the todos from the local database and passes them to `renderAllTodos`, which converts the todos to HTML and injects that HTML into the web page.
 
 ---
 
