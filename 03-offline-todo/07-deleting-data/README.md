@@ -75,4 +75,4 @@ Our to-do app is basically feature-complete. We can add and delete items, and it
 
 ---
 
-[Continue to *AppCache for full offline experience* →](../07-appcache)
+[Continue to *AppCache for full offline experience* →](../08-appcache)
