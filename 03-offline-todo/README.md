@@ -1,4 +1,4 @@
-# Offline Todo with IndexedDB
+# Offline todo with IndexedDB
 
 We’re going to make a simple offline-first [to-do application](https://matthew-andrews.github.io/offline-todo/) with HTML5
 technology.  Here is what the app will do:
