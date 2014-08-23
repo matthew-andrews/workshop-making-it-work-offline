@@ -19,7 +19,7 @@ Note that I’ve omitted the database’s opening code, indicated by ellipses (�
   function onSubmit(e) {
     e.preventDefault();
     var todo = { text: input.value, _id: String(Date.now()) };
-    databasesTodosPut(input.value)
+    databasesTodosPut(todo)
       .then(function() {
         input.value = '';
       });
@@ -27,7 +27,7 @@ Note that I’ve omitted the database’s opening code, indicated by ellipses (�
 
 […]
 
-  function databasesTodosPut(text, callback) {
+  function databasesTodosPut(todo) {
     return new Promise(function(resolve, reject) {
       var transaction = db.transaction(['todo'], 'readwrite');
       var store = transaction.objectStore('todo');

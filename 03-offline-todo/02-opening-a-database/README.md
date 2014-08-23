@@ -13,7 +13,7 @@
       alert("The database has been opened");
     });
 
-  function databaseOpen(callback) {
+  function databaseOpen() {
     return new Promise(function(resolve, reject) {
       var version = 1;
       var request = indexedDB.open('todos', version);
