@@ -67,4 +67,6 @@ indexedDB.deleteDatabase('todos');
 After refreshing, the “Resources” pane of “Developer Tools” should have changed and should now show the object store that we added:
 The Resources panel should now show the object store that was added.
 
-// IMAGE - The “Resources” panel should now show the object store that was added.
+![The “Resources” panel should now show the object store that was added](./screenshot.jpg)
+
+[Continue to *adding data* →](../05-adding-data)

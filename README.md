@@ -17,6 +17,7 @@ Contents
   - [Scaffolding the application](03-offline-todo/01-scaffolding)
   - [Opening an IndexedDB database](03-offline-todo/02-opening-a-database)
   - [Using Dev Tools with Safari, Chrome, IE and Firefox](03-offline-todo/03-using-dev-tools)
+  - [Creating Object Stores](03-offline-todo/04-creating-object-stores)
   - [Adding data](03-offline-todo/04-adding-data)
   - Updating data
   - Getting data
