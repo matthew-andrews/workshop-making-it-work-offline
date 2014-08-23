@@ -41,4 +41,4 @@ In this section we will put in the plumbing that will use the methods we've alre
 
 ---
 
-[Continue to *deleting data* →](../09-deleting-data)
+[← Back to *getting data*](../07-getting-data) | [Continue to *deleting data* →](../09-deleting-data)
