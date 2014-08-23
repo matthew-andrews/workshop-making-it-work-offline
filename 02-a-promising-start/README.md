@@ -2,7 +2,7 @@
 
 ## What is a Promise?
 
-Promises are are used to organise asynchronous logic.
+Promises are used to organise asynchronous logic.
 
 ## Why are we talking about it?
 
