@@ -48,4 +48,4 @@ Verify the application works offline by loading it up and then switching off the
 
 We’ve created a quick and simple to-do app that works offline and that runs in all major modern browsers, thanks to both IndexedDB and WebSQL (via a polyfill).
 
-[Back to contents →](https://github.com/matthew-andrews/workshop-making-it-work-offline)
+[← Continue to *deleting data*](../09-deleting-data) | [Back to contents →](https://github.com/matthew-andrews/workshop-making-it-work-offline)
