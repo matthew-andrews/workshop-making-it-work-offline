@@ -2,7 +2,7 @@
 
 ### Chrome
 
-To check that it’s working, open the application in the browser, open up **Developer Tools** and click on the **Resources** tab.
+To check that the database has been succesfully created open the application in the browser, open up **Developer Tools** and click on the **Resources** tab.
 
 ![Screenshot of the IndexedDB in Chrome Dev Tools](./chrome.jpg)
 
