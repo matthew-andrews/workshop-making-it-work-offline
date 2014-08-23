@@ -67,6 +67,7 @@ quite complicated for applications whose database schemas change frequently**.
 
 \* Documentation for this object is often filed under `IDBFactory`.  `IDBFactory` is an **interface** that `window.indexedDB` *implements* (and indeed the *nly* object that implements this
 interface).
+
 \*\* May be subject to change, [see MDN](https://developer.mozilla.org/en-US/docs/Web/API/IDBFactory.open)
 
 ### Deleting Databases
