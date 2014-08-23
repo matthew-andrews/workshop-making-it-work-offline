@@ -2,7 +2,7 @@
 
 The next step is to enable the user to add items.
 
-##### /application.js
+##### `/application.js`
 
 Note that I’ve omitted the database’s opening code, indicated by ellipses (…) below:
 
