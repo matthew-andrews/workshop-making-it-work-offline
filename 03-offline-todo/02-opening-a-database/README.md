@@ -37,7 +37,7 @@ All this code does is create a database with indexedDB.open and then show the us
 
 To check that it’s working, open the application in the browser, open up “Developer Tools” and click on the “Resources” tab.
 
-![Screenshot of the IndexedDB in Dev Tools](./screenshot.jpg?)
+![Screenshot of the IndexedDB in Dev Tools](./screenshot.jpg)
 
 ### What's going on here?
 
