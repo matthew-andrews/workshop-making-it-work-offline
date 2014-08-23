@@ -9,6 +9,8 @@ While HTML5 Application Cache works reasonably well for a simple single-page app
 - Service Worker might soon replace HTML5 Application Cache, although it is not currently usable in any browser, and neither Apple nor Microsoft have publicly committed to supporting it.
 - To enable the application cache, we’ll add a `manifest` attribute to the `html` element of the web page.
 
+We will cover the essential hacks needed to get AppCache to behave itself later in the course.
+
 #### `/index.html`
 
 ```html
