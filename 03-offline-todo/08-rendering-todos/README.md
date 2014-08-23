@@ -14,6 +14,16 @@ In this section we will put in the plumbing that will use the methods we've alre
     })
     .then(refreshView);
 
+  function onSubmit(e) {
+    e.preventDefault();
+    var todo = { text: input.value, _id: String(Date.now()) };
+    databasesTodosPut(todo)
+      .then(function() {
+        input.value = '';
+      })
+      .then(refreshView);
+  }
+
 […]
 
   function refreshView() {
@@ -38,6 +48,7 @@ In this section we will put in the plumbing that will use the methods we've alre
 - `todoToHtml` takes a single todo and converts it to a HTML string.
 - `renderAllTodos` takes an array of todos, converts each of them HTML and then sets the `innerHTML` of the `ul` to those strings concatenated together.
 - `refreshView` returns a promise then gets all the todos from the local database and passes them to `renderAllTodos`, which converts the todos to HTML and injects that HTML into the web page.
+- We have also enhanced another method, the `onSubmit` event handler, so that the todos re-render as new todos are added.
 
 ---
 
