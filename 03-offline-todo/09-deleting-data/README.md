@@ -34,18 +34,6 @@ To achieve this, we will be a little hacky and give each item an ID set to its `
 
 […]
 
-  function refreshView() {
-    return databaseTodosGet().then(renderAllTodos);
-  }
-
-  function renderAllTodos(todos) {
-    var html = '';
-    todos.forEach(function(todo) {
-      html += todoToHtml(todo);
-    });
-    ul.innerHTML = html;
-  }
-
   function todoToHtml(todo) {
     return '<li><button id="'+todo._id+'">delete</button>'+todo.text+'</li>';
   }
@@ -75,4 +63,4 @@ Our to-do app is basically feature-complete. We can add and delete items, and it
 
 ---
 
-[Continue to *AppCache for full offline experience* →](../101010101010101010
+[Continue to *AppCache for full offline experience* →](../10-appcache)
