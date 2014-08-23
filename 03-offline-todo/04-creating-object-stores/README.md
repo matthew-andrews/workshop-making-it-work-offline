@@ -55,7 +55,7 @@ Having updated `application.js`, if you open the web app again, not a lot happen
 ## How to solve this?
 
 Whenever you add or remove object stores, you will need to increment the version number. Otherwise, the structure of the data will be different from what your code expects, and you risk breaking the application.
-Because this application doesn’t have any real users yet, we can fix this another way: by deleting the database. Copy this line of code into the “Console,” and then refresh the page:
+Because this application doesn’t have any real users yet, we can fix this another way: by deleting the database. Copy this line of code into the **Console**, and then refresh the page:
 
 ```js
 indexedDB.deleteDatabase('todos');
