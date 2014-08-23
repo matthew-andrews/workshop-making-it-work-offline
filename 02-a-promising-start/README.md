@@ -8,7 +8,7 @@ Promises are are used to organise asynchronous logic.
 
 We're going to need Promises because new browser APIs, such as **Service Worker** which we will cover later, are built on top of them.  By covering them early we will be able to use them in all of our prototypes and exercises so that hopefully they will be second nature (if they aren't already) by the end of the day.	
 
-Take for example messy logic that **POST**s two todos to the server and opens an alert when it's done (or an alert if one fails).
+Take for example messy logic that **POSTs** two todos to the server and opens an alert when it's done (or an alert if one fails).
 
 ```js
 request({
