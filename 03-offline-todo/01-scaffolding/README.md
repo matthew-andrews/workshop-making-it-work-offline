@@ -88,6 +88,8 @@ button {
 Again, this should be quite familiar: just some simple styles to make the to-do list look tidy. You may choose not to
 have any styles at all or create your own.
 
+We will leave `application.js` and `offline.appcache` empty for now and return to them later.
+
 ## Quick test
 
 Run any simple static web server, for example [node-static](https://github.com/cloudhead/node-static), in the directory
