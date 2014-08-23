@@ -21,8 +21,9 @@ We will cover the essential hacks needed to get AppCache to behave itself later 
 
 Then, we’ll create a manifest file, which is a simple text file in which we crudely specify the files to make available offline and how we want the cache to behave.
 
+#### `/offline.appcache`
+
 ```
-/OFFLINE.APPCACHE
 CACHE MANIFEST
 ./styles.css
 ./indexeddb.shim.min.js
