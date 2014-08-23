@@ -21,8 +21,9 @@ Contents
   - [Review: window.indexedDB](03-offline-todo/05-review-window-indexeddb)
   - [Adding data](03-offline-todo/06-adding-data)
   - [Getting data](03-offline-todo/07-getting-data)
-  - [Deleting data](03-offline-todo/08-deleting-data)
-  - [AppCache for full offline experience](03-offline-todo/09-appcache)
+  - [Rendering todos](03-offline-todo/08-rendering-todos)
+  - [Deleting data](03-offline-todo/09-deleting-data)
+  - [AppCache for full offline experience](03-offline-todo/10-appcache)
 4. [Offline Todo with IndexedDB with sync](04-offline-todo-with-sync)
   - Simplifications and potential gotchas (one browser, many times; private browsing)
   - The backend API

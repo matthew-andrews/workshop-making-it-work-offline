@@ -23,3 +23,7 @@
 ```
 
 // TODO - explain
+
+---
+
+[Continue to *deleting data* →](../09-deleting-data)
