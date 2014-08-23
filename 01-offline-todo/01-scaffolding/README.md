@@ -90,3 +90,5 @@ Run any simple static web server, for example [node-static](https://github.com/c
 containing these files and verify the website matches the screenshot below.
 
 ![Screenshot of the scaffolded application](./screenshot.png)
+
+[Continue to *opening a database* →](./02-opening-a-database)
