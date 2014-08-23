@@ -36,4 +36,6 @@ directly.
 I’ll go through all of the steps using Google Chrome (and its developer tools), but there’s no reason why you couldn’t
 develop this application using any other modern browser.
 
+---
+
 [Start by *scaffolding the application* →](./01-scaffolding)
