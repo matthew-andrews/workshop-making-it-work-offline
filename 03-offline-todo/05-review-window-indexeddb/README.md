@@ -66,4 +66,4 @@ request.onsuccess = function(e) {
 
 ---
 
-[Continue to *adding data* →](../06-adding-data)
+[← Back to *creating object stores*](../04-creating-object-stores) | [Continue to *adding data* →](../06-adding-data)
