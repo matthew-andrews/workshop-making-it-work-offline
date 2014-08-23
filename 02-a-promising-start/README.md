@@ -93,7 +93,8 @@ Promise.all(
       },
       method: 'POST'
     })
-  ]).then(function success() {
+  ]
+  ).then(function success() {
     alert('success!');
   }, function failure() {
     alert('something failed');
