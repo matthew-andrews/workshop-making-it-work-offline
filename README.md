@@ -10,9 +10,9 @@ Contents
 - Start with a Promise
   - Explainer
   - Worksheet
-- [Offline Todo with IndexedDB](01-offline-todo)
-  - [Scaffolding the application](01-offline-todo/01-scaffolding)
-  - [Opening an IndexedDB database](02-opening-a-database)
+- [Offline Todo with IndexedDB](03-offline-todo)
+  - [Scaffolding the application](03-offline-todo/01-scaffolding)
+  - [Opening an IndexedDB database](03-offline-todo/02-opening-a-database)
   - Using Dev Tools with Safari, Chrome, IE and Firefox
   - Adding data
   - Updating data
