@@ -22,4 +22,4 @@ Safari is also a little different because it does not yet support IndexedDB in s
 
 ---
 
-[← Back to *Opening a database*](../02-opening-a-database) | [Continue to *creating object stores* →](../04-creating-object-stores)
+[← Back to *opening a database*](../02-opening-a-database) | [Continue to *creating object stores* →](../04-creating-object-stores)
