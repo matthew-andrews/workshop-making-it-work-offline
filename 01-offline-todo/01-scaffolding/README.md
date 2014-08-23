@@ -3,10 +3,10 @@
 we will create the following files in a single directory:
 
 - [`/index.html`](./index.html)
-- [`/application.js`](/application.js)
-- [`/indexeddb.shim.min.js`](/indexeddb.shim.min.js)
-- [`/styles.css`](/styles.css)
-- [`/offline.appcache`](/offline.appcache)
+- [`/application.js`](./application.js)
+- [`/indexeddb.shim.min.js`](./indexeddb.shim.min.js)
+- [`/styles.css`](./styles.css)
+- [`/offline.appcache`](./offline.appcache)
 
 ### `/index.html`
 
