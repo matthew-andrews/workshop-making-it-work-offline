@@ -1,4 +1,4 @@
-# Retrieving Items
+# Retrieving items
 
 Now that we’ve stored some data, the next step is to work out how to retrieve it.
 
@@ -60,3 +60,7 @@ Notice how the `onsuccess` callback is called after each item is retrieved from 
 If you reopen the application again, Dev Tools console should look a bit like this:
 
 ![Screenshot of the scaffolded application](./screenshot.jpg)
+
+---
+
+[Continue to *opening a database* →](../07-deleting-data)
