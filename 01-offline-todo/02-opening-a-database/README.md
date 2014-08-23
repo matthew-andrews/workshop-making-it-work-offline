@@ -1,6 +1,6 @@
 # Opening an IndexedDB database
 
-### `/application.js`
+#### `/application.js`
 
 ```js
 (function() {
