@@ -56,7 +56,7 @@ To achieve this, we will be a little hacky and give each item an ID set to its `
 We’ve made the following enhancements:
 
 - We’ve added a new event handler (`onClick`) that listens to click events and checks whether the target element has an ID attribute. If it has one it calls databaseTodosDelete with that value and, if the item is successfully deleted, re-renders the to-do list following the same approach that we took in step 6.
-- We’ve enhanced the `todoToHtml` function so that every to-do item is outputted with an ID attribute, set to its `_id`.
+- We’ve enhanced the `todoToHtml` function so that every to-do item is outputted with a delete button with an ID attribute set to its `_id`.
 - We’ve added a new function, `databaseTodosDelete`, which takes a `todo` (well, a javascript object with an `_id` property) and returns a promise, deletes the item and then resolves the promise.
 
 Our to-do app is basically feature-complete. We can add and delete items, and it works in any browser that supports WebSQL or IndexedDB (although it could be a lot more efficient).
