@@ -63,4 +63,4 @@ If you reopen the application again, Dev Tools console should look a bit like th
 
 ---
 
-[Continue to *rendering todos* →](../08-rendering-todos)
+[← Back to *adding data*](../06-adding-data) | [Continue to *rendering todos* →](../08-rendering-todos)
