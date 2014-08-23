@@ -19,33 +19,30 @@ Now, `/application.js` looks like this (the new code starts at `request.onupgrad
   // 'global' variable to store reference to the database
   var db;
 
-  databaseOpen(function() {
-    alert("The database has been opened");
+  databaseOpen
+    .then(function() {
+      alert("The database has been opened");
+    });
+
+  function databaseOpen() {
+    return new Promise(function(resolve, reject) {
+      var version = 1;
+      var request = indexedDB.open('todos', version);
+
+      // Run migrations if necessary
+      request.onupgradeneeded = function(e) {
+        db = e.target.result;
+        e.target.transaction.onerror = databaseError;
+        db.createObjectStore('todo', { keyPath: 'timeStamp' });
+      };
+  
+      request.onsuccess = function(e) {
+        db = e.target.result;
+        resolve();
+      };
+      request.onerror = reject;
+    }
   });
-
-  function databaseOpen(callback) {
-    // Open a database, specify the name and version
-    var version = 1;
-    var request = indexedDB.open('todos', version);
-
-    // Run migrations if necessary
-    request.onupgradeneeded = function(e) {
-      db = e.target.result;
-      e.target.transaction.onerror = databaseError;
-      db.createObjectStore('todo', { keyPath: 'timeStamp' });
-    };
-
-    request.onsuccess = function(e) {
-      db = e.target.result;
-      callback();
-    };
-    request.onerror = databaseError;
-  }
-
-  function databaseError(e) {
-    console.error('An IndexedDB error has occurred', e);
-  }
-
 }());
 ```
 
