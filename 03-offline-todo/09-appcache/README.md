@@ -11,7 +11,7 @@ While HTML5 Application Cache works reasonably well for a simple single-page app
 
 We will cover the essential hacks needed to get AppCache to behave itself later in the course.
 
-#### `/index.html`
+##### `/index.html`
 
 ```html
 <!DOCTYPE html>
@@ -21,7 +21,7 @@ We will cover the essential hacks needed to get AppCache to behave itself later 
 
 Then, we’ll create a manifest file, which is a simple text file in which we crudely specify the files to make available offline and how we want the cache to behave.
 
-#### `/offline.appcache`
+##### `/offline.appcache`
 
 ```
 CACHE MANIFEST
