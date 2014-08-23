@@ -21,3 +21,5 @@ Verify the database has been correctly created and is version 1 in Firefox, Chro
 Safari is also a little different because it does not yet support IndexedDB in stable.  You can however still verify that the polyfill has correctly set the database up in WebSQL.
 
 ![Safari IndexedDB Dev Tools](./safari.png)
+
+[Continue to *using dev tools* →](../04-adding-data)
