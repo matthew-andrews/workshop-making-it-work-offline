@@ -9,7 +9,7 @@ Contents
 - Introduction
   - Why?
   - Meet the dysfunctional family
-- Start with a Promise
+- A promising start
   - Explainer
   - Worksheet
 - [Offline Todo with IndexedDB](03-offline-todo)
