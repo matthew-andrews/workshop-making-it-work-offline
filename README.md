@@ -7,6 +7,8 @@ Contents
 --------
 
 - Introduction
+  - Why?
+  - Meet the dysfunctional family
 - Start with a Promise
   - Explainer
   - Worksheet
@@ -19,6 +21,10 @@ Contents
   - Getting data
   - Deleting data
   - AppCache for full offline experience
-- Offline Todo with IndexedDB with sync
+- [Offline Todo with IndexedDB with sync](04-offline-todo-with-sync)
   - Simplifications and potential gotchas (one browser, many times; private browsing)
   - Add in the simple synchronisation algorithm
+- [Building an offline news website](05-offline-news)
+  - Scaffolding the application
+  - Hacking AppCache
+  - Replacing AppCache with Service Worker
