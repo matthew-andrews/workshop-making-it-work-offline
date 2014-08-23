@@ -79,6 +79,10 @@ li {
   border-bottom: solid 1px #DDD;
   cursor: pointer;
 }
+
+button {
+  float: right;
+}
 ```
 
 Again, this should be quite familiar: just some simple styles to make the to-do list look tidy. You may choose not to

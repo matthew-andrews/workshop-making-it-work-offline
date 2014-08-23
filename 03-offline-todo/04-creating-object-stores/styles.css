@@ -38,3 +38,7 @@ li {
   border-bottom: solid 1px #DDD;
   cursor: pointer;
 }
+
+button {
+  float: right;
+}
