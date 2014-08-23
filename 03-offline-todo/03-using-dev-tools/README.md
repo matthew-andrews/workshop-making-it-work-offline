@@ -20,4 +20,6 @@ Safari is also a little different because it does not yet support IndexedDB in s
 
 ![Safari IndexedDB Dev Tools](./safari.png)
 
+---
+
 [Continue to *creating object stores* →](../04-creating-object-stores)
