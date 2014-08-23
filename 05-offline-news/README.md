@@ -9,6 +9,7 @@ We’re going to make a simple offline-first to-do application with HTML5 techno
 ## Why news?
 
 Content-based websites (which includes websites other than news sites, such as Wikipedia, where the focus is on **reading** rather than **doing** make up a huge proportion of the world wide web)
-but are a use case that stretches AppCache to its (and a bit beyond) what it is capable of.
+but are a use case that stretches AppCache to its limits, which make it a good example to explore AppCache and its replacement, Service Worker, in depth.  Also it will be possible to takes these
+tips and tricks and apply them **immediately** to most websites.
 
 [TODO - Finish this]
