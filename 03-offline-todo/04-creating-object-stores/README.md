@@ -1,4 +1,4 @@
-# Creating Object Stores
+# Creating object stores
 
 Like many database formats that you might be familiar with, you can create many tables in a single IndexedDB database. These tables are called **objectStores**. In this step, we’ll create an object store named `todo`. To do this, we simply add an event listener on the database’s `upgradeneeded` event.
 The data format that we will store to-do items in will be JavaScript objects, with two properties:
