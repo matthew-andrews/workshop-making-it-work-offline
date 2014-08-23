@@ -30,4 +30,4 @@ All this code does is create a database with indexedDB.open and then show the us
 
 ---
 
-[Continue to *using dev tools* →](../03-using-dev-tools)
+[← Back to *Scaffolding the application*](../01-scaffolding) | [Continue to *using dev tools* →](../03-using-dev-tools)
