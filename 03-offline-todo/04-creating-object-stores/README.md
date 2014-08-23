@@ -68,4 +68,4 @@ The Resources panel should now show the object store that was added.
 
 ---
 
-[Continue to *adding data* →](../05-review-window-indexeddb)
+[Continue to *Review: `window.indexedDB`* →](../05-review-window-indexeddb)
