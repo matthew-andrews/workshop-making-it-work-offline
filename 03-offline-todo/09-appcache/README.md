@@ -42,3 +42,9 @@ The section that begins `NETWORK` tells the browser that all other files must be
 ## Check
 
 Verify the application works offline by loading it up and then switching off the static web server (or if you're using a webserver disconnect your device from the internet) and press refresh.
+
+## Success!
+
+We’ve created a quick and simple to-do app that works offline and that runs in all major modern browsers, thanks to both IndexedDB and WebSQL (via a polyfill).
+
+[Continue to *offline todo with sync* →](../../04-offline-todo-with-sync)
