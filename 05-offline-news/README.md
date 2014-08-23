@@ -1,4 +1,4 @@
-# Offline News Website
+# Offline news website
 
 We’re going to make a simple offline-first to-do application with HTML5 technology. Here is what the app will do:
 
