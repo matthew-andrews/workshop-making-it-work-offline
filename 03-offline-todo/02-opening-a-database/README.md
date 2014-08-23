@@ -26,10 +26,10 @@
 }());
 ```
 
-All this code does is create a database with indexedDB.open and then show the user an old-fashioned alert if it is successful. Every IndexedDB database needs a name (in this case, todos) and a version number (which I’ve set to 1).
+All this code does is create a database with `indexedDB.open` and then shows the user an old-fashioned alert if it is successful.  Every IndexedDB database needs a name (in this case, `todos`) and a version number (which I’ve set to 1).
 
 But how can we check that this has actually worked?
 
 ---
 
-[← Back to *Scaffolding the application*](../01-scaffolding) | [Continue to *using dev tools* →](../03-using-dev-tools)
+[← Back to *scaffolding the application*](../01-scaffolding) | [Continue to *using dev tools* →](../03-using-dev-tools)
