@@ -75,7 +75,8 @@ try {
 ### Promises let us write code like this.
 
 ```js
-Promise.all([
+Promise.all(
+  [
     request({
       url: "https://offline-todo-api.herokuapp.com/todos",
       body: {
