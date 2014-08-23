@@ -1,6 +1,6 @@
 # Scaffolding the application
 
-we will create the following files in a single directory:
+We will create the following files in a single directory:
 
 - [`/index.html`](./index.html)
 - [`/application.js`](./application.js)
