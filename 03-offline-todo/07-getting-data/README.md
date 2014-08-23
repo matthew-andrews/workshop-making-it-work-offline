@@ -63,4 +63,4 @@ If you reopen the application again, Dev Tools console should look a bit like th
 
 ---
 
-[Continue to *deleting data* →](../07-deleting-data)
+[Continue to *deleting data* →](../08-deleting-data)

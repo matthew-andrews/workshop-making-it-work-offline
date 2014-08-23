@@ -53,4 +53,4 @@ After adding a few items, they should appear in the todo object store.
 
 ---
 
-[Continue to *updating data* →](../06-getting-data)
+[Continue to *updating data* →](../07-getting-data)
