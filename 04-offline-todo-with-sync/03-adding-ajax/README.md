@@ -50,6 +50,9 @@ Now we have an ajax library installed and available to us in our application we 
 ##### `application.js`
 
 ```js
+(function() {
+  var api = 'http://localhost:3000/todos';
+
 […]
 
   function databaseTodosDelete(todo) {
