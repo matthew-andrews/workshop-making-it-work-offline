@@ -10,4 +10,4 @@ We’ve created a quick and simple to-do app that works offline and that runs in
   - Create a new version of the database that uses an incrementor for the `_id` and write a migration within `onupgradeneeded` that changes the structure of the database to use an auto-incrementor and updates the data to use the new index.
   - What happens if you have two tabs open and one tab upgrades to the new schema and javascript whilst the other is still expecting the old schema?
 
-[← Back to *AppCache for full offline experience*](../08-rendering-todos) | [Continue to *AppCacheOffline Todo with IndexedDB with sync* →](../../04-offline-todo-with-sync)
+[← Back to *AppCache for full offline experience*](../08-rendering-todos) | [Continue to *AppCacheOffline Todo with IndexedDB and sync* →](../../04-offline-todo-with-sync)
