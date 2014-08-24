@@ -27,5 +27,9 @@ To achieve this we are going to need to make the following changes to `applicati
 
 […]
 
-  
+  function refreshView() {
+    return databaseTodosGet({ deleted: false }).then(renderAllTodos);
+  }
+
+[…]
 ```
