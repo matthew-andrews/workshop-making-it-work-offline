@@ -67,4 +67,4 @@ Assuming nothing has broken the application should continue working in exactly t
 
 ---
 
-[← Back to *Architecture*](../01-architecture) | [Continue to *adding ajax* →](03-adding-ajax)
+[← Back to *architecture*](../01-architecture) | [Continue to *adding ajax* →](03-adding-ajax)
