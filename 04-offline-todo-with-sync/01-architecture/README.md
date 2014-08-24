@@ -51,6 +51,10 @@ With distributed applications where it is possible to create records on clients 
 
 ### Conclusion
 
-There is no simple solution that works in all cases.  For real world applications I would either choose to use some sort of uuid or to try to find a way to make local ids with remote ids lazily filled tab-safe.
+There is no simple solution that works in all cases.  For real world applications (that use this synchronisation algorithm) I would either choose to use some sort of uuid or to try to find a way to make local ids with remote ids lazily filled tab-safe.
 
 For the purpose of this demonstration prototype we will we use the **timestamp** option because it's by far the simplest.
+
+---
+
+[← Back to *offline todo with IndexedDB and synchronisation*](../) | [Continue to *mark for deletion* →](./02-mark-for-deletion)
