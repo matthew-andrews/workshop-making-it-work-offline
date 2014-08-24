@@ -65,4 +65,6 @@ Assuming nothing has broken the application should continue working in exactly t
 
 !['Hallo Welt' has been flagged for deletion](./screenshot.png)
 
+---
+
 [← Back to *Architecture*](../01-architecture) | [Continue to *adding ajax* →](03-adding-ajax)
