@@ -2,7 +2,7 @@
 
 Rather than directly deleting todo items we need to change our client side code to *mark todos for deletion*.
 
-To achieve this we are going to need to make the following changes
+To achieve this we are going to need to make the following changes:
 
 - change the `onClick` handler, which deletes individual todos, from directly deleting the todo to setting a new `deleted` property to `true`
 - enhance the `databaseTodosGet` method so that todos can be filtered by their deleted status.
