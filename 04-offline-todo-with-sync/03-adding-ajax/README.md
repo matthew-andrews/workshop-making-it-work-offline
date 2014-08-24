@@ -55,16 +55,6 @@ Now we have an ajax library installed and available to us in our application we 
 
 […]
 
-  function databaseTodosDelete(todo) {
-    return new Promise(function(resolve, reject) {
-      var transaction = db.transaction(['todo'], 'readwrite');
-      var store = transaction.objectStore('todo');
-      var request = store.delete(todo._id);
-      request.onsuccess = resolve;
-      request.onerror = reject;
-    });
-  }
-
   function serverTodosGet(_id) {
     return new Promise(function(resolve, reject) {
       superagent.get(api+'/' + (_id ? _id : ''))
