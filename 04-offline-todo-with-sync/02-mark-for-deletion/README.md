@@ -32,4 +32,31 @@ To achieve this we are going to need to make the following changes to `applicati
   }
 
 […]
+
+  function databaseTodosGet(query) {
+    return new Promise(function(resolve, reject) {
+      var transaction = db.transaction(['todo'], 'readwrite');
+      var store = transaction.objectStore('todo');
+
+      var keyRange = IDBKeyRange.lowerBound(0);
+      var cursorRequest = store.openCursor(keyRange);
+
+      var data = [];
+      cursorRequest.onsuccess = function(e) {
+        var result = e.target.result;
+
+        if (result) {
+          if (!query || (query.deleted === true && result.value.deleted) || (query.deleted === false && !result.value.deleted)) {
+            data.push(result.value);
+          }
+          result.continue();
+
+        } else {
+          resolve(data);
+        }
+      };
+    });
+  }
+
+[…]
 ```
