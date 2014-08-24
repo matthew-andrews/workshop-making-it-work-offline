@@ -1,4 +1,5 @@
 (function() {
+  var api = 'http://localhost:3000/todos';
   var db, input, ul;
 
   databaseOpen()
@@ -127,4 +128,34 @@
     });
   }
 
+  function serverTodosGet(_id) {
+    return new Promise(function(resolve, reject) {
+      superagent.get(api+'/' + (_id ? _id : ''))
+        .end(function(err, res) {
+          if (!err && res.ok) resolve(res);
+          else reject(res);
+        });
+    });
+  }
+
+  function serverTodosPost(todo) {
+    return new Promise(function(resolve, reject) {
+      superagent.post(api)
+        .send(todo)
+        .end(function(res) {
+          if (res.ok) resolve(res);
+          else reject(res);
+        });
+    });
+  }
+
+  function serverTodosDelete(todo) {
+    return new Promise(function(resolve, reject) {
+      superagent.del(api + '/' + todo._id)
+        .end(function(res) {
+          if (res.ok) resolve();
+          else reject();
+        });
+    });
+  }
 }());
