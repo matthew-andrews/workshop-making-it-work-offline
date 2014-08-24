@@ -30,6 +30,7 @@ Contents
   - [Mark for deletion](04-offline-todo-with-sync/02-mark-for-deletion)
   - [Adding ajax](04-offline-todo-with-sync/03-adding-ajax)
   - [Synchronise](04-offline-todo-with-sync/04-synchronise)
+  - [Success! (and bonus exercises)](04-offline-todo-with-sync/05-success)
 5. [Building an offline news website](05-offline-news)
   - Scaffolding the application
   - Hacking AppCache
