@@ -35,13 +35,11 @@ Nothing surprising here: just a standard HTML web page, with an input field to a
 
 ##### `/indexeddb.shim.min.js`
 
-Download the contents of [the minified IndexedDB polyfill](https://raw.githubusercontent.com/matthew-andrews/offline-todo/gh-pages/indexeddb.shim.min.js)
-, and put it in this file.
+Download the contents of [the minified IndexedDB polyfill](https://raw.githubusercontent.com/matthew-andrews/offline-todo/gh-pages/indexeddb.shim.min.js), and put it in this file.
 
 ##### `/promise.js`
 
-Download the contents of [the minified ES6 Promise polyfill](http://s3.amazonaws.com/es6-promises/promise-1.0.0.min.js)
-, and put it in this file.
+Download the contents of [the minified ES6 Promise polyfill](http://s3.amazonaws.com/es6-promises/promise-1.0.0.min.js), and put it in this file.
 
 ##### `/styles.css`
 
