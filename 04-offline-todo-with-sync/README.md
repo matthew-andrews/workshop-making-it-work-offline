@@ -1,4 +1,4 @@
-# Offline todo with IndexedDB with synchronisation
+# Offline todo with IndexedDB and synchronisation
 
 We will now enhance our simple offline-first to-do application by hooking it up to a server so that, when it has an internet connection, it can synchronise its data.  Here is what the app will do:
 
