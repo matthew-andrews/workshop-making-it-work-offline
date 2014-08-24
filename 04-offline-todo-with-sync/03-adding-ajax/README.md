@@ -2,6 +2,8 @@
 
 In order to communicate with the server we're going to need to implement some ajax functionality to communicate with our **[offline-todo-api](https://github.com/matthew-andrews/offline-todo-api)**.  I'm going to suggest using [superagent](https://github.com/visionmedia/superagent) but you could use vanilla javascript or jQuery if you prefer.
 
+## Install ajax library
+
 To add superagent we will need to make changes to `index.html`, `offline.appcache` and create a new file `superagent.js`.
 
 ##### `index.html`
@@ -46,6 +48,8 @@ NETWORK:
 // todo - notes
 
 Now we have an ajax library installed and available to us in our application we are next going to implement a few helper methods that mirror the API of the database methods:
+
+## Api wrapper methods
 
 ##### `application.js`
 
