@@ -14,3 +14,7 @@ but are a use case that stretches AppCache to its limits.
 This makes building a simple offline news website a good example to explore AppCache and its replacement, Service Worker, in depth.  Also it will be possible to takes these tips and tricks and apply them **immediately** to most websites.
 
 [TODO - Finish this]
+
+---
+
+[← Back to *success*](../../04-offline-todo-with-sync/05-success) | [Continue to *scaffolding* →](01-scaffolding)
