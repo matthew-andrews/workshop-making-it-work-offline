@@ -114,7 +114,7 @@ Promise.all(
 
 ### Like them or not they're here to stay
 
-- Browsers now support them natively, Node v0.11 ships with them built in.
+- Browsers now support them natively, Node v0.11 ships with them built in
 - Old familiar APIs (e.g. XMLHttpRequest) may be replaced by new shiny promising versions (e.g. request)
-- They are a fundamental building block to ServiceWorkers (a new browser API that can, among other things enable offline website functionality - which promises are a key component of today's workshop)
-- ReactPHP supports Promises.  Many, many languages support promises (or equivalents - sometimes called futures - promises were actually first proposed in 1976)
+- They are a fundamental building block to ServiceWorkers, which will be a key component of today's workshop
+- Many, many languages support promises (even [ReactPHP](https://github.com/reactphp/promise)) or equivalents (sometimes called futures - promises were actually first proposed in 1976)
