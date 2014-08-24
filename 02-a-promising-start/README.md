@@ -42,7 +42,7 @@ request({
 
 - Difficult to follow
 - The second request doesn't start until the first is complete (they could be running at the same time)
-- Error handling is messy...
+- Error handling is messy
 
 ## What are we aiming for?
 
