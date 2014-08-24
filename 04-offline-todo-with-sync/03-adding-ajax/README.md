@@ -92,8 +92,6 @@ Now we have an ajax library installed and available to us in our application we 
 }());
 ```
 
-// todo - finish me
-
 ---
 
 [← Back to *mark for deletion*](../02-mark-for-deletion) | [Continue to *synchronise* →](03-synchronise)
