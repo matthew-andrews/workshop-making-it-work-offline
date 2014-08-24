@@ -2,6 +2,8 @@
 
 // todo - explain
 
+##### `application.js`
+
 ```js
 […]
 
