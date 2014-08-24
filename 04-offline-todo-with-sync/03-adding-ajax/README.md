@@ -45,11 +45,11 @@ NETWORK:
 
 ##### `superagent.js`
 
-// todo - notes
-
-Now we have an ajax library installed and available to us in our application we are next going to implement a few helper methods that mirror the API of the database methods:
+Download the contents of the [minified superagent polyfill](https://raw.githubusercontent.com/visionmedia/superagent/master/superagent.js), and put it in this file.
 
 ## Api wrapper methods
+
+Now we have an ajax library installed and available to us in our application we are next going to implement a few helper methods that mirror the API of the database methods:
 
 ##### `application.js`
 
