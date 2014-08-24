@@ -27,6 +27,7 @@ Then, we’ll create a manifest file, which is a simple text file in which we cr
 CACHE MANIFEST
 ./styles.css
 ./indexeddb.shim.min.js
+./promise.js
 ./application.js
 
 NETWORK:

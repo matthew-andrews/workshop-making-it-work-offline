@@ -5,6 +5,7 @@ We will create the following files in a single directory:
 - [`/index.html`](./index.html)
 - [`/application.js`](./application.js)
 - [`/indexeddb.shim.min.js`](./indexeddb.shim.min.js)
+- [`/promise.js`](./promise.js)
 - [`/styles.css`](./styles.css)
 - [`/offline.appcache`](./offline.appcache)
 
@@ -24,6 +25,7 @@ We will create the following files in a single directory:
     <ul>
     </ul>
     <script src="./indexeddb.shim.min.js"></script>
+    <script src="./promise.js"></script>
     <script src="./application.js"></script>
   </body>
 </html>
@@ -34,6 +36,11 @@ Nothing surprising here: just a standard HTML web page, with an input field to a
 ##### `/indexeddb.shim.min.js`
 
 Download the contents of [the minified IndexedDB polyfill](https://raw.githubusercontent.com/matthew-andrews/offline-todo/gh-pages/indexeddb.shim.min.js)
+, and put it in this file.
+
+##### `/promise.js`
+
+Download the contents of [the minified ES6 Promise polyfill](http://s3.amazonaws.com/es6-promises/promise-1.0.0.min.js)
 , and put it in this file.
 
 ##### `/styles.css`
