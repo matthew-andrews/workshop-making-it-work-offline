@@ -18,3 +18,5 @@ offline-todo-api
 Otherwise, deploy the **[offline todo api](https://github.com/matthew-andrews/offline-todo-api)** project to a new (free) Heroku app.
 
 Verify that your server is running correctly by going to `http://localhost:3000/todos` (replacing `http://localhost:3000` as appropriate) and checking that JSON encoded array is returned.  (At this stage it's probably empty - `[]`)
+
+[← Back to *success*](../03-offline-todo/11-success) | [Continue to *architecture* →](01-architecture)
