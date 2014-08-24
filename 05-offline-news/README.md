@@ -17,4 +17,4 @@ This makes building a simple offline news website a good example to explore AppC
 
 ---
 
-[← Back to *success*](../../04-offline-todo-with-sync/05-success) | [Continue to *scaffolding* →](01-scaffolding)
+[← Back to *success*](../04-offline-todo-with-sync/05-success) | [Continue to *scaffolding* →](01-scaffolding)
