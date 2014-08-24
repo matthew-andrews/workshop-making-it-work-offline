@@ -19,7 +19,7 @@ This algorithm is clearly extremely inefficient as it requires downloading all t
 
 ## Corollary: we can't just delete todos anymore
 
-By choosing this approach to synchronisation if we just delete todos in the same way we are currently, when the synchronisation algorithm isn't going to be able to distinguish todos that have been previously synced with the server but deleted locallly from todos that have been added by other clients but haven't yet been downloaded.
+By choosing this approach to synchronisation if we continue to directly delete todos from the local database as we are at the moment, the synchronisation algorithm isn't going to be able to distinguish todos that have been previously synced with the server but deleted locallly from todos that have been added by other clients but haven't yet been downloaded.
 
 To work around this instead of deleting todos we will *mark todos for deletion* and only delete them once we are sure that the server has successfully deleted them.
 
