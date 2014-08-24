@@ -24,6 +24,7 @@ Contents
   - [Rendering todos](03-offline-todo/08-rendering-todos)
   - [Deleting data](03-offline-todo/09-deleting-data)
   - [AppCache for full offline experience](03-offline-todo/10-appcache)
+  - [Success! (and bonus exercises)](03-offline-todo/11-success)
 4. [Offline Todo with IndexedDB with sync](04-offline-todo-with-sync)
   - Simplifications and potential gotchas (one browser, many times; private browsing)
   - The backend API
