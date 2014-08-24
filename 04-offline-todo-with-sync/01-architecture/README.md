@@ -4,7 +4,7 @@ As with the simple offline todo app, we're going to take lots of shortcuts so th
 
 ## Synchronisation
 
-There are many ways to store data so that it can be synchronised and merged in with other changes that have happened since the last synchronisation.  For example, **git** stores changes made 'offline' as sequences of **diffs**.
+There are many ways to store data so that it can be synchronized and merged in with other changes that have happened since the last synchronisation.  For example, **git** stores changes made 'offline' as sequences of **diffs**.
 
 For our todo application we are going to take the simplest possible route use the following algorithm for synchronising with the server:
 
