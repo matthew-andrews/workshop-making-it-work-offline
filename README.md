@@ -28,7 +28,7 @@ Contents
 4. [Offline Todo with IndexedDB with sync](04-offline-todo-with-sync)
   - [Architecture](04-offline-todo-with-sync/01-architecture)
   - [Mark for deletion](04-offline-todo-with-sync/02-mark-for-deletion)
-  - [Adding AJAX](04-offline-todo-with-sync/03-adding-ajax)
+  - [Adding ajax](04-offline-todo-with-sync/03-adding-ajax)
   - [Synchronise](04-offline-todo-with-sync/04-synchronise)
 5. [Building an offline news website](05-offline-news)
   - Scaffolding the application
