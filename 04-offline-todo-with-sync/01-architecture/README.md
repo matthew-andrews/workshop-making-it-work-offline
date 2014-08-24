@@ -40,7 +40,7 @@ With distributed applications where it is possible to create records on clients 
 - Both simulataneously `POST` the new todo to the server.
 - Because the server hasn't yet allocated the todo its permanent unique identifier, it cannot distinguish the two todos from each other and so creates it twice.
 
-(You could work around this by requiring all todo text to be unique - which would probably be undesireable from a product point of view)
+You could work around this by requiring all todo text to be unique but that would probably be undesireable for a todo app.
 
 #### Other alternatives
 
