@@ -60,3 +60,9 @@ To achieve this we are going to need to make the following changes to `applicati
 
 […]
 ```
+
+Assuming nothing has broken the application should continue working in exactly the same way it did before - you should be able to create and delete todos.  The difference is an implementation detail that can be checked by opening up dev tools - where you will see that todos don't actually get deleted any more - they only have a `deleted` flag set to `true` against them.  See below:
+
+!['Hallo Welt' has been flagged for deletion](./screenshot.png)
+
+[← Back to *Architecture*](../01-architecture) | [Continue to *adding ajax* →](03-adding-ajax)
