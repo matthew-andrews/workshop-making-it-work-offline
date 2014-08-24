@@ -13,4 +13,4 @@ The structure of this course will be very practical, focused on building prototy
 
 ---
 
-[← Back to *contents*](https://github.com/matthew-andrews/workshop-making-it-work-offline) | [Why →](01-why)
+[← Back to *contents*](https://github.com/matthew-andrews/workshop-making-it-work-offline) | [Continue to *why* →](01-why)
