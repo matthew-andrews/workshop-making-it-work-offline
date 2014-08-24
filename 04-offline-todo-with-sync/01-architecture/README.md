@@ -17,13 +17,13 @@ For our todo application we are going to take the simplest possible route use th
 
 This algorithm is clearly extremely inefficient as it requires downloading all the todos in one go, it requires holding all the todos that exist in memory at once, and it requires walking through all the data to figure out what needs updating.  We get away with this because the size of the data we expect for our todos is quite small.
 
-## Delete Corollary 1: we can't just delete todos anymore
+### Delete Corollary 1: we can't just delete todos anymore
 
 By choosing this approach to synchronisation if we continue to directly delete todos from the local database as we are at the moment, the synchronisation algorithm isn't going to be able to distinguish todos that have been previously synced with the server but deleted locallly from todos that have been added by other clients but haven't yet been downloaded.
 
 To work around this instead of deleting todos we will *mark todos for deletion* and only delete them once we are sure that the server has successfully deleted them.
 
-## Delete Corollary 2: the server can never delete todos
+### Delete Corollary 2: the server can never delete todos
 
 Again because of the choice to use this approach to synchronisation in order for clients to be able to distinguish between todos that have been just created locally and not synced (and so exist locally but not on the server) and those that have been deleted by other clients (and so exist locally but not on the server) the server can never *actually* delete todos - only mark them for deletion.
 
