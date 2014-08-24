@@ -94,4 +94,4 @@ Now we have an ajax library installed and available to us in our application we 
 
 ---
 
-[← Back to *mark for deletion*](../02-mark-for-deletion) | [Continue to *synchronize* →](../03-synchronize)
+[← Back to *mark for deletion*](../02-mark-for-deletion) | [Continue to *synchronize* →](../04-synchronize)
