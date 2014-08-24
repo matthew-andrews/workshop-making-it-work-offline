@@ -12,7 +12,7 @@
   function onSubmit(e) {
     e.preventDefault();
     var todo = { text: input.value, _id: String(Date.now()) };
-    databasesTodosPut(todo)
+    databaseTodosPut(todo)
       .then(function() {
         input.value = '';
       })
@@ -52,7 +52,7 @@
     });
   }
 
-  function databasesTodosPut(todo) {
+  function databaseTodosPut(todo) {
     return new Promise(function(resolve, reject) {
       var transaction = db.transaction(['todo'], 'readwrite');
       var store = transaction.objectStore('todo');

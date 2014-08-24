@@ -17,7 +17,7 @@ In this section we will put in the plumbing that will use the methods we've alre
   function onSubmit(e) {
     e.preventDefault();
     var todo = { text: input.value, _id: String(Date.now()) };
-    databasesTodosPut(todo)
+    databaseTodosPut(todo)
       .then(function() {
         input.value = '';
       })
