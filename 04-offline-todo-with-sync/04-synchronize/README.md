@@ -1,4 +1,4 @@
-# Synchronise
+# Synchronize
 
 // todo - explain
 
