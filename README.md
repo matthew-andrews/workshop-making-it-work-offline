@@ -26,7 +26,7 @@ Contents
   - [AppCache for full offline experience](03-offline-todo/10-appcache)
   - [Success! (and bonus exercises)](03-offline-todo/11-success)
 4. [Offline Todo with IndexedDB with sync](04-offline-todo-with-sync)
-  - Simplifications and potential gotchas (one browser, many times; private browsing)
+  - [Architecture](04-offline-todo-with-sync/01-architecture)
   - The backend API
   - Add in the simple synchronisation algorithm
 5. [Building an offline news website](05-offline-news)
