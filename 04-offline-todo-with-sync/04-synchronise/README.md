@@ -7,7 +7,7 @@
 ```js
 […]
 
-  function synchronise() {
+  function synchronize() {
     return Promise.all([serverTodosGet(), databaseTodosGet()])
       .then(function(results) {
         var promises = [];
