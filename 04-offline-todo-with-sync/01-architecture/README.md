@@ -57,4 +57,4 @@ For the purpose of this demonstration prototype we will we use the **timestamp**
 
 ---
 
-[← Back to *offline todo with IndexedDB and sync*](../) | [Continue to *mark for deletion* →](./02-mark-for-deletion)
+[← Back to *offline todo with IndexedDB and sync*](../) | [Continue to *mark for deletion* →](../02-mark-for-deletion)
