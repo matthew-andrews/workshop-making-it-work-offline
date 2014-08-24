@@ -104,7 +104,7 @@ Promise.all(
 
 ### Nice things about promises
 
-- Abstracts the complexity of dealing with asynchronous logic - lets you write performant but (relatively) siple code.
+- Abstracts the complexity of dealing with asynchronous logic - lets you write performant but (relatively) simple code.
 - Allows you to deal with errors in asynchronous libraries in a sensible way.
 
 ### Maybe not so nice things about promises
