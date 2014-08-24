@@ -14,7 +14,8 @@
     if (e.target.hasAttribute('id')) {
       databaseTodosGetById(e.target.getAttribute('id'))
         .then(function(todo) {
-          return databaseTodosDelete(todo);
+          todo.deleted = true;
+          return databaseTodosPut(todo);
         })
         .then(refreshView);
     }
@@ -31,7 +32,7 @@
   }
 
   function refreshView() {
-    return databaseTodosGet().then(renderAllTodos);
+    return databaseTodosGet({ deleted: false }).then(renderAllTodos);
   }
 
   function renderAllTodos(todos) {
@@ -73,7 +74,7 @@
     });
   }
 
-  function databaseTodosGet() {
+  function databaseTodosGet(query) {
     return new Promise(function(resolve, reject) {
       var transaction = db.transaction(['todo'], 'readwrite');
       var store = transaction.objectStore('todo');
@@ -90,7 +91,9 @@
 
         // If there's data, add it to array
         if (result) {
-          data.push(result.value);
+          if (!query || (query.deleted === true && result.value.deleted) || (query.deleted === false && !result.value.deleted)) {
+            data.push(result.value);
+          }
           result.continue();
 
         // Reach the end of the data
