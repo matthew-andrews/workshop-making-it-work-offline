@@ -153,7 +153,7 @@
     return new Promise(function(resolve, reject) {
       superagent.del(api + '/' + todo._id)
         .end(function(res) {
-          if (res.ok) resolve();
+          if (res.ok) resolve(res);
           else reject();
         });
     });
