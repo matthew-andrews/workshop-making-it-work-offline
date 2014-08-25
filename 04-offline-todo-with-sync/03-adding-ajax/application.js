@@ -132,7 +132,7 @@
     return new Promise(function(resolve, reject) {
       superagent.get(api+'/' + (_id ? _id : ''))
         .end(function(err, res) {
-          if (!err && res.ok) resolve(res);
+          if (!err && res.ok) resolve(res.body);
           else reject(res);
         });
     });
@@ -143,7 +143,7 @@
       superagent.post(api)
         .send(todo)
         .end(function(res) {
-          if (res.ok) resolve(res);
+          if (res.ok) resolve();
           else reject(res);
         });
     });

@@ -63,7 +63,7 @@ Now we have an ajax library installed and available to us in our application we 
     return new Promise(function(resolve, reject) {
       superagent.get(api+'/' + (_id ? _id : ''))
         .end(function(err, res) {
-          if (!err && res.ok) resolve(res);
+          if (!err && res.ok) resolve(res.body);
           else reject(res);
         });
     });
@@ -74,7 +74,7 @@ Now we have an ajax library installed and available to us in our application we 
       superagent.post(api)
         .send(todo)
         .end(function(res) {
-          if (res.ok) resolve(res);
+          if (res.ok) resolve();
           else reject(res);
         });
     });
