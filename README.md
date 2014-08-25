@@ -18,7 +18,7 @@ Contents
   - [Opening an IndexedDB database](03-offline-todo/02-opening-a-database)
   - [Using Dev Tools with Safari, Chrome, IE and Firefox](03-offline-todo/03-using-dev-tools)
   - [Creating Object Stores](03-offline-todo/04-creating-object-stores)
-  - [Review: window.indexedDB](03-offline-todo/05-review-window-indexeddb)
+  - [Review: `window.indexedDB`](03-offline-todo/05-review-window-indexeddb)
   - [Adding data](03-offline-todo/06-adding-data)
   - [Getting data](03-offline-todo/07-getting-data)
   - [Rendering todos](03-offline-todo/08-rendering-todos)
