@@ -47,7 +47,7 @@ We’ve added two bits of code here:
 
 To test that this works, open up the web app again. Type some words into the `input` element and press **Enter**. Repeat this a few times, and then open up **Developer Tools** to the **Resources** tab again. You should see the items that you typed now appear in the todo object store.
 
-![After adding a few items, they should appear in the todo object store](./screenshot.jpg)
+![After adding a few items, they should appear in the todo object store](./screenshot.png)
 
 After adding a few items, they should appear in the todo object store.
 
