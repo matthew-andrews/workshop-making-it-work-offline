@@ -1,6 +1,13 @@
 # Synchronize
 
-// todo - explain
+As a reminder the algorithm we decided to use for synchronization was:
+
+- download all todos from the server, load all todos from the local database
+- loop through all local todos
+  - if a todo has been deleted locally, delete it from the server
+  - if a todo isn't in the array of todos returned from the server, assume it's new and create it on the server
+- loop through all the remote todos
+  - if a todo isn't in the array of todos loaded from the local database, assume it's been created by another client since the last synchronisation and create it locally.
 
 ##### `application.js`
 
@@ -52,8 +59,6 @@
 
 […]
 ```
-
-// todo - explain
 
 
 ---
