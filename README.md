@@ -30,7 +30,7 @@ Contents
   - [Adding ajax](04-offline-todo-with-sync/03-adding-ajax)
   - [Synchronize](04-offline-todo-with-sync/04-synchronize)
   - [Success! (and bonus exercises)](04-offline-todo-with-sync/05-success)
-5. [Building an offline news app](05-offline-news)
+5. [Building an offline news app, FT style](05-offline-news)
   - [Scaffolding the application](05-offline-news/01-scaffolding)
   - [Hacking AppCache with an iframe](05-offline-news/02-hacking-appcache-with-an-iframe)
   - [Rendering on the server and the client](05-offline-news/03-server-side-rendering)
