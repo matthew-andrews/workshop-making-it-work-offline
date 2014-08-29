@@ -45,4 +45,6 @@ The section that begins `NETWORK` tells the browser that all other files must be
 
 Verify the application works offline by loading it up and then switching off the static web server (or if you're using a webserver disconnect your device from the internet) and press refresh.
 
-[← Back to *deleting data*](../09-deleting-data) | [Continue to success →](../11-success)
+---
+
+[← Back to *deleting data*](../09-deleting-data) | [Continue to *first appcache gotcha* →](../10-appcache-gotcha-1)
