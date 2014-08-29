@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "npm run jshint && npm run lintspaces",
-    "jshint": "jshint `find . -name \"*.js\" ! -path \"./node_modules/*\" ! -name \"superagent.js\" ! -name \"promise.js\" ! -name \"indexeddb.shim.min.js\"`",
-    "lintspaces": "lintspaces -n -t -d spaces -i js-comments -s 2 `find . -name \"*.js\" ! -path \"./node_modules/*\"`"
+    "jshint": "jshint `npm run get-js-files | tail -n +5`",
+    "lintspaces": "lintspaces -n -t -d spaces -i js-comments -s 2 `npm run get-js-files | tail -n +5`",
+    "get-js-files": "find . -name \"*.js\" ! -path \"./node_modules/*\" ! -name \"superagent.js\" ! -name \"promise.js\" ! -name \"indexeddb.shim.min.js\""
   },
   "repository": {
     "type": "git",
