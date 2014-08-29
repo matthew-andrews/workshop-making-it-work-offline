@@ -51,6 +51,15 @@ To test that this works, open up the web app again. Type some words into the `in
 
 After adding a few items, they should appear in the todo object store.
 
+#### Exercises
+
+- Find out what the difference is between `IDBObjectStore#add` and `IDBObjectStore#put` is.  What are the advantages of using `put` over `add`?
+
+
+#### Solutions
+
+- It's equivalent to the difference between the `POST` and `PUT` verbs in RESTful APIs, or `INSERT` versus `REPLACE` in SQL.  `add` will always create something fresh and if an attempt is made to create something with a key that already exists it will fail - whereas `put` will override the item with the existing key.  We use `put` here to simplify the implementation for demonstration purposes (we don't need to handle the error case).
+
 ---
 
 [← Back to *Review: `window.indexedDB`*](../05-review-window-indexeddb) | [Continue to *updating data* →](../07-getting-data)
