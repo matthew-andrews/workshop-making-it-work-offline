@@ -11,6 +11,10 @@ The structure of this course will be very practical, focused on building prototy
 - Discuss why it's inefficient or inelegant and then improve on it.
 - There are bonus exercises at the end of each section if you find the core material not challenging enough.
 
+## Group Chat
+
+http://tlk.io/
+
 ---
 
 [← Back to *contents*](https://github.com/matthew-andrews/workshop-making-it-work-offline) | [Continue to *why* →](01-why)
