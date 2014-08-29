@@ -9,7 +9,7 @@ Contents
 
 1. [Introduction](01-introduction)
   - Why?
-  - Meet the dysfunctional family
+  - [Meet the dysfunctional family](01-introduction/dysfunctional-family.md)
 2. [A promising start](02-a-promising-start)
   - Explainer
   - Exercises
