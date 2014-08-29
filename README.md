@@ -33,4 +33,7 @@ Contents
 5. [Building an offline news website](05-offline-news)
   - Scaffolding the application
   - Hacking AppCache
-  - Replacing AppCache with Service Worker
+6. [Building an offline news website *with Service Worker](06-offline-news-with-service-worker)
+  - [Architecture](06-offline-news-with-service-worker/01-architecture)
+  - [Replacing AppCache with Service Worker](06-offline-news-with-service-worker/02-replace-appcache-with-service-worker)
+  - [Making it more awesome with Service Worker](06-offline-news-with-service-worker/03-more-awesome-with-service-worker)
