@@ -34,7 +34,7 @@ Contents
   - [Scaffolding the application](05-offline-news/01-scaffolding)
   - [Hacking AppCache with an iframe](05-offline-news/02-hacking-appcache-with-an-iframe)
   - [Rendering on the server and the client](05-offline-news/03-server-side-rendering)
-6. [Building an offline news website *with Service Worker](06-offline-news-with-service-worker)
+6. [Building an offline news app with Service Worker](06-offline-news-with-service-worker)
   - [Architecture](06-offline-news-with-service-worker/01-architecture)
   - [Replacing AppCache with Service Worker](06-offline-news-with-service-worker/02-replace-appcache)
   - [Making it more awesome with Service Worker](06-offline-news-with-service-worker/03-more-awesome)
