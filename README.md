@@ -36,5 +36,6 @@ Contents
   - [Rendering on the server and the client](05-offline-news/03-server-side-rendering)
 6. [Building an offline news website *with Service Worker](06-offline-news-with-service-worker)
   - [Architecture](06-offline-news-with-service-worker/01-architecture)
-  - [Replacing AppCache with Service Worker](06-offline-news-with-service-worker/02-replace-appcache-with-service-worker)
-  - [Making it more awesome with Service Worker](06-offline-news-with-service-worker/03-more-awesome-with-service-worker)
+  - [Replacing AppCache with Service Worker](06-offline-news-with-service-worker/02-replace-appcache)
+  - [Making it more awesome with Service Worker](06-offline-news-with-service-worker/03-more-awesome)
+  - [Other approaches](06-offline-news-with-service-worker/04-other-approaches)
