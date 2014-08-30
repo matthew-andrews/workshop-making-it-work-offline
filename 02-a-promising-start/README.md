@@ -118,3 +118,7 @@ Promise.all(
 - Old familiar APIs (e.g. XMLHttpRequest) may be replaced by new shiny promising versions (e.g. request)
 - They are a fundamental building block to ServiceWorkers, which will be a key component of today's workshop
 - Many, many languages support promises (even [ReactPHP](https://github.com/reactphp/promise)) or equivalents (sometimes called futures - promises were actually first proposed in 1976)
+
+---
+
+[← Back to *meet the dysfunctional family*](../01-introduction/dysfunctional-family.md) | [Continue to *offline todo with IndexedDB* →](../03-offline-todo)
