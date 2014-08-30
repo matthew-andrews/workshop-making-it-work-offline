@@ -11,6 +11,7 @@
     .then(refreshView);
 
   function onClick(e) {
+    e.preventDefault();
     if (e.target.hasAttribute('id')) {
       databaseTodosGetById(e.target.getAttribute('id'))
         .then(function(todo) {

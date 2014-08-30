@@ -15,6 +15,7 @@ To achieve this we are going to need to make the following changes to `applicati
 […]
 
   function onClick(e) {
+    e.preventDefault();
     if (e.target.hasAttribute('id')) {
       databaseTodosGetById(e.target.getAttribute('id'))
         .then(function(todo) {

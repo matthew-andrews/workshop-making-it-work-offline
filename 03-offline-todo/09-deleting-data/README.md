@@ -23,6 +23,7 @@ To achieve this, we will be a little hacky and give each item an ID set to its `
 
     // We'll assume that any element with an ID
     // attribute is a to-do item. Don't try this at home!
+    e.preventDefault();
     if (e.target.hasAttribute('id')) {
       databaseTodosGetById(e.target.getAttribute('id'))
         .then(function(todo) {
