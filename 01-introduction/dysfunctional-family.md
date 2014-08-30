@@ -62,3 +62,7 @@ Note. There was another storage technology relevant to offline websites called t
 #### Q. Which technology do you need to make an offline-first web application?
 
 A. Most, if not all, of them.
+
+---
+
+[← Back to *why*](./01-why) | [Continue to *a promising start* →](../02-a-promising-start)
