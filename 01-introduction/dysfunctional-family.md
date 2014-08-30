@@ -65,4 +65,4 @@ A. Most, if not all, of them.
 
 ---
 
-[← Back to *why*](./01-why) | [Continue to *a promising start* →](../02-a-promising-start)
+[← Back to *why*](./why.md) | [Continue to *a promising start* →](../02-a-promising-start)
