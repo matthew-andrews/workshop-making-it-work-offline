@@ -17,4 +17,4 @@ http://tlk.io/
 
 ---
 
-[← Back to *contents*](https://github.com/matthew-andrews/workshop-making-it-work-offline) | [Continue to *why* →](01-why)
+[← Back to *contents*](https://github.com/matthew-andrews/workshop-making-it-work-offline) | [Continue to *why* →](./why.md)
