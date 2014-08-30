@@ -2,6 +2,15 @@
 
 Today we're going to explore all the technologies available in browsers today that can be brought together to build **offline websites**.
 
+## Me
+
+- Core dev FT web app, Economist HTML5 app (both successful offline-first applications)
+- Author of tutorial series: [How to make an offline HTML5 web app, FT style](http://labs.ft.com/2012/08/basic-offline-html5-web-app/)
+
+## You
+
+...
+
 ## Course structure
 
 The structure of this course will be very practical, focused on building prototypes, and will typically follow this pattern:
