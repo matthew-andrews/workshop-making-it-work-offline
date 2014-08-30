@@ -38,4 +38,4 @@ develop this application using any other modern browser.
 
 ---
 
-[← Back to *contents*](https://github.com/matthew-andrews/workshop-making-it-work-offline) | [Start by *scaffolding the application* →](./01-scaffolding)
+[← Back to *a promising start*](../02-a-promising-start) | [Start by *scaffolding the application* →](./01-scaffolding)
