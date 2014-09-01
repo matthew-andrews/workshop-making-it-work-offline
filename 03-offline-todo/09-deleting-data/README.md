@@ -12,8 +12,8 @@ To achieve this, we will be a little hacky and give each item an ID set to its `
 
   databaseOpen()
     .then(function() {
-      input = document.getElementsByTagName('input')[0];
-      ul = document.getElementsByTagName('ul')[0];
+      input = document.querySelector('input');
+      ul = document.querySelector('ul');
       document.body.addEventListener('submit', onSubmit);
       document.body.addEventListener('click', onClick);
     })
