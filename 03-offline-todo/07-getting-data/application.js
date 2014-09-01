@@ -3,7 +3,7 @@
 
   databaseOpen()
     .then(function() {
-      input = document.getElementsByTagName('input')[0];
+      input = document.querySelector('input');
       document.body.addEventListener('submit', onSubmit);
     })
     .then(databaseTodosGet)
