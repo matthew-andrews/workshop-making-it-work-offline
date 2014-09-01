@@ -1,4 +1,4 @@
-Making it work offline  [![Build Status](https://codeship.io/projects/a5f00640-11f5-0132-b5cc-6e89f715e7d6/status?branch=master)](https://codeship.io/projects/33169/)
+Making it work offline
 ======================
 
 Making it work offline, the workshop.
