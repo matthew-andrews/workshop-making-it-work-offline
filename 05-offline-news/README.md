@@ -2,11 +2,13 @@
 
 We’re going to make a simple offline-first to-do application with HTML5 technology. Here is what the app will do:
 
-- list the latest news headlines as well as allow users to click into an article;
-- have a unique URL for each of the articles, and the list of articles page;
 - store data offline and load without an Internet connection;
 - automatically download the latest stories when there is a good connection;
-- run on the first- and second-most recent versions of all major desktop and mobile browsers.
+- run on the first- and second-most recent versions of all major desktop and mobile browsers;
+- list the latest news headlines as well as allow users to click into an article;
+- **have a unique URL for each of the articles, and the list of articles page.**
+
+The last point is highlighted because it's the key distinguishing feature that makes making a website work offline different, and substantially harder (with AppCache) than "single page apps" like the one described in the previous section.
 
 ## Why news?
 
