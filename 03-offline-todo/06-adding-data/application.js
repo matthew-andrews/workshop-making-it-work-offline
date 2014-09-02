@@ -38,7 +38,7 @@
       var transaction = db.transaction(['todo'], 'readwrite');
       var store = transaction.objectStore('todo');
       var request = store.put(todo);
-      request.onsuccess = resolve;
+      transaction.oncomplete = resolve;
       request.onerror = reject;
     });
   }
