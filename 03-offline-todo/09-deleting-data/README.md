@@ -59,7 +59,7 @@ To achieve this, we will be a little hacky and give each item an ID set to its `
       var transaction = db.transaction(['todo'], 'readwrite');
       var store = transaction.objectStore('todo');
       var request = store.delete(todo._id);
-      request.onsuccess = resolve;
+      transaction.oncomplete = resolve;
       request.onerror = reject;
     });
   }

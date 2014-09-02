@@ -70,7 +70,7 @@
       var transaction = db.transaction(['todo'], 'readwrite');
       var store = transaction.objectStore('todo');
       var request = store.put(todo);
-      request.onsuccess = resolve;
+      transaction.oncomplete = resolve;
       request.onerror = reject;
     });
   }
@@ -123,7 +123,7 @@
       var transaction = db.transaction(['todo'], 'readwrite');
       var store = transaction.objectStore('todo');
       var request = store.delete(todo._id);
-      request.onsuccess = resolve;
+      transaction.oncomplete = resolve;
       request.onerror = reject;
     });
   }

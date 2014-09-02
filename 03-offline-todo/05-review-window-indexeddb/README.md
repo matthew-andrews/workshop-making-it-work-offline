@@ -34,7 +34,7 @@ request.onupgradeneeded = function(e) {
 };
 
 request.onsuccess = function(e) {
-  alert("Database deleted successfully");
+  alert("Database opened successfully");
 };
 ```
 
@@ -58,7 +58,7 @@ IDBOpenDBRequest deleteDatabase (DOMString name);
 ```js
 var request = window.indexedDB.deleteDatabase("todos");
 request.onsuccess = function(e) {
-  alert("Database deleted successfully");
+  alert("Database opened successfully");
 };
 ```
 
