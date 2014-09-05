@@ -10,3 +10,5 @@ Basically, nothing.
 - As the device is offline that tracking event will fail.
 - Google Analytics will not retry or store that data locally for retry later.
 - **If you want to keep that data, you will have to implement the storing and resending of it yourself.**
+
+[← Back to *why*](./why.md) | [Continue to *meet the dysfunctional family* →](./dysfunctional-family.md)
