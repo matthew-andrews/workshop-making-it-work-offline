@@ -1,6 +1,17 @@
 # How
 
-// TODO: talk in general terms about offline web application architecture
+There are basically two approaches.
+
+- **Prefer online**
+- Or, **offline first**
+
+## Prefer online
+
+// TODO - explain prefer online
+
+## Offline first
+
+// TODO - explain offline-first
 
 ## What happens to Google Analytics data?
 
