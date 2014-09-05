@@ -119,6 +119,53 @@ Promise.all(
 - They are a fundamental building block to ServiceWorkers, which will be a key component of today's workshop
 - Many, many languages support promises (even [ReactPHP](https://github.com/reactphp/promise)) or equivalents (sometimes called futures - promises were actually first proposed in 1976)
 
+### Exercises
+
+Explain the difference between this:-
+
+```js
+promise
+  .then(function() {
+      alert("Success!");
+    }, function() {
+      alert("Fail!");
+    });
+```
+
+And this:-
+
+```js
+promise
+  .then(function() {
+    alert("Success!");
+  })
+  .catch(function() {
+    alert("Fail!");
+  });
+```
+
+---
+
+Explain the difference between this:-
+
+```js
+Promise.all([promise1, promise2])
+  .then(function() {
+    alert("Success!");
+  });
+```
+
+And this:-
+
+```js
+Promise.race([promise1, promise2])
+  .then(function() {
+    alert("Success!");
+  });
+```
+
+When might race be useful in an offline web application?
+
 ---
 
 [← Back to *meet the dysfunctional family*](../01-introduction/dysfunctional-family.md) | [Continue to *offline todo with IndexedDB* →](../03-offline-todo)
