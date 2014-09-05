@@ -8,6 +8,7 @@ Contents
 
 1. [Introduction](01-introduction)
   - [Why?](01-introduction/why.md)
+  - [How?](01-introduction/how.md)
   - [Meet the dysfunctional family](01-introduction/dysfunctional-family.md)
 2. [A promising start](02-a-promising-start)
 3. [Offline Todo with IndexedDB](03-offline-todo)
