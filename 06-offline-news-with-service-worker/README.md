@@ -20,7 +20,7 @@ Service Workers are a new web browser feature that enable developers to write sc
 - They are able to **intercept** and **manipulate** HTTP requests between the web application and the internet.
 - They have their own mechanism to **cache requests** (in addition to the existing browser cache).
 - They can enable websites to **work offline** because they are able to respond to requests and respond from a cache without an internet connection.
-- They will probably only be permitted on websites served over **https**.
+- They will probably [only be permitted on websites served over **https**](https://github.com/slightlyoff/ServiceWorker/issues/199).
 
 Service Workers are meant to replace the HTML5 Application Cache. Unlike AppCache, which is controlled by [adding specific entries into a manifest file](https://developer.mozilla.org/en/docs/HTML/Using_the_application_cache), Service Workers are written in Javascript.
 
