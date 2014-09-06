@@ -38,6 +38,6 @@ Contents
   - [Even more hacking AppCache](05-offline-news/04-more-hacking-appcache)
 6. [Building an offline news app with Service Worker](06-offline-news-with-service-worker)
   - [Architecture](06-offline-news-with-service-worker/01-architecture)
-  - [Replacing AppCache with Service Worker](06-offline-news-with-service-worker/02-replace-appcache)
+  - [Registering a Service Worker](06-offline-news-with-service-worker/02-registering-a-service-worker)
   - [Other approaches](06-offline-news-with-service-worker/03-other-approaches)
   - [Success!](06-offline-news-with-service-worker/04-success)
