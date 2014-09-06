@@ -8,9 +8,7 @@ Use this snippet to serve an AppCache manifest from express:-
 app.get('/offline.appcache', function(req, res) {
   res.set('Content-Type', 'text/cache-manifest');
   res.send('CACHE MANIFEST'
-    + '\n./appcache.js'
     + '\n./application.js'
-    + '\n./iframe.js'
     + '\n./indexeddb.shim.min.js'
     + '\n./promise.js'
     + '\n./styles.css'
@@ -24,3 +22,5 @@ app.get('/offline.appcache', function(req, res) {
     + '\n*');
 });
 ```
+
+(We could do this by creating a static file, `/public/offline.appcache`, but you'll soon see why we've taken this approach)
