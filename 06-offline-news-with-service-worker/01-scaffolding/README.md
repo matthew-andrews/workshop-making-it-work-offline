@@ -92,7 +92,6 @@ This should be very familiar by now.
       + '\n    <link rel="stylesheet" href="/styles.css" type="text/css" media="all" />'
       + '\n  </head>'
       + '\n  <body>'
-      + '\n    <div class="brandrews"><a href="https://mattandre.ws">mattandre.ws</a> | <a href="https://twitter.com/andrewsmatt">@andrewsmatt</a></div>'
       + '\n    <main>'+data.main+'</main>'
       + '\n    <script src="/templates.js"></script>'
       + '\n    <script src="/application.js"></script>'
