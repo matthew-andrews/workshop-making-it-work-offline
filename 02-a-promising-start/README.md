@@ -2,7 +2,15 @@
 
 ## What is a Promise?
 
-Promises are used to organise asynchronous logic.
+> The Promise interface **represents a proxy for a value not necessarily known when the promise is created**. It allows you to associate handlers to an asynchronous action's eventual success or failure. **This lets asynchronous methods return values like synchronous methods**: instead of the final value, the asynchronous method returns a promise of having a value at some point in the future.
+>
+> A pending promise can become either **fulfilled with a value**, or **rejected with a reason**. When either of these happens, the associated handlers queued up by a promise's then method are called. (If the promise has already been fulfilled or rejected when a corresponding handler is attached, the handler will be called, so there is no race condition between an asynchronous operation completing and its handlers being attached.)
+>
+> As the Promise.prototype.then and Promise.prototype.catch methods return promises, they can be chained—an operation called composition.
+
+\- Source: [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise), emphasis mine.
+
+In short, Promises are a way to organise asynchronous logic.
 
 ## Why are we talking about it?
 
