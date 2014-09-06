@@ -63,3 +63,6 @@ Within the `layoutShell` function add the iframe like this:-
  + '\n    <iframe src="/iframe.html" style="width:0px; height:0px; visibility:hidden; position:absolute; border:none"></iframe>'
 ```
 
+Now as you use the web application no unwanted files will be added to AppCache.
+
+Except one.
