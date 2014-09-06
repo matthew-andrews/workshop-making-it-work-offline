@@ -81,7 +81,7 @@ We can now talk through each line and explain what it does:-
 
 #### Cursors
 
-`[IDBCursors](https://developer.mozilla.org/en-US/docs/Web/API/IDBCursor)` can be used to look up data by their index as well as sort data within an object store.  Usage of them is normally out of scope for this course - but here are a few links that introduce the key ideas:
+[`IDBCursors`](https://developer.mozilla.org/en-US/docs/Web/API/IDBCursor) can be used to look up data by their index as well as sort data within an object store.  Usage of them is normally out of scope for this course - but here are a few links that introduce the key ideas:
 
 - [`IDBCursor` documentation on MDN](https://developer.mozilla.org/en-US/docs/Web/API/IDBCursor)
 - [How to do some magic with indexedDB](http://www.codeproject.com/Articles/744986/How-to-do-some-magic-with-indexedDB)
