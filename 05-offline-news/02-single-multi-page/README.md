@@ -216,3 +216,7 @@ Try to do use the work we have done already in previous prototypes copying the s
   }
 })();
 ```
+
+---
+
+[← Back to *scaffolding*](../01-scaffolding) | [Continue to *hacking appcache* →](../03-hacking-appcache)
