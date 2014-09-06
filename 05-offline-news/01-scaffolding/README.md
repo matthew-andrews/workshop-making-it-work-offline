@@ -171,7 +171,11 @@ app.listen(port);
 console.log('listening on port', port);
 ```
 
-Now run the application in your favourite web browser and check that both views work.
+Now run the application in your favourite web browser and check that both views work by running:-
+
+```js
+node index.js
+```
 
 ---
 
