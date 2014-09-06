@@ -7,18 +7,21 @@ There are four distinct problems to solve*:
 3. Storing data
 4. Syncing data
 
-There are basically two approaches.
+## Delivering the application
 
-- **Prefer online**
-- Or, **offline first**
+// todo
 
-## Prefer online
+## Detecting connectivity
 
-// TODO - explain prefer online
+// todo
 
-## Offline first
+## Storing data
 
-// TODO - explain offline-first
+// todo
+
+## Syncing data
+
+// todo
 
 ## What happens to Google Analytics data?
 
