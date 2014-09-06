@@ -5,6 +5,7 @@ There are three distinct problems to solve*:
 1. Delivering the application
 2. Storing data
 3. Syncing data
+4. Third parties
 
 ## Delivering the application
 
@@ -17,8 +18,15 @@ There are three distinct problems to solve*:
 ## Syncing data
 
 - How do we ensure the data on users' devices are kept in sync with content on the server?
+- What if there are conflicts?
 
-## What happens to Google Analytics data?
+## Third parties
+
+One of the great things about the web is how easy it is to bring multiple products, widgets and services together onto a single page.
+
+Offline technologies have only just started to be developed - using them enable us to create incredible user experience that previously would have been impossible on the web - but, aslo by using them, you will discover many of the third party components you relied on to build websites don't work well offline.
+
+### What happens to Google Analytics data?
 
 Basically, nothing.
 
