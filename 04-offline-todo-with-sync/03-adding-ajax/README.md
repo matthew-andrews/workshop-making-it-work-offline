@@ -45,7 +45,7 @@ NETWORK:
 
 ##### `superagent.js`
 
-Download the contents of the [minified superagent polyfill](https://raw.githubusercontent.com/visionmedia/superagent/master/superagent.js), and put it in this file.
+Download the contents of the [minified superagent library](https://raw.githubusercontent.com/visionmedia/superagent/master/superagent.js), and put it in this file.
 
 ## Api wrapper methods
 
