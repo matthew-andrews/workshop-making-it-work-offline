@@ -19,7 +19,7 @@ The structure of this course will be very practical, focused on building prototy
 - Hack something together that works.
 - Talk about why it works (explaining any browser APIs that we've used that may be unfamiliar).
 - Discuss why it's inefficient or inelegant and then improve on it.
-- There are exercises at the end of each section if you finish the core material quickly.
+- There are exercises at the end of many sections if you finish the core material quickly.
 
 ## Group chat
 
