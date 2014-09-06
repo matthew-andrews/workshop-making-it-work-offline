@@ -1,5 +1,9 @@
 # Using dev tools
 
+### Exercise
+
+- Find debug tools for viewing IndexedDB and WebSQL databases across all the major web browsers and check our database has been created across all of them.
+
 ### Chrome
 
 To check that the database has been succesfully created open the application in the browser, open up **Developer Tools** and click on the **Resources** tab.
