@@ -79,4 +79,4 @@ Our to-do app is basically feature-complete. We can add and delete items, and it
 
 ---
 
-[← Back to *rendering todos*](../08-rendering-todos) | [Continue to *AppCache for full offline experience* →](../10-appcache)
+[← Back to *rendering todos*](../08-rendering-todos) | [Continue to *Review: `IDBRequest` and `IDBTransaction`* →](../10-review-requests-transactions)
