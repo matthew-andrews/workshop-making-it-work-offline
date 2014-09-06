@@ -39,5 +39,4 @@ Contents
 6. [Building an offline news app with Service Worker](06-offline-news-with-service-worker)
   - [Architecture](06-offline-news-with-service-worker/01-architecture)
   - [Replacing AppCache with Service Worker](06-offline-news-with-service-worker/02-replace-appcache)
-  - [Making it more awesome with Service Worker](06-offline-news-with-service-worker/03-more-awesome)
-  - [Other approaches](06-offline-news-with-service-worker/04-other-approaches)
+  - [Other approaches](06-offline-news-with-service-worker/03-other-approaches)
