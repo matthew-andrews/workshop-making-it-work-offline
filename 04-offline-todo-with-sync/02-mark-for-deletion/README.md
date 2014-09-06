@@ -36,7 +36,7 @@ To achieve this we are going to need to make the following changes to `applicati
 
   function databaseTodosGet(query) {
     return new Promise(function(resolve, reject) {
-      var transaction = db.transaction(['todo'], 'readwrite');
+      var transaction = db.transaction(['todo'], 'readonly');
       var store = transaction.objectStore('todo');
 
       var keyRange = IDBKeyRange.lowerBound(0);

@@ -24,7 +24,7 @@ Again, the ellipses indicate code that we have already implemented in the previo
 
   function databaseTodosGet() {
     return new Promise(function(resolve, reject) {
-      var transaction = db.transaction(['todo'], 'readwrite');
+      var transaction = db.transaction(['todo'], 'readonly');
       var store = transaction.objectStore('todo');
 
       // Get everything in the store

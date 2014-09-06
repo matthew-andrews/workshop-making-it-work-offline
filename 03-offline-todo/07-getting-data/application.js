@@ -49,7 +49,7 @@
 
   function databaseTodosGet() {
     return new Promise(function(resolve, reject) {
-      var transaction = db.transaction(['todo'], 'readwrite');
+      var transaction = db.transaction(['todo'], 'readonly');
       var store = transaction.objectStore('todo');
 
       // Get everything in the store
