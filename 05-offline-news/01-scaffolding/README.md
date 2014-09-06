@@ -22,7 +22,7 @@ npm install --save express cookie-parser superagent
 
 To begin with we'll make the application work online only (ie. a normal website) and then discuss the changes that we will have to make to make it work offline.  As building normal websites is an assumed prerequisite of this course heavy use of copy-paste is encouragedhere unless anything is unclear:
 
-##### `public/styles.css`
+##### [`public/styles.css`](./public/styles.css)
 
 ```css
 body {
@@ -59,7 +59,7 @@ li {
 
 Nothing too surprising should jump out here - it's just plain CSS.
 
-##### `public/templates.js`
+##### [`public/templates.js`](./public/templates.js)
 
 ```js
 (function() {
@@ -105,7 +105,7 @@ if (typeof module == 'object') {
 
 `if (typeof module == 'object')` is just a way of saying "am I running on the server" - and if that is the case this module will expose its functions via `module.exports`, otherwise it will add them to the `window` object.
 
-##### `index.js`
+##### [`index.js`](./index.js)
 
 ```js
 var api = 'https://offline-news-api.herokuapp.com/stories';
