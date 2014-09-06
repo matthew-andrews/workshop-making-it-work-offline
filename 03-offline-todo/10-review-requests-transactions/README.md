@@ -37,7 +37,9 @@ Use `transaction.oncomplete` and not `request.onsuccess` as the point where you 
 
 ### Requests
 
-// todo
+Requests are the only objects that you can use to _read_ or _write_ data with IndexedDB.  You can get to the results of each request using event handlers on the request objects.
+
+Results are created by the methods on object stores such as `IDBObjectStore#add`, `IDBObjectStore#delete` , `IDBObjectStore#createIndex`, `IDBObjectStore#openCursor`, etc.  A special type of `IDBRequest` called `IDBOpenDBRequest` that we covered in the previous review is created by `IDBFactory#open` and `IDBFactory#deleteDatabase`.
 
 ## Deleting data
 
