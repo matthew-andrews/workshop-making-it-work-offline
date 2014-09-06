@@ -52,6 +52,8 @@ li {
 }
 ```
 
+This should be very familiar by now.
+
 ##### [`public/templates.js`](./public/templates.js)
 
 ```js
