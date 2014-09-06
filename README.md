@@ -35,6 +35,7 @@ Contents
   - [Scaffolding the application](05-offline-news/01-scaffolding)
   - [Single/Multi-page app](05-offline-news/02-single-multi-page)
   - [Hacking AppCache](05-offline-news/03-hacking-appcache)
+  - [More hacking AppCache](05-offline-news/04-more-hacking-appcache)
 6. [Building an offline news app with Service Worker](06-offline-news-with-service-worker)
   - [Architecture](06-offline-news-with-service-worker/01-architecture)
   - [Replacing AppCache with Service Worker](06-offline-news-with-service-worker/02-replace-appcache)
