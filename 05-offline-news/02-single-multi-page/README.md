@@ -30,11 +30,11 @@ On the server side we will need to add a few more JavaScript files to the `layou
 [...]
 ```
 
-#### Add libraries and polyfills
+##### Add libraries and polyfills
 
 Copy over the polyfills for [**IndexedDB**](./public/indexeddb.shim.min.js), [**Promises**](./public/promise.js) and the [**Superagent**](./public/superagent.js) library from our previous prototypes and place the JavaScript files in `public`.
 
-#### `/application.js`
+##### [`/application.js`](./public/application.js)
 
 1. Opens a database
 2. Synchronises with the `/stories`, adding stories that have been added and deleting stories that have been removed
