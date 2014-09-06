@@ -1,5 +1,21 @@
 # Solutions
 
+```js
+function successful() {
+  return new Promise(resolve, reject) {
+    setTimeout(resolve, 1000);
+  };
+}
+
+function unsuccessful() {
+  return new Promise(resolve, reject) {
+    setTimeout(reject, 500);
+  };
+}
+```
+
+---
+
 `then` actually takes two arguments - one for success, one for failure, and `catch(function() {})` is just shorthand for `then(undefined, function() {})`.
 
 So really we are comparing the difference between:-
