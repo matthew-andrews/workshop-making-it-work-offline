@@ -8,4 +8,4 @@ Luckily a better way is coming.
 
 ---
 
-[← Back to *More hacking AppCache*](../04-more-hacking-appcache) | [Continue to *Offline news with Service Worker* →](../../../06-offline-news-with-service-worker)
+[← Back to *More hacking AppCache*](../04-more-hacking-appcache) | [Continue to *Offline news with Service Worker* →](../../06-offline-news-with-service-worker)
