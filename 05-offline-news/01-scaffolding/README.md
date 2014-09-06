@@ -1,6 +1,6 @@
 # Scaffolding
 
-This assumes familiarity with *npm*, `package.json` and [*express*](http://expressjs.com/).
+This assumes familiarity with [*npm*](https://www.npmjs.org/), `package.json` and [*express*](http://expressjs.com/).
 
 ## Set up a quick *express* server
 
