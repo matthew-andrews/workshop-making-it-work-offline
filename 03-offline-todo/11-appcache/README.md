@@ -47,4 +47,4 @@ Verify the application works offline by loading it up and then switching off the
 
 ---
 
-[← Back to *deleting data*](../09-deleting-data) | [Continue to *first appcache gotcha* →](../11-appcache-gotcha-1)
+[← Back to *review: `window.indexedDB`*](../11-review-requests-transactions) | [Continue to *first appcache gotcha* →](../12-appcache-gotcha-1)

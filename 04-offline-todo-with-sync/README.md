@@ -21,4 +21,4 @@ Verify that your server is running correctly by going to `http://localhost:3000/
 
 ---
 
-[← Back to *success*](../03-offline-todo/11-success) | [Continue to *architecture* →](01-architecture)
+[← Back to *success*](../03-offline-todo/10-success) | [Continue to *architecture* →](01-architecture)
