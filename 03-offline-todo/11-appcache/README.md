@@ -41,6 +41,8 @@ The section that begins `CACHE MANIFEST` tells the browser the following:
 
 The section that begins `NETWORK` tells the browser that all other files must be downloaded fresh from the Internet every time they are needed.
 
+(Yes, the default behaviour is to say any file not listed in the AppCache should never be downloaded - even if the device is online!?)
+
 ## Check
 
 Verify the application works offline by loading it up and then switching off the static web server (or if you're using a webserver disconnect your device from the internet) and press refresh.
