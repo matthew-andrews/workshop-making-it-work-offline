@@ -6,6 +6,7 @@ To get AppCache to work with our offline news website required us to write so ma
 - Returning an HTTP error on the manifest when a cookie is not set;
 - Created an iframe to load a page that loads the manifest rather than referencing it directly.
 - Without the `NETWORK: *` hack in your AppCache manifest you will break all non-offline'd resources.
+- If we deployed this as a real app on to a CDN we would also have to add hacks into the CDN too to vary its cache by cooke.
 
 Luckily, a better way is coming.
 
