@@ -66,6 +66,8 @@ A. Most, if not all, of them.
 
 For today's browsers I advocate the following approach and the reasons why will hopefully become clear over the course of the workshop:
 
+### Guidance
+
 - **Delivering the application** - we will use the Application Cache to store the JavaScript, HTML and CSS to launch our application.  We will not store any content here.
 - **Storing content** - we will use a clientside database technology, either IndexedDB or WebSQL, to store our content.  We will not store any application assets here.
 
