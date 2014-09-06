@@ -32,4 +32,4 @@ On the server side we will need to add a few more JavaScript files to the `layou
 
 #### Add libraries and polyfills
 
-Copy over the polyfills for [*IndexedDB*](./public/indexeddb.shim.min.js), [*Promises*](./public/promise.js) and the [*Superagent*](./public/superagent.js) library from our previous prototypes and place the JavaScript files in `public`.
+Copy over the polyfills for [**IndexedDB**](./public/indexeddb.shim.min.js), [**Promises**](./public/promise.js) and the [**Superagent**](./public/superagent.js) library from our previous prototypes and place the JavaScript files in `public`.
