@@ -19,7 +19,15 @@ What if we could stored an empty shell of the application in AppCache and only u
 - Change the endpoints that return pages (either `/` or `/article/:guid` in our express app to return an empty shell if a special cooke (we'll call it `up`).
 - Don't include the AppCache iframe loader by default - instead use JavaScript to insert it after setting the `up` cookie.  Remove the iframe once the AppCache update process is complete.
 
-// todo
+There's one more complication:-
+
+- When a web app is loaded from the Application Cache, it will implicitly try to do AppCache update - even if that page itself doesn't have a `manifest` attribute.  Therefore if the `up` cookie is not set and `/offline.appcache` is requested we will return a `400` response.
+
+Warning: do not return a 410 because that will cause the user's device to delete the AppCache and the web app will no longer work offline.
+
+## Reacting to the `up` cookie in express.
+
+
 
 ## Exercises
 
