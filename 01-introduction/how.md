@@ -10,12 +10,13 @@ There are three distinct problems to solve*:
 ## Delivering the application
 
 - How do we efficiently cache enough enough of the pieces that make up a website for it to be useful offline?
+- How do we guarantee that the browser won't delete them?
 
-## Storing data
+## Storing content
 
 - How do we store content downloaded to or created on users' devices?
 
-## Syncing data
+## Synchronizing content
 
 - How do we ensure the data on users' devices are kept in sync with content on the server?
 - What if there are conflicts?
