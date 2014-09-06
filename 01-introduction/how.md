@@ -1,27 +1,22 @@
 # How
 
-There are four distinct problems to solve*:
+There are three distinct problems to solve*:
 
 1. Delivering the application
-2. Detecting connectivity
-3. Storing data
-4. Syncing data
+2. Storing data
+3. Syncing data
 
 ## Delivering the application
 
-// todo
-
-## Detecting connectivity
-
-// todo
+- How do we efficiently cache enough enough of the pieces that make up a website for it to be useful offline?
 
 ## Storing data
 
-// todo
+- How do we store content downloaded to or created on users' devices?
 
 ## Syncing data
 
-// todo
+- How do we ensure the data on users' devices are kept in sync with content on the server?
 
 ## What happens to Google Analytics data?
 
