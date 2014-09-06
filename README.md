@@ -10,7 +10,7 @@ Contents
   - [Why?](01-introduction/why.md)
   - [How?](01-introduction/how.md)
   - [Meet the dysfunctional family](01-introduction/dysfunctional-family.md)
-2. [A promising start](02-a-promising-start)
+2. [ES6 Promises](02-a-promising-start)
 3. [Offline Todo with IndexedDB](03-offline-todo)
   - [Scaffolding the application](03-offline-todo/01-scaffolding)
   - [Opening an IndexedDB database](03-offline-todo/02-opening-a-database)
