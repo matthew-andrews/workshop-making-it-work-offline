@@ -12,4 +12,4 @@ We’ve created a quick and simple to-do app that works offline and that runs in
 
 ---
 
-[← Back to *AppCache for full offline experience*](../08-rendering-todos) | [Continue to *AppCacheOffline Todo with IndexedDB and sync* →](../../04-offline-todo-with-sync)
+[← Back to *appcache gotchas*](../12-appcache-gotchas-1) | [Continue to *AppCacheOffline Todo with IndexedDB and sync* →](../../04-offline-todo-with-sync)
