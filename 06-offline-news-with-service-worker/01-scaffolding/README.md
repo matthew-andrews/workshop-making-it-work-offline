@@ -52,4 +52,58 @@ li {
 }
 ```
 
-This should be very familiar by now.
+##### [`public/templates.js`](./public/templates.js)
+
+```js
+(function() {
+  var exports = {
+    list: list,
+    article: article
+  };
+
+  function list(data) {
+    var ul = '';
+    data.forEach(function(story) {
+      ul += '<li><a class="js-link" href="/article/'+story.guid+'">'+story.title+'</a></li>';
+    });
+    return shell({
+      main: '<h1>FT Tech Blog</h1><ul>'+ul+'</ul>'
+    });
+  }
+
+  function article(data) {
+    return shell({
+      title: data.title,
+      main: '<nav><a class="js-link" href="/">&raquo; Back to FT Tech Blog</a></nav><h1>'+data.title+'</h1>'+data.body
+    });
+  }
+
+  function shell(data) {
+    data = {
+      title: data && data.title || 'FT Tech News',
+      main: data && data.main || ''
+    };
+    return '<!DOCTYPE html>'
+      + '\n<html>'
+      + '\n  <head>'
+      + '\n    <title>'+data.title+'</title>'
+      + '\n    <link rel="stylesheet" href="/styles.css" type="text/css" media="all" />'
+      + '\n  </head>'
+      + '\n  <body>'
+      + '\n    <div class="brandrews"><a href="https://mattandre.ws">mattandre.ws</a> | <a href="https://twitter.com/andrewsmatt">@andrewsmatt</a></div>'
+      + '\n    <main>'+data.main+'</main>'
+      + '\n    <script src="/templates.js"></script>'
+      + '\n    <script src="/application.js"></script>'
+      + '\n  </body>'
+      + '\n</html>';
+  }
+
+  if (typeof module == 'object') {
+    module.exports = exports;
+  } else {
+    this.templates = exports;
+  }
+}());
+```
+
+This is a little different - the `shell` function has been moved to `./public/templates.js` from `./index.js` as the Service Worker will now need to use it on the client side.  We've also taken the opportunity to simplify the way the templating functions work.  Now when you call `list` or `article` you get an entire HTML page.
