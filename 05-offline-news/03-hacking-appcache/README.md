@@ -39,3 +39,27 @@ This is really bad.  Luckily someone has come up with a workaround.
 ## IFRAMES to the rescue
 
 Rather than referencing your AppCache manifest on every page on your site, you can instead include an iframe that points to a single page that the user never sees that connects to that iframe.
+
+##### `public/iframe.html`
+
+```html
+<!DOCTYPE html>
+<html manifest="/offline.appcache">
+  <head>
+    <title>FT Tech News</title>
+  </head>
+  <body>
+  </body>
+</html>
+```
+
+(Note: you'll probably want to hide `./iframe.html` from search bots)
+
+##### `public/index.js`
+
+Within the `layoutShell` function add the iframe like this:-
+
+```
+ + '\n    <iframe src="/iframe.html" style="width:0px; height:0px; visibility:hidden; position:absolute; border:none"></iframe>'
+```
+
