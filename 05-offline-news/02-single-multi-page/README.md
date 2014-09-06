@@ -159,7 +159,7 @@ Try to do use the work we have done already in previous prototypes copying the s
 
   function databaseStoriesGet() {
     return new Promise(function(resolve, reject) {
-      var transaction = db.transaction(['stories'], 'readwrite');
+      var transaction = db.transaction(['stories'], 'readonly');
       var store = transaction.objectStore('stories');
 
       var keyRange = IDBKeyRange.lowerBound(0);
@@ -184,7 +184,7 @@ Try to do use the work we have done already in previous prototypes copying the s
 
   function databaseStoriesGetById(guid) {
     return new Promise(function(resolve, reject) {
-      var transaction = db.transaction(['stories'], 'readwrite');
+      var transaction = db.transaction(['stories'], 'readonly');
       var store = transaction.objectStore('stories');
       var request = store.get(guid);
       request.onsuccess = function(e) {
