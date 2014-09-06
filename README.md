@@ -39,5 +39,8 @@ Contents
 6. [Building an offline news app with Service Worker](06-offline-news-with-service-worker)
   - [Architecture](06-offline-news-with-service-worker/01-architecture)
   - [Registering a Service Worker](06-offline-news-with-service-worker/02-registering-a-service-worker)
-  - [Other approaches](06-offline-news-with-service-worker/03-other-approaches)
-  - [Success!](06-offline-news-with-service-worker/04-success)
+  - [Service Worker Cache](06-offline-news-with-service-worker/03-service-worker-caches)
+  - [Respond to `onfetch`](06-offline-news-with-service-worker/04-onfetch)
+  - [Other approaches](06-offline-news-with-service-worker/05-other-approaches)
+  - [Success!](06-offline-news-with-service-worker/06-success)
+  - 
