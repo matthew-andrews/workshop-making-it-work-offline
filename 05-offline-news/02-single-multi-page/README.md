@@ -9,7 +9,7 @@ Because content stored in IndexedDB is not accessible to the Application Cache, 
 
 In this step we will implement synchronisation and client-side and server-side rendering.
 
-#### [`index.js`](./index.js)
+##### [`/index.js`](./index.js)
 
 On the server side we will need to add a few more JavaScript files to the `layoutShell` function.
 
