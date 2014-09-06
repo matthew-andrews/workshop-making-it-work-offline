@@ -46,4 +46,4 @@ Notice that both update and re-download all the assets required for the applicat
 
 ---
 
-[← Back to *appcache*](../10-appcache) | [Continue to *success* →](../13-success)
+[← Back to *appcache*](../11-appcache) | [Continue to *success* →](../13-success)
