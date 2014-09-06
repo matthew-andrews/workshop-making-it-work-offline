@@ -172,3 +172,7 @@ console.log('listening on port', port);
 ```
 
 Now run the application in your favourite web browser and check that both views work.
+
+---
+
+[← Back to *building and offline news app, FT style*](../) | [Continue to *single/multi-page app* →](./02-single-multi-page)
