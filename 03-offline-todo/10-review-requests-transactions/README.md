@@ -95,11 +95,11 @@ We can now talk through each line and explain what it does:-
 
 ### Exercises
 
-- Reverse the order of the todos so that they added to the top, not the bottom, in our demo.
-- Write code to update an existing item in an object store.
-- What would be different if we'd have used `add` instead of `put`?  What are the benefits of one over the other?
-- Write code that selects items from an object store that instead of waiting for all of them to come back before rendering those items onto the page, immediately render each one.  What approaches or browser APIs instead of Promises could be more appropriate to implement this?
 - Try changing `transaction.oncomplete` to `request.success` inside `databaseTodosPut` in your todo app.  What happens when you create todos?  Why?
+- Reverse the order of the todos so that they added to the top, not the bottom, in our demo.
+- What would be different if we'd have used `add` instead of `put`?  What are the benefits of one over the other?
+- _Bonus:_ Write code that selects items from an object store that instead of waiting for all of them to come back before rendering those items onto the page, immediately render each one.  What approaches or browser APIs instead of Promises could be more appropriate to implement this?
+- _Bonus:_ Support the ability to update existing items on our todo list.
 
 ---
 
