@@ -40,3 +40,4 @@ Contents
   - [Architecture](06-offline-news-with-service-worker/01-architecture)
   - [Replacing AppCache with Service Worker](06-offline-news-with-service-worker/02-replace-appcache)
   - [Other approaches](06-offline-news-with-service-worker/03-other-approaches)
+  - [Success!](06-offline-news-with-service-worker/04-success)
