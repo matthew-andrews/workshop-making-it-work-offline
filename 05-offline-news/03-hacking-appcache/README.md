@@ -55,7 +55,7 @@ Rather than referencing your AppCache manifest on every page on your site, you c
 
 (Note: you'll probably want to hide `./iframe.html` from search bots)
 
-##### [`public/index.js`](./public/index.js)
+##### [`index.js`](./index.js)
 
 Within the `layoutShell` function add the iframe like this:-
 
