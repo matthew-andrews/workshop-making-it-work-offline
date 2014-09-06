@@ -57,6 +57,8 @@ li {
 }
 ```
 
+Nothing too surprising should jump out here - it's just plain CSS.
+
 #### `public/templates.js`
 
 ```js
@@ -82,10 +84,26 @@ li {
   if (typeof module == 'object') {
     module.exports = exports;
   } else {
-    this.templates = exports;
+    window.templates = exports;
   }
 }());
 ```
+
+As we discussed above, these functions will eventually be used on the client side - which is why they need to go inside `public`.
+
+`list` and `article` are functions that take a JavaScript object containing data that represent a list of stories and a single story, respectively.
+
+The last few lines are potentially a little confusing:-
+
+```js
+if (typeof module == 'object') {
+  module.exports = exports;
+} else {
+  window.templates = exports;
+}
+```
+
+`if (typeof module == 'object')` is just a way of saying "am I running on the server" - and if that is the case this module will expose its functions via `module.exports`, otherwise it will add them to the `window` object.
 
 #### `index.js`
 
