@@ -19,7 +19,7 @@ You can only make changes to the structure of the database during a callback to 
 
 Transactions can only be created by calling `transaction` method on the `IDBDatabase` database.
 
-### `IDBTransaction`
+### Transactions
 
 ```js
 IDBTransaction transaction ((DOMString or sequence<DOMString>) storeNames, optional IDBTransactionMode mode = "readonly");
@@ -31,11 +31,11 @@ IDBTransaction transaction ((DOMString or sequence<DOMString>) storeNames, optio
 
 Use `transaction.oncomplete` and not `request.onsuccess` as the point where you know the data has been stored.
 
-### `IDBObjectStore`
+### Object Stores
 
 // todo
 
-### `IDBRequest`
+### Requests
 
 // todo
 
@@ -57,7 +57,34 @@ We can now talk through each line and explain what it does:-
 
 ## Getting data
 
+```js
+  var transaction = db.transaction(['todo'], 'readwrite');
+  var store = transaction.objectStore('todo');
+
+  var keyRange = IDBKeyRange.lowerBound(0);
+  var cursorRequest = store.openCursor(keyRange);
+
+  var data = [];
+  cursorRequest.onsuccess = function(e) {
+    var result = e.target.result;
+
+    if (result) {
+      data.push(result.value);
+      result.continue();
+    } else {
+      resolve(data);
+    }
+  };
+```
+
 // todo
+
+#### Cursors
+
+`[IDBCursors](https://developer.mozilla.org/en-US/docs/Web/API/IDBCursor)` can be used to look up data by their index as well as sort data within an object store.  Usage of them is normally out of scope for this course - but here are a few links that introduce the key ideas:
+
+- [`IDBCursor` documentation on MDN](https://developer.mozilla.org/en-US/docs/Web/API/IDBCursor)
+- [How to do some magic with indexedDB](http://www.codeproject.com/Articles/744986/How-to-do-some-magic-with-indexedDB)
 
 ### Exercises
 
