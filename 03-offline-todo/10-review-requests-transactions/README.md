@@ -9,7 +9,6 @@ var transaction = db.transaction(['todo'], 'readwrite');
 var store = transaction.objectStore('todo');
 var request = store.put(todo);
 transaction.oncomplete = resolve;
-request.onerror = reject;
 ```
 
 To insert a item into the object store we first need to create a **transaction**.  In IndexedDB all changes to the database, whether they be reads, updates, adds, deletions or changes to the structure all need to be wrapped in a transaction
@@ -20,23 +19,43 @@ You can only make changes to the structure of the database during a callback to 
 
 Transactions can only be created by calling `transaction` method on the `IDBDatabase` database.
 
-### Creating transactions
+### `IDBTransaction`
 
-```
+```js
 IDBTransaction transaction ((DOMString or sequence<DOMString>) storeNames, optional IDBTransactionMode mode = "readonly");
 ```
 - `storeNames` - an array of object stores that your transaction needs to access.
 - `mode` - there are two modes for transactions: `readwrite` or `readonly`.
 
-### Warning
+#### Warning
 
 Use `transaction.oncomplete` and not `request.onsuccess` as the point where you know the data has been stored.
 
-## Getting data
+### `IDBObjectStore`
+
+// todo
+
+### `IDBRequest`
 
 // todo
 
 ## Deleting data
+
+```js
+var transaction = db.transaction(['todo'], 'readwrite');
+var store = transaction.objectStore('todo');
+var request = store.delete(todo._id);
+transaction.oncomplete = resolve;
+```
+
+We can now talk through each line and explain what it does:-
+
+- Create an `IDBTransaction` object with `readwrite` access to the `todo` object store, assign it to `transaction`
+- Get an `IDBStore` object that represents the object store `todo` and assign it to `store`
+- Create a request to `delete` object with ID `todo._id` from `store`
+- When complete, `resolve` the promise
+
+## Getting data
 
 // todo
 
