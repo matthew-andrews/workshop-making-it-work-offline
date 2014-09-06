@@ -23,3 +23,7 @@ Service Workers are a new web browser feature that enable developers to write sc
 - They will probably only be permitted on websites served over **https**.
 
 Service Workers are meant to replace the HTML5 Application Cache. Unlike AppCache, which is controlled by [adding specific entries into a manifest file](https://developer.mozilla.org/en/docs/HTML/Using_the_application_cache), Service Workers are written in Javascript.
+
+Or, in visual form:-
+
+![Service Worker Explained](./service-worker-explained.png)
