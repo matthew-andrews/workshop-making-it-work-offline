@@ -36,6 +36,6 @@ You will notice that each time you load a URL from the server that page gets _im
 
 This is really bad.  Luckily someone has come up with a workaround.
 
-## Iframes to the rescue
+## IFRAMES to the rescue
 
 Rather than referencing your AppCache manifest on every page on your site, you can instead include an iframe that points to a single page that the user never sees that connects to that iframe.
