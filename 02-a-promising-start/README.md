@@ -6,7 +6,7 @@
 >
 > A pending promise can become either **fulfilled with a value**, or **rejected with a reason**. When either of these happens, the associated handlers queued up by a promise's then method are called. (If the promise has already been fulfilled or rejected when a corresponding handler is attached, the handler will be called, so there is no race condition between an asynchronous operation completing and its handlers being attached.)
 >
-> As the Promise.prototype.then and Promise.prototype.catch methods return promises, they can be chained—an operation called composition.
+> As the `Promise.prototype.then` and `Promise.prototype.catch` methods return promises, they can be chained—an operation called composition.
 
 \- Source: [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise), emphasis mine.
 
