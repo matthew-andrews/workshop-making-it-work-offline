@@ -99,3 +99,8 @@ We can now talk through each line and explain what it does:-
 - Write code to update an existing item in an object store.
 - What would be different if we'd have used `add` instead of `put`?  What are the benefits of one over the other?
 - Write code that selects items from an object store that instead of waiting for all of them to come back before rendering those items onto the page, immediately render each one.  What approaches or browser APIs instead of Promises could be more appropriate to implement this?
+- Try changing `transaction.oncomplete` to `request.success` inside `databaseTodosPut` in your todo app.  What happens when you create todos?  Why?
+
+---
+
+[← Back to *deleting todos*](../09-deleting-todos) | [Continue to *truly offline* →](../11-appcache)
