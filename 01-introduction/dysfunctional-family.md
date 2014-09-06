@@ -20,6 +20,7 @@
 
 - Works on a lot of browsers
 - Supports more data than cookies
+- But still only a small amount of space available on most browsers
 - Very *fast*
 - Only supports strings
 - Not sent on http request (only available client side)
