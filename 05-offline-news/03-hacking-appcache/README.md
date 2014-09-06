@@ -40,7 +40,7 @@ This is really bad.  Luckily someone has come up with a workaround.
 
 Rather than referencing your AppCache manifest on every page on your site, you can instead include an iframe that points to a single page that the user never sees that connects to that iframe.
 
-##### `public/iframe.html`
+##### [`public/iframe.html`](./public/iframe.html)
 
 ```html
 <!DOCTYPE html>
@@ -55,7 +55,7 @@ Rather than referencing your AppCache manifest on every page on your site, you c
 
 (Note: you'll probably want to hide `./iframe.html` from search bots)
 
-##### `public/index.js`
+##### [`public/index.js`](./public/index.js)
 
 Within the `layoutShell` function add the iframe like this:-
 
