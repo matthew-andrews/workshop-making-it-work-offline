@@ -181,4 +181,4 @@ And opening `http://localhost:8080` with your favourite browser.
 
 ---
 
-[← Back to *building and offline news app, FT style*](../) | [Continue to *single/multi-page app* →](./02-single-multi-page)
+[← Back to *building and offline news app, FT style*](../) | [Continue to *single/multi-page app* →](../02-single-multi-page)
