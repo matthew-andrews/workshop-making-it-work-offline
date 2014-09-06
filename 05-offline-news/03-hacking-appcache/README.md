@@ -66,3 +66,7 @@ Within the `layoutShell` function add the iframe like this:-
 Now as you use the web application no unwanted files will be added to AppCache.
 
 Except one.
+
+---
+
+[← Back to *Single/Multi page app*](../02-single-multi-page) | [Continue to *more hacking appcache* →](../04-more-hacking-appcache)
