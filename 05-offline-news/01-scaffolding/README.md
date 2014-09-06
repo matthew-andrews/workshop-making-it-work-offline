@@ -6,11 +6,11 @@ This assumes familiarity with [*npm*](https://www.npmjs.org/), `package.json` an
 
 In a new folder, create some files and a directory:-
 
-- `/public` - a new directory
-- `/public/styles.css` - some simple styles
-- `/public/templates.js` - templating functions that will be shared between the server and the client
-- `/index.js` - this will be our express server
-- `/package.json` - this will be for listing our dependencies, initially all this will need to contain is `{}`.
+- [`/public`](./public) - a new directory
+- [`/public/styles.css`](./public/style.css) - some simple styles
+- [`/public/templates.js`](./public/templates.js) - templating functions that will be shared between the server and the client
+- [`/index.js`](./index.js) - this will be our express server
+- [`/package.json`](./package.json) - this will be for listing our dependencies, initially all this will need to contain is `{}`.
 
 
 ```
