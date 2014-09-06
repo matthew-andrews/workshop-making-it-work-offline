@@ -8,7 +8,7 @@ Taking just network connection as one example.  It's no longer as simple as onli
 - In a region where the cost of using the local network is so high the user has _chosen_ not to be connected.
 - Connected to a weak wireless signal where only a small number of requests are successful.
 - Using a connection where only a subset of websites are blocked (an airport or in China - it's possible to make your website nearly unusable in China by poorly integration of a Facebook widget)
-- Device prefer to connect to wifi hotspots that require logins, even when they have perfectly good 3G connections.
+- Device prefer to connect to wifi hotspots that require logins, even when they have perfectly good mobile connections.
 
 ## People need the web offline
 
