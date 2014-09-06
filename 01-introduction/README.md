@@ -6,6 +6,7 @@ Today we're going to explore all the technologies available in browsers today th
 
 - Core dev FT web app, Economist HTML5 app (both successful offline-first applications)
 - Author of tutorial series: [How to make an offline HTML5 web app, FT style](http://labs.ft.com/2012/08/basic-offline-html5-web-app/)
+- [Building A Simple Cross-Browser Offline To-Do List With IndexedDB And WebSQL on Smashing Magazine](http://www.smashingmagazine.com/2014/09/02/building-simple-cross-browser-offline-todo-list-indexeddb-websql/)
 
 ## You
 
