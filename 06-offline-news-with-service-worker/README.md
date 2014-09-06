@@ -28,3 +28,8 @@ Service Workers are meant to replace the HTML5 Application Cache. Unlike AppCach
 Or, in visual form:-
 
 ![Service Worker Explained](./service-worker-explained.png)
+
+---
+
+[← Back to *success*](../05-offline-news/05-success) | [Continue to *scaffolding* →](01-scaffolding)
+
