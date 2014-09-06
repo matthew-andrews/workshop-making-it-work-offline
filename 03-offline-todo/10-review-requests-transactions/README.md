@@ -33,7 +33,12 @@ Use `transaction.oncomplete` and not `request.onsuccess` as the point where you 
 
 ### Object Stores
 
-// todo
+You can think of Object Stores as similar to tables in a SQL database.  You can have many object stores per database, and they can contain many objects - indexed by at least one index.  Object Stores are accessed via transaction objects.  For example:-
+
+```js
+var transaction = db.transaction['todo'], 'readonly');
+var store = transaction.objectStore('todo');
+```
 
 ### Requests
 
