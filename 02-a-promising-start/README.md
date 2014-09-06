@@ -121,8 +121,10 @@ Promise.all(
 
 ### Exercises
 
-- Create a function that returns a promise that successfully resolves after 1 second with `setTimeout`
-- Create a function that returns a promise that rejects a promise after half a second with `setTimeout`
+Create a function that returns a promise that successfully resolves after 1 second with `setTimeout`
+Create a function that returns a promise that rejects a promise after half a second with `setTimeout`
+
+---
 
 Explain the difference between this:-
 
