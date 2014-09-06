@@ -1,6 +1,6 @@
 # Success!
 
-## Summarize
+## Summary
 
 Over the course of today we've covered **IndexedDB**, **AppCache** and **ServiceWorker** in depth.
 
