@@ -140,6 +140,125 @@ app.listen(port);
 console.log('listening on '+port);
 ```
 
+##### [`public/iframe.html`](./public/iframe.html)
+
+```html
+<!DOCTYPE html>
+<html manifest="/offline.appcache">
+  <head>
+    <title>FT Tech News</title>
+  </head>
+  <body>
+    <script src="/iframe.js"></script>
+  </body>
+</html>
+```
+
+##### [`public/iframe.js`](./public/iframe.js)
+
+```js
+(function() {
+  "use strict";
+
+  var checkTimer = null, ac = window.applicationCache, status = null, hasChecked = false, loopMax = 60;
+
+  function checkNow() {
+    if (ac.status === ac.CHECKING || ac.status === ac.DOWNLOADING || ac.status === ac.UPDATEREADY) {
+      hasChecked = true;
+    }
+    if (ac.status !== status) {
+      status = ac.status;
+      trigger(status, hasChecked);
+    }
+    if (loopMax--) {
+      checkIn(1000);
+    } else {
+      trigger(-1, hasChecked);
+    }
+  }
+
+  function checkIn(ms) {
+    if (checkTimer) clearTimeout(checkTimer);
+    checkTimer = setTimeout(checkNow, ms);
+  }
+  function trigger(evt, hasChecked) {
+    if (parent && parent.window) {
+      parent.window.postMessage({
+        type: 'appcache:event',
+        args: [evt, hasChecked]
+      }, '*');
+    }
+  }
+
+  ac.addEventListener('updateready', checkNow);
+  ac.addEventListener('cached', checkNow);
+  ac.addEventListener('checking', checkNow);
+  ac.addEventListener('downloading', checkNow);
+  ac.addEventListener('error', checkNow);
+  ac.addEventListener('noupdate', checkNow);
+  ac.addEventListener('obsolete', checkNow);
+  ac.addEventListener('progress', checkNow);
+
+  checkIn(250);
+}());
+```
+
+
+##### [`public/appcache.js`](./public/appcache.js)
+
+```js
+(function() {
+  var cookie = 'up';
+  var statuses = {
+    "-1": 'timeout',
+    "0": 'uncached',
+    "1": 'idle',
+    "2": 'checking',
+    "3": 'downloading',
+    "4": 'updateready',
+    "5": 'obsolete'
+  };
+
+  // Start the AppCache loading process when this file executes
+  load();
+
+  function onMessage(event) {
+    if (event.data && event.data.type && event.data.type === 'appcache:event') {
+      onEvent.apply(window, event.data.args || []);
+    }
+  }
+
+  function load() {
+    window.addEventListener("message", onMessage, false);
+
+    // HACK: Set a cookie so that the application
+    // root returns a Javascript bootstrap rather
+    // than content.
+    var cookieExpires = new Date(new Date().getTime() + 60 * 5 * 1000);
+    document.cookie = cookie + "=1;path=/;expires=" + cookieExpires.toGMTString();
+    var iframe = document.createElement('IFRAME');
+    iframe.setAttribute('style', 'width:0px; height:0px; visibility:hidden; position:absolute; border:none');
+    iframe.setAttribute('src', '/iframe.html');
+    iframe.setAttribute('id', 'appcache');
+    document.body.appendChild(iframe);
+  }
+
+  function onEvent(eventCode) {
+    var s = statuses[eventCode], loaderEl, cookieExpires;
+    if (s === 'uncached' || s === 'idle' || s === 'obsolete' || s === 'timeout' || s === 'updateready') {
+      loaderEl = document.getElementById('appcache');
+      loaderEl.parentNode.removeChild(loaderEl);
+
+      // Remove appcacheUpdate cookie
+      cookieExpires = new Date(new Date().getTime() - 60 * 5 * 1000);
+      document.cookie = cookie + "=;path=/;expires=" + cookieExpires.toGMTString();
+
+      // Remove message listener
+      window.removeEventListener("message", onMessage);
+    }
+  }
+}());
+```
 
 ## Exercises
 
