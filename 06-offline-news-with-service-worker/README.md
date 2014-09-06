@@ -29,6 +29,18 @@ Or, in visual form:-
 
 ![Service Worker Explained](./service-worker-explained.png)
 
+## Architecture
+
+For our first Service Worker prototype we're going to take the simplest possible approach.
+
+- The back-end will only contain routes for rendering the article list page and the article page.  Unlike the AppCache example, it won't be oblivious to the fact the app works offline.
+- The front-end won't contain any JavaScript (except a line to install the Service Worker)
+- Which leaves the Service Worker (the middle-end, if you like) to do the following things:-
+  - Download and store the latest news.
+  - Download and store the JavaScript and CSS files needed to run the application.
+  - Respond to requests for either the application files or application pages and render them locally with local data - enabling the application to work offline.
+  - Check for updates to the news every 3 minutes.
+
 ---
 
 [← Back to *success*](../05-offline-news/05-success) | [Continue to *scaffolding* →](01-scaffolding)
