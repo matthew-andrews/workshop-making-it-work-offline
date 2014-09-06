@@ -6,7 +6,11 @@ function successful() {
     setTimeout(resolve, 1000);
   };
 }
+```
 
+---
+
+```js
 function unsuccessful() {
   return new Promise(resolve, reject) {
     setTimeout(reject, 500);
