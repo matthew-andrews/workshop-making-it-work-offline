@@ -33,6 +33,7 @@ Contents
   - [Success!](04-offline-todo-with-sync/05-success)
 5. [Building an offline news app, FT style](05-offline-news)
   - [Scaffolding the application](05-offline-news/01-scaffolding)
+  - [Single/Multi-page app](05-offline-news/02-single-multi-page)
   - [Hacking AppCache with an iframe](05-offline-news/02-hacking-appcache-with-an-iframe)
   - [Rendering on the server and the client](05-offline-news/03-server-side-rendering)
 6. [Building an offline news app with Service Worker](06-offline-news-with-service-worker)
