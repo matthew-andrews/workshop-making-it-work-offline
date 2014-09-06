@@ -9,6 +9,17 @@ To get AppCache to work with our offline news website required us to write so ma
 
 Luckily, a better way is coming.
 
-## Service Worker
+## Service Workers
 
-// todo into Service Worker
+Service Workers are a new web browser feature that enable developers to write scripts that run independently from web pages, similar to shared workers, and are shared between web pages on the same domain name.
+
+- They run **independently** from web pages, in the background
+- They are **shared** between different URLs on the same domain.
+- A domain can have **multiple** Service Workers.
+- They can be **shut down** at the end of events.
+- They are able to **intercept** and **manipulate** HTTP requests between the web application and the internet.
+- They have their own mechanism to **cache requests** (in addition to the existing browser cache).
+- They can enable websites to **work offline** because they are able to respond to requests and respond from a cache without an internet connection.
+- They will probably only be permitted on websites served over **https**.
+
+Service Workers are meant to replace the HTML5 Application Cache. Unlike AppCache, which is controlled by [adding specific entries into a manifest file](https://developer.mozilla.org/en/docs/HTML/Using_the_application_cache), Service Workers are written in Javascript.
