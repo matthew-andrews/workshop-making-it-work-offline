@@ -22,6 +22,8 @@ Passing a Promise into the `waitUntil` method on the event object tells the brow
 
 ### Chrome
 
+![Service Worker Dev Tools in Chrome](./service-worker-dev-tools.png)
+
 ```
 chrome://serviceworker-internals
 ```
