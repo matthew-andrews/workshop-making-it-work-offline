@@ -34,12 +34,12 @@ Then click **Inspect**
 
 Not yet :cry:.  https://jakearchibald.github.io/isserviceworkerready/#debugging
 
-## Exercise
+## Exercises
 
 - Register a Service Worker that listens to the `install` event on our news application.
 - Find out how to open Dev Tools in a Service Worker and experiment with setting breakpoints.
 
-## Implement Service Worker in the news app
+## Implementing Service Worker in the news app
 
 ##### [`public/application.js`](./public/application)
 
