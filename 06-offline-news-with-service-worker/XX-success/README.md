@@ -11,4 +11,5 @@ Over the course of today we've covered **IndexedDB**, **AppCache** and **Service
 
 ## Exercises
 
-- Rebuild the todo app (either with or without sync) with Service Worker
+- Rewrite the code that caches resources from using IndexedDB to using Service Worker Cache objects.
+- Rebuild the todo app (either with or without sync) with Service Worker.
