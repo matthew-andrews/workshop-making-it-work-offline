@@ -37,7 +37,7 @@ Contents
   - [More hacking AppCache](05-offline-news/03-hacking-appcache)
   - [Even more hacking AppCache](05-offline-news/04-more-hacking-appcache)
 6. [Building an offline news app with Service Worker](06-offline-news-with-service-worker)
-  - [Architecture](06-offline-news-with-service-worker/01-architecture)
+  - [Scaffolding](06-offline-news-with-service-worker/01-scaffolding)
   - [Registering a Service Worker](06-offline-news-with-service-worker/02-registering-a-service-worker)
   - [Service Worker Cache](06-offline-news-with-service-worker/03-service-worker-caches)
   - [Respond to `onfetch`](06-offline-news-with-service-worker/04-onfetch)
