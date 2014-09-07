@@ -39,6 +39,29 @@ Not yet :cry:.  https://jakearchibald.github.io/isserviceworkerready/#debugging
 - Register a Service Worker that listens to the `install` event on our news application.
 - Find out how to open Dev Tools in a Service Worker and experiment with setting breakpoints.
 
+## Implement Service Worker in the news app
+
+##### [`public/application.js`](./public/application)
+
+```js
+(function() {
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/service-worker.js');
+  }
+}());
+```
+
+##### [`public/service-worker.js`](./public/service-worker.js)
+
+```js
+console.log("I am a Service Worker");
+
+this.oninstall = function(e) {
+  // TODO: Something interesting
+  console.log("The Service Worker has been installed");
+};
+```
+
 ---
 
 [← Back to *Scaffolding*](../01-scaffolding) | [Continue to *Service Worker Cache* →](../03-service-worker-cache)
