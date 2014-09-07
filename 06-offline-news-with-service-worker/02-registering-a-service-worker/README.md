@@ -8,7 +8,7 @@ Promise register(scriptURL, options);
 
 All asynchronous APIs related to Service Workers, including `serviceWorker.register`, return [native browser Promises](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise) - in fact we can throw away our Promise polyfill because browsers must support Promises before supporting Service Workers.
 
-Once you've called `serviceWorker.register` the browser will load the `scriptURL` and fire the `install` event on the Service Worker.  You can listen to that event within the Service Worker like this:-
+Once you've called `serviceWorker.register` the browser will load the Service Worker at the URL specified by `scriptURL` and fire the `install` event on it.  You can listen to that event within the Service Worker like this:-
 
 ```js
 this.oninstall = function(e) {
