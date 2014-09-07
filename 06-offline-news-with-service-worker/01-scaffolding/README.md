@@ -155,3 +155,7 @@ app.get('/', function(req, res) {
 app.listen(port);
 console.log('listening on '+port);
 ```
+
+---
+
+[← Back to *Offline news with Service Worker*](../) | [Continue to *Registering a Service Worker* →](02-registering-a-service-worker)
