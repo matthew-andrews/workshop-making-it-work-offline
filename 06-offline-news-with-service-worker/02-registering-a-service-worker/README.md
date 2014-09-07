@@ -17,3 +17,12 @@ this.oninstall = function(e) {
 ```
 
 Passing a Promise into the `waitUntil` method on the event object tells the browser to `waitUntil` that Promise resolves - and once that promise resolves the Promise returned from `serviceWorker.register` on the page that registered the Service Worker will resolve.
+
+## Exercise
+
+- Register a Service Worker that listens to the `install` event on our news application.
+- Find out how to open Dev Tools in a Service Worker and experiment with setting break points.
+
+---
+
+[← Back to *Scaffolding*](../01-scaffolding) | [Continue to *Service Worker Cache* →](../03-service-worker-cache)
