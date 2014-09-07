@@ -21,7 +21,7 @@ Passing a Promise into the `waitUntil` method on the event object tells the brow
 ## Exercise
 
 - Register a Service Worker that listens to the `install` event on our news application.
-- Find out how to open Dev Tools in a Service Worker and experiment with setting break points.
+- Find out how to open Dev Tools in a Service Worker and experiment with setting breakpoints.
 
 ---
 
