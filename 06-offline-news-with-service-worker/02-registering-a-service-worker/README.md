@@ -2,7 +2,7 @@
 
 To get a Service Worker attached to our web page we need to use `navigator.serviceWorker.register`.  It's API is this:-
 
-```
+```js
 Promise register(scriptURL, options);
 ```
 
