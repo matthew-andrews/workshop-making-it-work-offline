@@ -44,4 +44,3 @@ For our first Service Worker prototype we're going to take the simplest possible
 ---
 
 [← Back to *success*](../05-offline-news/05-success) | [Continue to *scaffolding* →](01-scaffolding)
-
