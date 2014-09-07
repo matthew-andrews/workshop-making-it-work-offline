@@ -158,4 +158,4 @@ console.log('listening on '+port);
 
 ---
 
-[← Back to *Offline news with Service Worker*](../) | [Continue to *Registering a Service Worker* →](02-registering-a-service-worker)
+[← Back to *Offline news with Service Worker*](../) | [Continue to *Registering a Service Worker* →](../02-registering-a-service-worker)
