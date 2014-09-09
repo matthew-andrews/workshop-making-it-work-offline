@@ -12,6 +12,17 @@
 
 In short, Promises are a way to organise asynchronous logic.
 
+## Lots of Promise libraries
+
+Or similar libraries that achieve the same thing:-
+
+- Q
+- async
+- when
+- RSVP
+
+But the implementation we're going to use is **ES6 Promise**.  It's a browser standard that is already available and also works in Node.
+
 ## Why are we talking about it?
 
 We're going to need Promises because new browser APIs, such as **Service Worker** which we will cover later, are built on top of them.  By covering them early we will be able to use them in all of our prototypes and exercises so that hopefully they will be second nature (if they aren't already) by the end of the day.	
