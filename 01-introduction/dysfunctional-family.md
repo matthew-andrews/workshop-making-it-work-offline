@@ -23,7 +23,7 @@
 - But still only a small amount of space available on most browsers
 - Very *fast*
 - Only supports strings
-- Not sent on http request (only available client side)
+- Not sent on HTTP request (only available client side)
 - Synchronous, which can cause performance issues
 
 ### Local database (WebSQL, IndexedDB)
