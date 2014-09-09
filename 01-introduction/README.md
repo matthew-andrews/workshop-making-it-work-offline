@@ -10,7 +10,8 @@ Today we're going to explore all the technologies available in browsers today th
 
 ## You
 
-...
+- How would you describe your JavaScript skills?
+- What do you hope to gain from today?
 
 ## Course structure
 
