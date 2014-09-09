@@ -1,6 +1,8 @@
 # Sevice Worker Caches
 
-// todo explain them
+// TODO - This page is under construction because Cache APIs are not yet ready!
+
+A brief explainer here: http://www.serviceworker.org/
 
 
 ## One tiny problem
