@@ -64,4 +64,4 @@ this.oninstall = function(e) {
 
 ---
 
-[← Back to *Scaffolding*](../01-scaffolding) | [Continue to *Service Worker Cache* →](../03-service-worker-cache)
+[← Back to *Scaffolding*](../01-scaffolding) | [Continue to *Service Worker Cache* →](../03-service-worker-caches)
