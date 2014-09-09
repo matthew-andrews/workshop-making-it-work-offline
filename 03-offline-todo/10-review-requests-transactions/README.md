@@ -65,7 +65,7 @@ We can now talk through each line and explain what it does:-
 ## Getting data
 
 ```js
-  var transaction = db.transaction(['todo'], 'readwrite');
+  var transaction = db.transaction(['todo'], 'readonly');
   var store = transaction.objectStore('todo');
 
   var keyRange = IDBKeyRange.lowerBound(0);
@@ -84,7 +84,10 @@ We can now talk through each line and explain what it does:-
   };
 ```
 
-// todo
+- As we're only getting data we only need to create a `readonly` transaction.
+- Then we get an `IDBStore` object that represents the object store `todo` and assigns it to `store` - in the same way deleting works above.
+- The next two lines are concerned with creating a cursor (an object that allows us to walk through the database).  The line `IDBKeyRange.lowerBound(0)` simply says start from the beginning of the table.
+- As data is pulled out of the table `success` events are fired on the cursor.  In each callback we must call `continue` to proceed to the next `result`, and if that `result` is empty we know we've reached the end of the dataset.
 
 #### Cursors
 
@@ -98,6 +101,7 @@ We can now talk through each line and explain what it does:-
 - Try changing `transaction.oncomplete` to `request.success` inside `databaseTodosPut` in your todo app.  What happens when you create todos?  Why?
 - Reverse the order of the todos so that they added to the top, not the bottom, in our demo.
 - What would be different if we'd have used `add` instead of `put`?  What are the benefits of one over the other?
+- Aside from `cursorRequest.lowerBound` what other approaches could you take to retrieving all the data from a table?
 - _Bonus:_ Write code that selects items from an object store that instead of waiting for all of them to come back before rendering those items onto the page, immediately render each one.  What approaches or browser APIs instead of Promises could be more appropriate to implement this?
 - _Bonus:_ Support the ability to update existing items on our todo list.
 
