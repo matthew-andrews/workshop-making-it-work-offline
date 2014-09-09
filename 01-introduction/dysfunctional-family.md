@@ -1,5 +1,13 @@
 # Meet the dysfunctional family
 
+## Quiz
+
+- Can you name all the offline storage technologies that exist in browsers today?
+- What are the differences between them?
+- What sort of data can you store offline?
+
+## Choices
+
 - Cookies
 - Local Storage / Session Storage
 - WebSQL
@@ -14,7 +22,7 @@
 - Only supports very small pieces of information
 - Only supports strings
 - Sent on every http request
-- Quite fiddly to use without a helper library/function
+- A bit fiddly to use without a helper library/function
 
 ### Local Storage
 
