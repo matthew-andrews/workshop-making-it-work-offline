@@ -138,6 +138,33 @@ Promise.all(
 - They are a fundamental building block to ServiceWorkers, which will be a key component of today's workshop
 - Many, many languages support promises (even [ReactPHP](https://github.com/reactphp/promise)) or equivalents (sometimes called futures - promises were actually first proposed in 1976)
 
+### Getting setup for Promises
+
+```
+mkdir promises
+cd promises
+echo '{}' >> package.json
+npm install --save es6-promise
+```
+
+Then, in that folder create a file called `test.js` with the following contents:-
+
+```js
+require('es6-promise/dist/commonjs/promise/polyfill').polyfill();
+
+console.log(Promise);
+```
+
+Hopefully the output will be:-
+
+```
+{ [Function: Promise]
+  all: [Function: all],
+  race: [Function: race],
+  resolve: [Function: resolve],
+  reject: [Function: reject] }
+```
+
 ### Exercises
 
 Create a function that returns a promise that successfully resolves after 1 second with `setTimeout`
