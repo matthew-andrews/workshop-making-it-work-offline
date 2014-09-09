@@ -180,6 +180,8 @@ Promise.race([promise1, promise2])
   });
 ```
 
+---
+
 When might race be useful in an offline web application?
 
 ---
