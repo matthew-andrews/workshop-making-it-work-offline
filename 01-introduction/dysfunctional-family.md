@@ -5,6 +5,9 @@
 - Can you name all the offline storage technologies that exist in browsers today?
 - What are the differences between them?
 - What sort of data can you store offline?
+- Which technologies allow you to shared data between domain names?
+- What are the rules for offline technologies that don't share data across domains?  How is https affected this?  How about subfolders?
+- If you built an offline web application and then migrated to https what potential problems might you need to consider?
 
 ## Choices
 
