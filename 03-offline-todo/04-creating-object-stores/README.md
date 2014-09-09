@@ -68,4 +68,13 @@ The Resources panel should now show the object store that was added.
 
 ---
 
+### Exercise
+
+- Write a migration that effectively renames the object store from `todos` to `todoList` (in version 2), and another to `todoItem` (in version 3) and back to `todos` (in version 4).
+- What are the advantages and the disadvantages of this compared to other approaches to software migrations in software applications?
+- Why might it be a good idea to minimize the number of database schema changes you make?
+
+---
+
+
 [← Back to *Using Dev Tools*](../03-using-dev-tools) | [Continue to *Review: `window.indexedDB`* →](../05-review-window-indexeddb)
