@@ -4,7 +4,10 @@ We’ve created a quick and simple to-do app that works offline and that runs in
 
 ## Exercises
 
-- What user journey and technical implemention might to make the offline experience optional?  Implementing opt-in is _relatively easy_.  Implement a mechanism to uninstall the application.
+- What user journey and technical implemention might to make the offline experience optional?  Implementing opt-in is _relatively easy_.  **Implement a mechanism to uninstall the application.**
+  - _Hint for AppCache: [If the manifest itself returns a 404 or 410, the cache is deleted](http://www.html5rocks.com/en/tutorials/appcache/beginner/)._
+
+
 - Currently, whenever a todo is *created* or *deleted* the application throws away everything on screen, loads all todos from the database and puts them in the DOM.
   - Make this more efficient.
 
