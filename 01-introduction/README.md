@@ -22,6 +22,11 @@ The structure of this course will be very practical, focused on building prototy
 - Discuss why it's inefficient or inelegant and then improve on it.
 - There are exercises at the end of many sections if you finish the core material quickly.
 
+## What you should get out of today's course
+
+- A few working prototypes.
+- Access to this GitHub repository.
+
 ## Group chat
 
 http://tlk.io/
