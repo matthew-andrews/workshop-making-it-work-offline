@@ -1,6 +1,6 @@
 # How
 
-There are three distinct problems to solve*:
+There are four distinct problems to solve*:
 
 1. Delivering the application
 2. Storing data
