@@ -15,7 +15,7 @@ Today we're going to explore all the technologies available in browsers today th
 
 ## Course structure
 
-The structure of this course will be very practical, focused on building prototypes, and will typically follow this pattern:
+The structure of this course will be very practical and hands-on focused on building prototypes, and will typically follow this pattern:
 
 - Hack something together that works.
 - Talk about why it works (explaining any browser APIs that we've used that may be unfamiliar).
