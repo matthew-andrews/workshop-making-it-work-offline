@@ -19,7 +19,7 @@ Now, `/application.js` looks like this (the new code starts at `request.onupgrad
   // 'global' variable to store reference to the database
   var db;
 
-  databaseOpen
+  databaseOpen()
     .then(function() {
       alert("The database has been opened");
     });
