@@ -32,7 +32,7 @@ Now, `/application.js` looks like this (the new code starts at `request.onupgrad
       // Run migrations if necessary
       request.onupgradeneeded = function(e) {
         db = e.target.result;
-        e.target.transaction.onerror = databaseError;
+        e.target.transaction.onerror = reject;
         db.createObjectStore('todo', { keyPath: 'timeStamp' });
       };
   
