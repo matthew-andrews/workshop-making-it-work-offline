@@ -23,7 +23,7 @@ The `version` parameter allows us to be able to change the schema of the databas
 `onupgradeneeded`.  Note, the *only* time browser will let us add, remove or edit the structure of Object Stores is within the `onupgradeneeded` callback.
 
 Note: `upgradeneeded` events will fire when the database is first created **as well as** when the version number has changed.  In addition to the 'just created' cas' if your database has changed more
-than once (for example, if the current verson if 3) your `onupgradeneeded` event handler must be able to handle upgrading databases from version 1 to 3 as well as version 2 to 3.  **This can get
+than once (for example, if the current verson is 3) your `onupgradeneeded` event handler must be able to handle upgrading databases from version 1 to 3 as well as version 2 to 3.  **This can get
 quite complicated for applications whose database schemas change frequently**.
 
 ```js
