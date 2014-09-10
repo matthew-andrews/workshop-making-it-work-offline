@@ -98,7 +98,7 @@ We can now talk through each line and explain what it does:-
 
 ### Exercises
 
-- Try changing `transaction.oncomplete` to `request.success` inside `databaseTodosPut` in your todo app.  What happens when you create todos?  Why?
+- Try changing `transaction.oncomplete` to `request.onsuccess` inside `databaseTodosPut` in your todo app.  What happens when you create todos?  Why?
 - Reverse the order of the todos so that they added to the top, not the bottom, in our demo.
 - What would be different if we'd have used `add` instead of `put`?  What are the benefits of one over the other?
 - Aside from `cursorRequest.lowerBound` what other approaches could you take to retrieving all the data from a table?
