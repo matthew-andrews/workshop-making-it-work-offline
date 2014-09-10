@@ -3,12 +3,12 @@
 Like many database formats that you might be familiar with, you can create many tables in a single IndexedDB database. These tables are called **objectStores**. In this step, we’ll create an object store named `todo`. To do this, we simply add an event listener on the database’s `upgradeneeded` event.
 The data format that we will store to-do items in will be JavaScript objects, with two properties:
 
-`timeStamp` This timestamp will also act as our key.
+`_id` This timestamp will also act as our key.
 `text` This is the text that the user has entered.
 
 For example:
 ```
-{ timeStamp: 1407594483201, text: 'Wash the dishes' }
+{ _id: 1407594483201, text: 'Wash the dishes' }
 ```
 
 Now, `/application.js` looks like this (the new code starts at `request.onupgradeneeded`):
@@ -33,7 +33,7 @@ Now, `/application.js` looks like this (the new code starts at `request.onupgrad
       request.onupgradeneeded = function(e) {
         db = e.target.result;
         e.target.transaction.onerror = databaseError;
-        db.createObjectStore('todo', { keyPath: 'timeStamp' });
+        db.createObjectStore('todo', { keyPath: '_id' });
       };
   
       request.onsuccess = function(e) {
@@ -46,7 +46,7 @@ Now, `/application.js` looks like this (the new code starts at `request.onupgrad
 }());
 ```
 
-This will create an object store keyed by `timeStamp` and named `todo`.
+This will create an object store keyed by `_id` and named `todo`.
 
 ## Or will it?
 
