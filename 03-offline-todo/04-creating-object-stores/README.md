@@ -41,8 +41,8 @@ Now, `/application.js` looks like this (the new code starts at `request.onupgrad
         resolve();
       };
       request.onerror = reject;
-    }
-  });
+    });
+  }
 }());
 ```
 
