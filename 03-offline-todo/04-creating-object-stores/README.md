@@ -66,6 +66,8 @@ The Resources panel should now show the object store that was added.
 
 ![The “Resources” panel should now show the object store that was added](./screenshot.png)
 
+Note: if Browser Dev Tools still down show the object store try closing and re-opening Dev Tools as sometimes Dev Tools don't refresh properly.
+
 ---
 
 ### Exercises
