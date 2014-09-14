@@ -19,7 +19,7 @@ Now, `/application.js` looks like this (the new code starts at `request.onupgrad
   // 'global' variable to store reference to the database
   var db;
 
-  databaseOpen
+  databaseOpen()
     .then(function() {
       alert("The database has been opened");
     });
@@ -32,7 +32,7 @@ Now, `/application.js` looks like this (the new code starts at `request.onupgrad
       // Run migrations if necessary
       request.onupgradeneeded = function(e) {
         db = e.target.result;
-        e.target.transaction.onerror = databaseError;
+        e.target.transaction.onerror = reject;
         db.createObjectStore('todo', { keyPath: '_id' });
       };
   
@@ -41,8 +41,8 @@ Now, `/application.js` looks like this (the new code starts at `request.onupgrad
         resolve();
       };
       request.onerror = reject;
-    }
-  });
+    });
+  }
 }());
 ```
 
@@ -66,13 +66,18 @@ The Resources panel should now show the object store that was added.
 
 ![The “Resources” panel should now show the object store that was added](./screenshot.png)
 
+Note: if Browser Dev Tools still down show the object store try closing and re-opening Dev Tools as sometimes Dev Tools don't refresh properly.
+
 ---
 
-### Exercise
+### Exercises
 
-- Write a migration that effectively renames the object store from `todos` to `todoList` (in version 2), and another to `todoItem` (in version 3) and back to `todos` (in version 4).
 - What are the advantages and the disadvantages of this compared to other approaches to software migrations in software applications?
 - Why might it be a good idea to minimize the number of database schema changes you make?
+
+### Bonus Exercise
+
+- Write a migration that effectively renames the object store from `todos` to `todoList` (in version 2), and another to `todoItem` (in version 3) and back to `todos` (in version 4).
 
 ---
 

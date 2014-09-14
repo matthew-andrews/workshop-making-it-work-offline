@@ -10,8 +10,9 @@ Today we're going to explore all the technologies available in browsers today th
 
 ## You
 
+- Introduction yourselves
 - How would you describe your JavaScript skills?
-- What do you hope to gain from today?
+- What do you hope to gain from today? (Mostly to learn about techniques to use today, or one that will be usable in a few month's time?)
 
 ## Course structure
 
@@ -21,11 +22,13 @@ The structure of this course will be very practical and hands-on focused on buil
 - Talk about why it works (explaining any browser APIs that we've used that may be unfamiliar).
 - Discuss why it's inefficient or inelegant and then improve on it.
 - There are exercises at the end of many sections if you finish the core material quickly.
+- Schedule for the day: 9 start, 11.00 break, 12.30 lunch, 3.00 break, 5.00 the end.
 
 ## What you should get out of today's course
 
 - A few working prototypes.
-- Access to this GitHub repository.
+- Access to this GitHub repository for 3 months (at least - not sure what to do after that).
+- All the prototypes are on my GitHub (publicly so if you have any problems with any after today - please feel free to raise issues there and I will try to find time to help)
 
 ## Group chat
 

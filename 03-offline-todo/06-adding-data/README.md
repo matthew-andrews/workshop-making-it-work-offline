@@ -62,4 +62,4 @@ After adding a few items, they should appear in the todo object store.
 
 ---
 
-[← Back to *Review: `window.indexedDB`*](../05-review-window-indexeddb) | [Continue to *updating data* →](../07-getting-data)
+[← Back to *Review: `window.indexedDB`*](../05-review-window-indexeddb) | [Continue to *retrieving data* →](../07-getting-data)

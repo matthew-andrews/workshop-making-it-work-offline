@@ -10,7 +10,7 @@ Again, the ellipses indicate code that we have already implemented in the previo
 (function() {
   var db, input;
 
-  databaseOpen
+  databaseOpen()
     .then(function() {
       input = document.querySelector('input');
       document.body.addEventListener('submit', onSubmit);
