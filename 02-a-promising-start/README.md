@@ -150,7 +150,7 @@ npm install --save es6-promise
 Then, in that folder create a file called `test.js` with the following contents:-
 
 ```js
-require('es6-promise/dist/commonjs/promise/polyfill').polyfill();
+require('es6-promise').polyfill();
 
 console.log(Promise);
 ```
