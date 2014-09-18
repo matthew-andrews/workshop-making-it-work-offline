@@ -1,5 +1,5 @@
 (function() {
-  var api = 'http' + (location.hostname === 'localhost' ? '://localhost:3000' : 's://offline-news-api.herokuapp.com') + '/stories';
+  var api = 'https://offline-news-api.herokuapp.com/stories';
   var synchronizeInProgress;
   var db, main;
 

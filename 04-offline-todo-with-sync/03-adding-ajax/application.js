@@ -1,5 +1,5 @@
 (function() {
-  var api = 'http://localhost:3000/todos';
+  var api = 'https://offline-todo-api.herokuapp.com/todos';
   var db, input, ul;
 
   databaseOpen()

@@ -55,7 +55,7 @@ Now we have an ajax library installed and available to us in our application we 
 
 ```js
 (function() {
-  var api = 'http://localhost:3000/todos';
+  var api = 'https://offline-todo-api.herokuapp.com/todos';
 
 […]
 
