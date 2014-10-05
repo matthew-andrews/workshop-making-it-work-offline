@@ -1,5 +1,19 @@
 # Registering a Service Worker
 
+## Enabling Service Workers
+
+Service Workers are not enabled by default in web browsers right now.  In order to use them in Chrome you must first switch on a feature flag.  To do this go to:-
+
+```
+chrome://flags
+```
+
+... and search for **Enable experimental Web Platform features** and click **Enable**.
+
+![Experimental Web Platform features](https://cloud.githubusercontent.com/assets/825088/4304757/597f461c-3e73-11e4-836f-b44e1da67056.png)
+
+## Registering Service Workers
+
 To get a Service Worker attached to our web page we need to use `navigator.serviceWorker.register`.  It's API is this:-
 
 ```js
