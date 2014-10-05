@@ -39,7 +39,6 @@ For our first Service Worker prototype we're going to take the simplest possible
   - Download and store the latest news.
   - Download and store the JavaScript and CSS files needed to run the application.
   - Respond to requests for either the application files or application pages and render them locally with local data - enabling the application to work offline.
-  - Check for updates to the news every 3 minutes.
 
 ---
 
