@@ -50,4 +50,6 @@ function refreshView() {
   return db.todo.toArray()
     .then(renderAllTodos);
 }
+
+[...]
 ```
