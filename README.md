@@ -43,5 +43,6 @@ Contents
   - [Respond to `onfetch`](06-offline-news-with-service-worker/04-onfetch)
   - [Other approaches](06-offline-news-with-service-worker/05-other-approaches)
   - [Success!](06-offline-news-with-service-worker/06-success)
+7. [Dexie.js - IndexedDB without the pain](07-dexie)
 
 ©
