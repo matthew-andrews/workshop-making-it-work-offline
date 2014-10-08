@@ -53,3 +53,5 @@ function refreshView() {
 
 [...]
 ```
+
+With this new, more powerful API let's build something a bit more challenging.
