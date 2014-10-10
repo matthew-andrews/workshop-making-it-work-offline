@@ -13,7 +13,7 @@
 
 ## Disadvantages
 
-- Slightly funky object store key syntax.
+- Slightly funky object store key syntax, but I think we can forgive them for that...
 
 ## Key ideas
 
