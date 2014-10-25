@@ -13,7 +13,7 @@ In a new folder, create some files and a directory:-
 - [`/package.json`](./package.json) - this will be for listing our dependencies, initially all this will need to contain is `{}`.
 
 ```
-echo '{}' >> test.json # Neat trick if you're using *nix
+echo '{}' >> package.json # Neat trick if you're using *nix
 npm install --save express superagent
 ```
 
