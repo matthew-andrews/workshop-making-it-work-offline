@@ -32,6 +32,17 @@ this.oninstall = function(e) {
 
 Passing a Promise into the `waitUntil` method on the event object tells the browser to `waitUntil` that Promise resolves - and once that promise resolves the Promise returned from `serviceWorker.register` on the page that registered the Service Worker will resolve.
 
+### Other Service Worker events
+
+There are other events that you can listen to from within Service Worker, the most useful of which is `fetch`.  This event allows you to hook into and/or respond to requests for pages on your website.  You can even set breakpoints from within Dev Tools and respond to requests manually from the console.
+
+```js
+this.onfetch = function(e) {
+  debugger;
+  event.waitUntil(new Response("Hello world!"));
+};
+```
+
 ## Accessing Dev Tools for Service Worker
 
 ### Chrome
