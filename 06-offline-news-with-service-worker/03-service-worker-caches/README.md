@@ -51,4 +51,4 @@ You can also customise how the matching works, [discounting things](https://slig
 
 ## Exercise
 
-- With this information create a version of the offline news application that works offline with Service Worker.
+- Create a version of the offline news application that works offline with Service Worker.
