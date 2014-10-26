@@ -43,6 +43,8 @@ this.onfetch = function(e) {
 };
 ```
 
+![The power of fetch](./breakpoint.gif)
+
 ## Accessing Dev Tools for Service Worker
 
 ### Chrome
