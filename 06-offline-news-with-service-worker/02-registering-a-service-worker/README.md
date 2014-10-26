@@ -8,7 +8,7 @@ Service Workers are not enabled by default in web browsers right now.  In order 
 chrome://flags
 ```
 
-... and search for **Enable experimental Web Platform features** and click **Enable**.
+… and search for **Enable experimental Web Platform features** and click **Enable**.
 
 ![Experimental Web Platform features](https://cloud.githubusercontent.com/assets/825088/4304757/597f461c-3e73-11e4-836f-b44e1da67056.png)
 

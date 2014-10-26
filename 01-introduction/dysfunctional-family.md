@@ -50,7 +50,7 @@
 ### Browser Cache
 
 - Works on every browser
-- *Sometimes* does work offline (which can be confusing when trying to test AppCache issues) but...
+- *Sometimes* does work offline (which can be confusing when trying to test AppCache issues) but…
 - It can't be relied on
 
 ### Application Cache

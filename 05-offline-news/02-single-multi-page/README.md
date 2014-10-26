@@ -14,7 +14,7 @@ In this step we will implement synchronisation and client-side and server-side r
 On the server side we will need to add a few more JavaScript files to the `layoutShell` function.
 
 ```js
-[...]
+[…]
 
      + '\n  </head>'
      + '\n  <body>'
@@ -27,7 +27,7 @@ On the server side we will need to add a few more JavaScript files to the `layou
      + '\n  </body>'
      + '\n</html>';
 
-[...]
+[…]
 ```
 
 ##### Add libraries and polyfills

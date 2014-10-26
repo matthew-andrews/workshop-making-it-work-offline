@@ -5,7 +5,7 @@
 ## Advantages
 
 - Simple **Promise-based** API
-- Human readable queries `db.friends.where('lastName').anyOf('Helenius', 'Fahlander').each(function(friends) { ... })`
+- Human readable queries `db.friends.where('lastName').anyOf('Helenius', 'Fahlander').each(function(friends) { … })`
 - Error handling
 - Supports search
 - Only one layer away from actual IndexedDB objects - not difficult to migrate code from manual IndexedDB integration to Dexie.
@@ -23,7 +23,7 @@
 ## Todo app IndexedDB integration in Dexie.js
 
 ```js
-[...]
+[…]
 
 db.version(1).stores({ todo: '_id' });
 db.open()
@@ -51,7 +51,7 @@ function refreshView() {
     .then(renderAllTodos);
 }
 
-[...]
+[…]
 ```
 
 With this new, more powerful API let's build something a bit more challenging.
