@@ -27,28 +27,28 @@
 
 db.version(1).stores({ todo: '_id' });
 db.open()
-  .then(refreshView);
+	.then(refreshView);
 
 function onClick(e) {
-  e.preventDefault();
-  if (e.target.hasAttribute('id')) {
-    db.todo.where('_id').equals(e.target.getAttribute('id')).delete()
-      .then(refreshView);
-  }
+	e.preventDefault();
+	if (e.target.hasAttribute('id')) {
+		db.todo.where('_id').equals(e.target.getAttribute('id')).delete()
+			.then(refreshView);
+	}
 }
 
 function onSubmit(e) {
-  e.preventDefault();
-  db.todo.put({ text: input.value, _id: String(Date.now()) })
-    .then(function() {
-      input.value = '';
-    })
-    .then(refreshView);
+	e.preventDefault();
+	db.todo.put({ text: input.value, _id: String(Date.now()) })
+		.then(function() {
+			input.value = '';
+		})
+		.then(refreshView);
 }
 
 function refreshView() {
-  return db.todo.toArray()
-    .then(renderAllTodos);
+	return db.todo.toArray()
+		.then(renderAllTodos);
 }
 
 […]
