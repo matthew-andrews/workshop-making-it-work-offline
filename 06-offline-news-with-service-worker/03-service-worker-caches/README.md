@@ -33,4 +33,20 @@ cachesPolyfill.open('my-first-sw-cache')
 
 ### `match`
 
-// TODO
+As we saw in the previous part Service Workers can respond to `fetch` events so all that remains is to demonstrate how to respond to `fetch` events with appropriate content from `caches` and we will have made it work offline.
+
+`caches` has a method `match` that will look through **all** the current Service Worker's caches, looking for a piece of content that **matches** the requested URL, method, vary headers.  (It will also ignore any cache headers - which is useful as often we would prefer the user to receive *something* even if that resource has technically expired if the alternative is for the user to get *nothing*).
+
+```js
+this.onfetch = function(event) {
+  event.respondWith(
+    caches.match(event.request).then(function(response) {
+      return response || fetch(event.request);
+    })
+  );
+};
+```
+
+You can also customise how the matching works, [discounting things](https://slightlyoff.github.io/ServiceWorker/spec/service_worker/#cache-query-options-dictionary) such as query string, methods, and vary headers.
+
+```js
