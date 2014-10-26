@@ -22,7 +22,7 @@ The structure of this course will be very practical and hands-on focused on buil
 - Talk about why it works (explaining any browser APIs that we've used that may be unfamiliar).
 - Discuss why it's inefficient or inelegant and then improve on it.
 - There are exercises at the end of many sections if you finish the core material quickly.
-- Schedule for the day: 9 start, 11.00 break, 12.30 lunch, 3.00 break, 5.00 the end.
+- Schedule for the day: 9 start, 10.30 break (½ hour), 12.30 lunch (1 hour), 15.00 break (½ hour), 17.00 the end.
 
 ## What you should get out of today's course
 
