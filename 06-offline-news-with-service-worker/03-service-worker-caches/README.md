@@ -52,3 +52,5 @@ You can also customise how the matching works, [discounting things](https://slig
 ## Exercise
 
 - Create a version of the offline news application that works offline with Service Worker.
+
+[← Back to *Registering a Service Worker*](../02-registering-a-service-worker) | [Continue to *Success* →](../04-success)
