@@ -30,3 +30,7 @@ cachesPolyfill.open('my-first-sw-cache')
     ]);
   });
 ```
+
+### `match`
+
+// TODO
