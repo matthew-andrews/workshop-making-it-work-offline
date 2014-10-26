@@ -43,6 +43,6 @@ Contents
   - [Service Worker Cache](06-offline-news-with-service-worker/03-service-worker-caches)
   - [Success!](06-offline-news-with-service-worker/04-success)
 7. [Dexie.js - IndexedDB without the pain](07-dexie)
-  - [Success!](08-success)
+8. [Success!](08-success)
 
 ©
