@@ -101,6 +101,8 @@ containing these files and verify the website matches the screenshot below.
 
 ![Screenshot of the scaffolded application](./screenshot.png)
 
+Warning: you will need to use `static -c 1` rather than `static` on its own in order to see updated files.  Once we've added AppCache, try leaving off the `-c 1` and see what happens when you update files.
+
 ---
 
 [← Back to *Offline todo with IndexedDB*](../) | [Continue to *opening a database* →](../02-opening-a-database)
