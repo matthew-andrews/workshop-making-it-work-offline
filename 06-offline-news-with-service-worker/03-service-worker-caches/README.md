@@ -48,5 +48,3 @@ this.onfetch = function(event) {
 ```
 
 You can also customise how the matching works, [discounting things](https://slightlyoff.github.io/ServiceWorker/spec/service_worker/#cache-query-options-dictionary) such as query string, methods, and vary headers.
-
-```js
