@@ -36,11 +36,13 @@ Contents
   - [Single/Multi-page app](05-offline-news/02-single-multi-page)
   - [More hacking AppCache](05-offline-news/03-hacking-appcache)
   - [Even more hacking AppCache](05-offline-news/04-more-hacking-appcache)
+  - [Success!](05-offline-news/05-success)
 6. [Building an offline news app with Service Worker](06-offline-news-with-service-worker)
   - [Scaffolding](06-offline-news-with-service-worker/01-scaffolding)
   - [Registering a Service Worker](06-offline-news-with-service-worker/02-registering-a-service-worker)
   - [Service Worker Cache](06-offline-news-with-service-worker/03-service-worker-caches)
-  - [Respond to `onfetch`](06-offline-news-with-service-worker/04-success)
+  - [Success!](06-offline-news-with-service-worker/04-success)
 7. [Dexie.js - IndexedDB without the pain](07-dexie)
+  - [Success!](08-success)
 
 ©
