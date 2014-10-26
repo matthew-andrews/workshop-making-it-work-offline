@@ -40,9 +40,7 @@ Contents
   - [Scaffolding](06-offline-news-with-service-worker/01-scaffolding)
   - [Registering a Service Worker](06-offline-news-with-service-worker/02-registering-a-service-worker)
   - [Service Worker Cache](06-offline-news-with-service-worker/03-service-worker-caches)
-  - [Respond to `onfetch`](06-offline-news-with-service-worker/04-onfetch)
-  - [Other approaches](06-offline-news-with-service-worker/05-other-approaches)
-  - [Success!](06-offline-news-with-service-worker/06-success)
+  - [Respond to `onfetch`](06-offline-news-with-service-worker/04-success)
 7. [Dexie.js - IndexedDB without the pain](07-dexie)
 
 ©
