@@ -53,6 +53,9 @@ fetch('http://mattandre.ws/my-json-file.json')
   });
 ```
 
+## Exercises
+
+- Use the Fetch API to create a, delete a and download all the todos from the API described: https://github.com/matthew-andrews/offline-todo-api.
 ---
 
 [← Back to *Promises*](./) | [Continue to *offline todo with IndexedDB* →](../03-offline-todo)
