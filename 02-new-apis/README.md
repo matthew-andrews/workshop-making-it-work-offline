@@ -224,4 +224,4 @@ When might race be useful in an offline web application?
 
 ---
 
-[← Back to *meet the dysfunctional family*](../01-introduction/dysfunctional-family.md) | [Continue to *offline todo with IndexedDB* →](../03-offline-todo)
+[← Back to *meet the dysfunctional family*](../01-introduction/dysfunctional-family.md) | [Continue to *Fetch* →](./fetch.md)
