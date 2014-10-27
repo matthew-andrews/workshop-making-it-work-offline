@@ -31,14 +31,12 @@ Which is much better but what's the point of a standard API that is so difficult
 
 What would be nice if browsers shipped with a simple, _Promise_ based API for _fetching_ ajax requests…
 
-```
+```js
 fetch('https://offline-news-api.herokaupp.com/stories')
   .then(success);
 ```
 
-[Luckily other people think this is a good idea too.](http://fetch.spec.whatwg.org/)
-
-// Todo - finish
+[Luckily other people think this is a good idea too](http://fetch.spec.whatwg.org/), and is the mechanism you *must* use within Service Worker, which we'll cover later.  Oddly though Chrome hasn't made this available in the front end, however the lovely people at [GitHub](https://www.github.com/github/fetch) have built a polyfill for modern browsers.
 
 ---
 
