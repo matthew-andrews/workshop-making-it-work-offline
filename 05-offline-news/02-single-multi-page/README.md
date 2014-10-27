@@ -20,7 +20,7 @@ On the server side we will need to add a few more JavaScript files to the `layou
      + '\n  <body>'
      + '\n    <main>'+data.main+'</main>'
      + '\n    <script src="/indexeddb.shim.min.js"></script>'
-     + '\n    <script src="/superagent.js"></script>'
+     + '\n    <script src="/fetch.js"></script>'
      + '\n    <script src="/promise.js"></script>'
      + '\n    <script src="/templates.js"></script>'
      + '\n    <script src="/application.js"></script>'
@@ -32,7 +32,7 @@ On the server side we will need to add a few more JavaScript files to the `layou
 
 ##### Add libraries and polyfills
 
-Copy over the polyfills for [**IndexedDB**](./public/indexeddb.shim.min.js), [**Promises**](./public/promise.js) and the [**Superagent**](./public/superagent.js) library from our previous prototypes and place the JavaScript files in `public`.
+Copy over the polyfills for [**IndexedDB**](./public/indexeddb.shim.min.js), [**Promises**](./public/promise.js) and the [**Fetch API polyfill**](./public/fetch.js) library from our previous prototypes and place the JavaScript files in `public`.
 
 ##### [`/application.js`](./public/application.js)
 
@@ -206,13 +206,10 @@ Try to do use the work we have done already in previous prototypes copying the s
   }
 
   function serverStoriesGet(guid) {
-    return new Promise(function(resolve, reject) {
-      superagent.get(api+'/' + (guid ? guid : ''))
-        .end(function(err, res) {
-          if (!err && res.ok) resolve(res.body);
-          else reject(res);
-        });
-    });
+    return fetch(api + '/' + (guid ? guid : ''))
+      .then(function(response) {
+        return response.json();
+      });
   }
 })();
 ```

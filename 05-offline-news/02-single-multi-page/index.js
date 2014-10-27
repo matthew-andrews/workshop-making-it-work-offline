@@ -54,7 +54,7 @@ function layoutShell(data) {
     + '\n  <body>'
     + '\n    <main>'+data.main+'</main>'
     + '\n    <script src="/indexeddb.shim.min.js"></script>'
-    + '\n    <script src="/superagent.js"></script>'
+    + '\n    <script src="/fetch.js"></script>'
     + '\n    <script src="/promise.js"></script>'
     + '\n    <script src="/templates.js"></script>'
     + '\n    <script src="/application.js"></script>'
