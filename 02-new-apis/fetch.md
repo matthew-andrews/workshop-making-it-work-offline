@@ -38,6 +38,21 @@ fetch('https://offline-news-api.herokaupp.com/stories')
 
 [Luckily other people think this is a good idea too](http://fetch.spec.whatwg.org/), and is the mechanism you *must* use within Service Worker, which we'll cover later.  Oddly though Chrome hasn't made this available in the front end, however the lovely people at [GitHub](https://www.github.com/github/fetch) have built a polyfill for modern browsers.
 
+## Gotcha
+
+The Fetch API builds on top of the W3C Streams _as well as_ Promises.  This is good as there are times where you won't want to wait for an ajax request to finish loading before you want to use the data it downloading — in these cases you can pipe that raw stream of downloaded data into different bits of your application.  JavaScript streams are out of scope for this workshop but you can read more about them on the [Stream Handbook](https://github.com/substack/stream-handbook).
+
+Warning: the Fetch Polyfill _only_ implements the Promise part of the API, *not* the Streams part.
+
+The reason why I mention it is that the `fetch` API returns a Promise that resolves with a Response object that gives you access to *streams* — not an object containing all the data you requested.  You need to then convert that into the data format you want.  For example:-
+
+```js
+fetch('http://mattandre.ws/my-json-file.json')
+  .then(function(response) {
+    return response.json();
+  });
+```
+
 ---
 
 [← Back to *Promises*](./) | [Continue to *offline todo with IndexedDB* →](../03-offline-todo)
