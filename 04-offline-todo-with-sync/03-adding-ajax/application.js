@@ -130,33 +130,28 @@
   }
 
   function serverTodosGet(_id) {
-    return new Promise(function(resolve, reject) {
-      superagent.get(api+'/' + (_id ? _id : ''))
-        .end(function(err, res) {
-          if (!err && res.ok) resolve(res);
-          else reject(res);
-        });
-    });
+    return fetch(api + '/' + (_id ? _id : ''))
+      .then(function(response) {
+        return response.json();
+      });
   }
 
   function serverTodosPost(todo) {
-    return new Promise(function(resolve, reject) {
-      superagent.post(api)
-        .send(todo)
-        .end(function(res) {
-          if (res.ok) resolve(res);
-          else reject(res);
-        });
-    });
+    return fetch(api, {
+        method: 'post',
+        headers: {
+          'Accept': 'application/json',
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(todo)
+      })
+        .then(function(response) {
+          if (response.status === 410) throw new Error(response.statusText);
+	  return response;
+	});
   }
 
   function serverTodosDelete(todo) {
-    return new Promise(function(resolve, reject) {
-      superagent.del(api + '/' + todo._id)
-        .end(function(res) {
-          if (res.ok) resolve(res);
-          else reject();
-        });
-    });
+    return fetch(api + '/' + todo._id, { method: 'delete' })
   }
 }());

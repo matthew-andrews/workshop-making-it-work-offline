@@ -1,10 +1,10 @@
 # Adding ajax
 
-In order to communicate with the server we're going to need to implement some ajax functionality to communicate with our **[offline-todo-api](https://github.com/matthew-andrews/offline-todo-api)**.  I'm going to suggest using [superagent](https://github.com/visionmedia/superagent) but you could use vanilla javascript or jQuery if you prefer.
+In order to communicate with the server we're going to need to implement some ajax functionality to communicate with our **[offline-todo-api](https://github.com/matthew-andrews/offline-todo-api)**.  I'm going to suggest using Fetch [(well, a polyfill of it)](https://github.com/github/fetch) but you could use `XMLHttpRequest`, jQuery or other libraries if you prefer.
 
 ## Install ajax library
 
-To add superagent we will need to make changes to `index.html`, `offline.appcache` and create a new file `superagent.js`.
+As the Fetch API isn't implemented in any browsers yet, we will need to use a polyfill instead, which will mean we will need to make changes to `index.html`, `offline.appcache` and create a new file `fetch.js`.
 
 ##### `index.html`
 
@@ -23,7 +23,7 @@ To add superagent we will need to make changes to `index.html`, `offline.appcach
     </ul>
     <script src="./indexeddb.shim.min.js"></script>
     <script src="./promise.js"></script>
-    <script src="./superagent.js"></script>
+    <script src="./fetch.js"></script>
     <script src="./application.js"></script>
   </body>
 </html>
@@ -36,16 +36,16 @@ CACHE MANIFEST
 ./styles.css
 ./indexeddb.shim.min.js
 ./promise.js
-./superagent.js
+./fetch.js
 ./application.js
 
 NETWORK:
 *
 ```
 
-##### `superagent.js`
+##### `fetch.js`
 
-Download the contents of the [minified superagent library](https://raw.githubusercontent.com/visionmedia/superagent/master/superagent.js), and put it in this file.
+Download the contents of the [Fetch API polyfill](https://raw.githubusercontent.com/github/fetch/master/fetch.js), and put it in this file.
 
 ## Api wrapper methods
 
@@ -60,34 +60,29 @@ Now we have an ajax library installed and available to us in our application we 
 […]
 
   function serverTodosGet(_id) {
-    return new Promise(function(resolve, reject) {
-      superagent.get(api+'/' + (_id ? _id : ''))
-        .end(function(err, res) {
-          if (!err && res.ok) resolve(res);
-          else reject(res);
-        });
-    });
+    return fetch(api + '/' + (_id ? _id : ''))
+      .then(function(response) {
+        return response.json();
+      });
   }
 
   function serverTodosPost(todo) {
-    return new Promise(function(resolve, reject) {
-      superagent.post(api)
-        .send(todo)
-        .end(function(res) {
-          if (res.ok) resolve(res);
-          else reject(res);
-        });
-    });
+    return fetch(api, {
+        method: 'post',
+        headers: {
+          'Accept': 'application/json',
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(todo)
+      })
+        .then(function(response) {
+          if (response.status === 410) throw new Error(response.statusText);
+	  return response;
+	});
   }
 
   function serverTodosDelete(todo) {
-    return new Promise(function(resolve, reject) {
-      superagent.del(api + '/' + todo._id)
-        .end(function(res) {
-          if (res.ok) resolve(res);
-          else reject();
-        });
-    });
+    return fetch(api + '/' + todo._id, { method: 'delete' })
   }
 }());
 ```
