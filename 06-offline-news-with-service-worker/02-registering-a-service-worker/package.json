@@ -1,6 +1,0 @@
-{
-  "dependencies": {
-    "express": "^4.10.0",
-    "superagent": "^0.20.0"
-  }
-}
