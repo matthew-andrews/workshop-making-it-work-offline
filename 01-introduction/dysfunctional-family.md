@@ -86,4 +86,4 @@ For today's browsers I advocate the following approach and the reasons why will 
 
 ---
 
-[← Back to *how*](./how.md) | [Continue to *a promising start* →](../02-a-promising-start)
+[← Back to *how*](./how.md) | [Continue to *a promising start* →](../02-new-apis)

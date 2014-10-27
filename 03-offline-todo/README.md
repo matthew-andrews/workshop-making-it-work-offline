@@ -38,4 +38,4 @@ develop this application using any other modern browser.
 
 ---
 
-[← Back to *a promising start*](../02-a-promising-start) | [Start by *scaffolding the application* →](./01-scaffolding)
+[← Back to *a promising start*](../02-new-apis) | [Start by *scaffolding the application* →](./01-scaffolding)
