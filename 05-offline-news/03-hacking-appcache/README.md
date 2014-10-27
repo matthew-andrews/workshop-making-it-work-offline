@@ -12,7 +12,7 @@ app.get('/offline.appcache', function(req, res) {
     + '\n./indexeddb.shim.min.js'
     + '\n./promise.js'
     + '\n./styles.css'
-    + '\n./superagent.js'
+    + '\n./fetch.js'
     + '\n./templates.js'
     + '\n'
     + '\nFALLBACK:'

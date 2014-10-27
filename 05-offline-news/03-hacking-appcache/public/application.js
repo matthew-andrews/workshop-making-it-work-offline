@@ -159,12 +159,9 @@
   }
 
   function serverStoriesGet(guid) {
-    return new Promise(function(resolve, reject) {
-      superagent.get(api+'/' + (guid ? guid : ''))
-        .end(function(err, res) {
-          if (!err && res.ok) resolve(res.body);
-          else reject(res);
-        });
-    });
+    return fetch(api + '/' + (guid ? guid : ''))
+      .then(function(response) {
+        return response.json();
+      });
   }
 })();
