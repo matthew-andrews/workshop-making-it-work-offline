@@ -40,7 +40,7 @@ As a reminder the algorithm we decided to use for synchronization was:
           if (!arrayContainsTodo(remoteTodos, todo)) {
             return serverTodosPost(todo)
               .catch(function(res) {
-                if (res.status === 410) return deleteTodo();
+                if (res.status === 410) return deleteTodo(todo);
               });
           }
         }));
