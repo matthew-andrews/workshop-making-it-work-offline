@@ -38,7 +38,7 @@ fetch('https://offline-news-api.herokaupp.com/stories')
 
 ## Gotchas
 
-The Fetch API builds on top of the W3C Streams _as well as_ Promises.  This is good as there are times where you won't want to wait for an ajax request to finish loading before you want to use the data its downloading — in these cases you can pipe that raw stream of downloaded data into different bits of your application.  JavaScript streams are out of scope for this workshop but you can read more about them on the [Stream Handbook](https://github.com/substack/stream-handbook).
+The Fetch API builds on top of the W3C Streams _as well as_ Promises.  This is good as there are times where you won't want to wait for an ajax request to finish loading before you want to use the data it's downloading — in these cases you can pipe that raw stream of downloaded data into different bits of your application.  JavaScript streams are out of scope for this workshop but you can read more about them on the [Stream Handbook](https://github.com/substack/stream-handbook).
 
 Warning: the Fetch Polyfill _only_ implements the Promise part of the API, *not* the Streams part.
 
