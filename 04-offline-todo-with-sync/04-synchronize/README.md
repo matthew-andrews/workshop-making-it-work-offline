@@ -30,7 +30,9 @@ As a reminder the algorithm we decided to use for synchronization was:
 
           // Has it been marked for deletion?
           if (todo.deleted) {
-            return serverTodosDelete(todo).then(deleteTodo);
+            return serverTodosDelete(todo).then(deleteTodo, function(res) {
+              if (res.status === 410) return deleteTodo();
+            });
           }
 
           // If this is a todo that doesn't exist on the server try to create
