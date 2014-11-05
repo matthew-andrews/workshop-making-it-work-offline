@@ -18,7 +18,7 @@ As a reminder the algorithm we decided to use for synchronization was:
     return Promise.all([serverTodosGet(), databaseTodosGet()])
       .then(function(results) {
         var promises = [];
-        var remoteTodos = results[0].body;
+        var remoteTodos = results[0];
         var localTodos = results[1];
 
         // Loop through local todos and if they haven't been
