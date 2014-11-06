@@ -59,6 +59,15 @@ As a reminder the algorithm we decided to use for synchronization was:
     .then(refreshView);
   }
 
+  function arrayContainsTodo(array, todo) {
+    for (var i = 0; i < array.length; i++) {
+       if(array[i]._id === todo._id) {
+         return true;
+       }
+    };
+    return false;
+  }
+
 […]
 ```
 
