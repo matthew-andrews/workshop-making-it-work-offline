@@ -3,7 +3,7 @@ Making it work offline
 
 Making it work offline, the workshop.
 
-I ran this workshop at [SmashingConf in Freiburg](http://smashingconf.com/freiburg-2014/workshops/matthew-andrews), at [Imperial College in London](http://www.whiteoctoberevents.co.uk/event/javascript-workshops/making-it-work-offline/) and interally for the [Financial Times](http://ft.com) also in London in Autumn 2014.  If you are interested in having a similar workshop run at your company or conference or would like to use these materials to run a workshop yourselves please email me: matt@mattandre.ws.
+I ran this workshop at [SmashingConf in Freiburg](http://smashingconf.com/freiburg-2014/workshops/matthew-andrews), at [Imperial College in London](http://www.whiteoctoberevents.co.uk/event/javascript-workshops/making-it-work-offline/) and interally for the [Financial Times](http://ft.com) also in London in Autumn 2014.  If you are interested in having a similar workshop run at your company or conference or would like to use these materials to run a workshop yourselves please email me: matt@mattandre.ws / [mattandre.ws](https://mattandre.ws).
 
 Contents
 --------
