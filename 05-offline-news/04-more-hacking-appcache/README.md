@@ -36,13 +36,15 @@ Warning: do not return a 410 because that will cause the user's device to delete
 ##### [`/index.js`](./index.js)
 
 ```js
+require('es6-promise').polyfill();
+require('isomorphic-fetch');
+
 var api = 'https://offline-news-api.herokuapp.com/stories';
 var port = 8080;
 
 var cookieParser = require('cookie-parser');
 var express = require('express');
 var path = require('path');
-var request = require('superagent');
 var templates = require('./public/templates');
 
 var app = express();
@@ -50,26 +52,26 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/offline.appcache', function(req, res) {
-  if (req.cookies.up) {
-    res.set('Content-Type', 'text/cache-manifest');
-    res.send('CACHE MANIFEST'
-      + '\n./appcache.js'
-      + '\n./application.js'
-      + '\n./iframe.js'
-      + '\n./indexeddb.shim.min.js'
-      + '\n./promise.js'
-      + '\n./styles.css'
-      + '\n./fetch.js'
-      + '\n./templates.js'
-      + '\n'
-      + '\nFALLBACK:'
-      + '\n/ /'
-      + '\n'
-      + '\nNETWORK:'
-      + '\n*');
-  } else {
-    res.status(400).end();
-  }
+	if (req.cookies.up) {
+		res.set('Content-Type', 'text/cache-manifest');
+		res.send('CACHE MANIFEST'
+			+ '\n./appcache.js'
+			+ '\n./application.js'
+			+ '\n./iframe.js'
+			+ '\n./indexeddb.shim.min.js'
+			+ '\n./promise.js'
+			+ '\n./styles.css'
+			+ '\n./fetch.js'
+			+ '\n./templates.js'
+			+ '\n'
+			+ '\nFALLBACK:'
+			+ '\n/ /'
+			+ '\n'
+			+ '\nNETWORK:'
+			+ '\n*');
+	} else {
+		res.status(400).end();
+	}
 });
 
 // Add middleware to send this when the appcache update cookie is set
@@ -77,67 +79,69 @@ app.get('/', offlineMiddleware);
 app.get('/article/:guid', offlineMiddleware);
 
 function offlineMiddleware(req, res, next) {
-  if (req.cookies.up) res.send(layoutShell());
-  else next();
+	if (req.cookies.up) res.send(layoutShell());
+	else next();
 }
 
 app.get('/article/:guid', function(req, res) {
-  request.get(api+'/'+req.params.guid)
-    .end(function(err, data) {
-      if (err || !data.ok) {
-        res.status(404);
-        res.send(layoutShell({
-          main: templates.article({
-            title: 'Story cannot be found',
-            body: '<p>Please try another</p>'
-          })
-        }));
-      } else {
-        res.send(layoutShell({
-          main: templates.article(data.body)
-        }));
-      }
-    });
+	fetch(api+'/'+req.params.guid)
+		.then(function(response) {
+			return response.json();
+		})
+		.then(function(data) {
+			res.send(layoutShell({
+				main: templates.article(data)
+			}));
+		}, function(err) {
+			res.status(404);
+			res.send(layoutShell({
+				main: templates.article({
+					title: 'Story cannot be found',
+					body: '<p>Please try another</p>'
+				})
+			}));
+		});
 });
 
 app.get('/', function(req, res) {
-  request.get(api)
-    .end(function(err, data) {
-      if (err) {
-        res.status(404).end();
-      } else {
-        res.send(layoutShell({
-          main: templates.list(data.body)
-        }));
-      }
-    });
+	fetch(api)
+		.then(function(response) {
+			return response.json();
+		})
+		.then(function(data) {
+			res.send(layoutShell({
+				main: templates.list(data)
+			}));
+		}, function(err) {
+			res.status(404).end();
+		});
 });
 
 function layoutShell(data) {
-  data = {
-    title: data && data.title || 'FT Tech News',
-    main: data && data.main || ''
-  };
-  return '<!DOCTYPE html>'
-    + '\n<html>'
-    + '\n  <head>'
-    + '\n    <title>'+data.title+'</title>'
-    + '\n    <link rel="stylesheet" href="/styles.css" type="text/css" media="all" />'
-    + '\n  </head>'
-    + '\n  <body>'
-    + '\n    <main>'+data.main+'</main>'
-    + '\n    <script src="/indexeddb.shim.min.js"></script>'
-    + '\n    <script src="/fetch.js"></script>'
-    + '\n    <script src="/promise.js"></script>'
-    + '\n    <script src="/templates.js"></script>'
-    + '\n    <script src="/appcache.js"></script>'
-    + '\n    <script src="/application.js"></script>'
-    + '\n  </body>'
-    + '\n</html>';
+	data = {
+		title: data && data.title || 'FT Tech News',
+		main: data && data.main || ''
+	};
+	return '<!DOCTYPE html>'
+		+ '\n<html>'
+		+ '\n  <head>'
+		+ '\n    <title>'+data.title+'</title>'
+		+ '\n    <link rel="stylesheet" href="/styles.css" type="text/css" media="all" />'
+		+ '\n  </head>'
+		+ '\n  <body>'
+		+ '\n    <main>'+data.main+'</main>'
+		+ '\n    <script src="/indexeddb.shim.min.js"></script>'
+		+ '\n    <script src="/fetch.js"></script>'
+		+ '\n    <script src="/promise.js"></script>'
+		+ '\n    <script src="/templates.js"></script>'
+		+ '\n    <script src="/appcache.js"></script>'
+		+ '\n    <script src="/application.js"></script>'
+		+ '\n  </body>'
+		+ '\n</html>';
 }
 
 app.listen(port);
-console.log('listening on '+port);
+console.log('listening on port', port);
 ```
 
 ##### [`public/iframe.html`](./public/iframe.html)
@@ -145,12 +149,12 @@ console.log('listening on '+port);
 ```html
 <!DOCTYPE html>
 <html manifest="/offline.appcache">
-  <head>
-    <title>FT Tech News</title>
-  </head>
-  <body>
-    <script src="/iframe.js"></script>
-  </body>
+	<head>
+		<title>FT Tech News</title>
+	</head>
+	<body>
+		<script src="/iframe.js"></script>
+	</body>
 </html>
 ```
 
@@ -158,48 +162,48 @@ console.log('listening on '+port);
 
 ```js
 (function() {
-  "use strict";
+	"use strict";
 
-  var checkTimer = null, ac = window.applicationCache, status = null, hasChecked = false, loopMax = 60;
+	var checkTimer = null, ac = window.applicationCache, status = null, hasChecked = false, loopMax = 60;
 
-  function checkNow() {
-    if (ac.status === ac.CHECKING || ac.status === ac.DOWNLOADING || ac.status === ac.UPDATEREADY) {
-      hasChecked = true;
-    }
-    if (ac.status !== status) {
-      status = ac.status;
-      trigger(status, hasChecked);
-    }
-    if (loopMax--) {
-      checkIn(1000);
-    } else {
-      trigger(-1, hasChecked);
-    }
-  }
+	function checkNow() {
+		if (ac.status === ac.CHECKING || ac.status === ac.DOWNLOADING || ac.status === ac.UPDATEREADY) {
+			hasChecked = true;
+		}
+		if (ac.status !== status) {
+			status = ac.status;
+			trigger(status, hasChecked);
+		}
+		if (loopMax--) {
+			checkIn(1000);
+		} else {
+			trigger(-1, hasChecked);
+		}
+	}
 
-  function checkIn(ms) {
-    if (checkTimer) clearTimeout(checkTimer);
-    checkTimer = setTimeout(checkNow, ms);
-  }
-  function trigger(evt, hasChecked) {
-    if (parent && parent.window) {
-      parent.window.postMessage({
-        type: 'appcache:event',
-        args: [evt, hasChecked]
-      }, '*');
-    }
-  }
+	function checkIn(ms) {
+		if (checkTimer) clearTimeout(checkTimer);
+		checkTimer = setTimeout(checkNow, ms);
+	}
+	function trigger(evt, hasChecked) {
+		if (parent && parent.window) {
+			parent.window.postMessage({
+				type: 'appcache:event',
+				args: [evt, hasChecked]
+			}, '*');
+		}
+	}
 
-  ac.addEventListener('updateready', checkNow);
-  ac.addEventListener('cached', checkNow);
-  ac.addEventListener('checking', checkNow);
-  ac.addEventListener('downloading', checkNow);
-  ac.addEventListener('error', checkNow);
-  ac.addEventListener('noupdate', checkNow);
-  ac.addEventListener('obsolete', checkNow);
-  ac.addEventListener('progress', checkNow);
+	ac.addEventListener('updateready', checkNow);
+	ac.addEventListener('cached', checkNow);
+	ac.addEventListener('checking', checkNow);
+	ac.addEventListener('downloading', checkNow);
+	ac.addEventListener('error', checkNow);
+	ac.addEventListener('noupdate', checkNow);
+	ac.addEventListener('obsolete', checkNow);
+	ac.addEventListener('progress', checkNow);
 
-  checkIn(250);
+	checkIn(250);
 }());
 ```
 
@@ -208,55 +212,55 @@ console.log('listening on '+port);
 
 ```js
 (function() {
-  var cookie = 'up';
-  var statuses = {
-    "-1": 'timeout',
-    "0": 'uncached',
-    "1": 'idle',
-    "2": 'checking',
-    "3": 'downloading',
-    "4": 'updateready',
-    "5": 'obsolete'
-  };
+	var cookie = 'up';
+	var statuses = {
+		"-1": 'timeout',
+		"0": 'uncached',
+		"1": 'idle',
+		"2": 'checking',
+		"3": 'downloading',
+		"4": 'updateready',
+		"5": 'obsolete'
+	};
 
-  // Start the AppCache loading process when this file executes
-  load();
+	// Start the AppCache loading process when this file executes
+	load();
 
-  function onMessage(event) {
-    if (event.data && event.data.type && event.data.type === 'appcache:event') {
-      onEvent.apply(window, event.data.args || []);
-    }
-  }
+	function onMessage(event) {
+		if (event.data && event.data.type && event.data.type === 'appcache:event') {
+			onEvent.apply(window, event.data.args || []);
+		}
+	}
 
-  function load() {
-    window.addEventListener("message", onMessage, false);
+	function load() {
+		window.addEventListener("message", onMessage, false);
 
-    // HACK: Set a cookie so that the application
-    // root returns a Javascript bootstrap rather
-    // than content.
-    var cookieExpires = new Date(new Date().getTime() + 60 * 5 * 1000);
-    document.cookie = cookie + "=1;path=/;expires=" + cookieExpires.toGMTString();
-    var iframe = document.createElement('IFRAME');
-    iframe.setAttribute('style', 'width:0px; height:0px; visibility:hidden; position:absolute; border:none');
-    iframe.setAttribute('src', '/iframe.html');
-    iframe.setAttribute('id', 'appcache');
-    document.body.appendChild(iframe);
-  }
+		// HACK: Set a cookie so that the application
+		// root returns a Javascript bootstrap rather
+		// than content.
+		var cookieExpires = new Date(new Date().getTime() + 60 * 5 * 1000);
+		document.cookie = cookie + "=1;path=/;expires=" + cookieExpires.toGMTString();
+		var iframe = document.createElement('IFRAME');
+		iframe.setAttribute('style', 'width:0px; height:0px; visibility:hidden; position:absolute; border:none');
+		iframe.setAttribute('src', '/iframe.html');
+		iframe.setAttribute('id', 'appcache');
+		document.body.appendChild(iframe);
+	}
 
-  function onEvent(eventCode) {
-    var s = statuses[eventCode], loaderEl, cookieExpires;
-    if (s === 'uncached' || s === 'idle' || s === 'obsolete' || s === 'timeout' || s === 'updateready') {
-      loaderEl = document.getElementById('appcache');
-      loaderEl.parentNode.removeChild(loaderEl);
+	function onEvent(eventCode) {
+		var s = statuses[eventCode], loaderEl, cookieExpires;
+		if (s === 'uncached' || s === 'idle' || s === 'obsolete' || s === 'timeout' || s === 'updateready') {
+			loaderEl = document.getElementById('appcache');
+			loaderEl.parentNode.removeChild(loaderEl);
 
-      // Remove appcacheUpdate cookie
-      cookieExpires = new Date(new Date().getTime() - 60 * 5 * 1000);
-      document.cookie = cookie + "=;path=/;expires=" + cookieExpires.toGMTString();
+			// Remove appcacheUpdate cookie
+			cookieExpires = new Date(new Date().getTime() - 60 * 5 * 1000);
+			document.cookie = cookie + "=;path=/;expires=" + cookieExpires.toGMTString();
 
-      // Remove message listener
-      window.removeEventListener("message", onMessage);
-    }
-  }
+			// Remove message listener
+			window.removeEventListener("message", onMessage);
+		}
+	}
 }());
 ```
 
