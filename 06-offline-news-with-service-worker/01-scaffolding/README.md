@@ -14,7 +14,7 @@ In a new folder, create some files and a directory:-
 
 ```
 echo {} >> package.json # Neat trick if you're using *nix
-npm install --save express superagent
+npm install --save express isomorphic-fetch es6-promise
 ```
 
 ##### [`public/styles.css`](./public/styles.css)
@@ -112,43 +112,45 @@ This is a little different - the `shell` function has been moved to `./public/te
 ##### [`index.js`](./index.js)
 
 ```js
+var port = Number(process.env.PORT || 8080);
 var api = 'https://offline-news-api.herokuapp.com/stories';
-var port = 8080;
 var express = require('express');
 var path = require('path');
-var request = require('superagent');
+require('es6-promise').polyfill();
+require('isomorphic-fetch');
 var templates = require('./public/templates');
 
 var app = express();
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/article/:guid', function(req, res) {
-	request.get(api+'/'+req.params.guid)
-		.end(function(err, data) {
-			var article = data.body;
-			if (err || !data.ok) {
-				res.status(404);
-				res.send(templates.article({
-					title: 'Story cannot be found',
-					body: '<p>Please try another</p>'
-				}));
-			} else {
-				res.send(templates.article({
-					title: article.title,
-					body: article.body
-				}));
-			}
+	fetch(api+'/'+req.params.guid)
+		.then(function(response) {
+			return response.json();
+		})
+		.then(function(article) {
+			res.send(templates.article({
+				title: article.title,
+				body: article.body
+			}));
+		}, function(err) {
+			res.status(404);
+			res.send(templates.article({
+				title: 'Story cannot be found',
+				body: '<p>Please try another</p>'
+			}));
 		});
 });
 
 app.get('/', function(req, res) {
-	request.get(api)
-		.end(function(err, data) {
-			if (err) {
-				res.status(404).end();
-			} else {
-				res.send(templates.list(data.body));
-			}
+	fetch(api)
+		.then(function(response) {
+			return response.json();
+		})
+		.then(function(data) {
+			res.send(templates.list(data));
+		}, function(err) {
+			res.status(404).end();
 		});
 });
 

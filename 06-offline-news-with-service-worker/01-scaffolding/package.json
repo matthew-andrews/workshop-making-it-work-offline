@@ -1,6 +1,7 @@
 {
   "dependencies": {
+    "es6-promise": "^2.0.0",
     "express": "^4.10.0",
-    "superagent": "^0.20.0"
+    "isomorphic-fetch": "^1.0.0"
   }
 }
