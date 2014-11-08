@@ -6,8 +6,8 @@
   "scripts": {
     "test": "npm run jshint && npm run lintspaces",
     "jshint": "jshint `npm run js-files | tail -n +5`",
-    "lintspaces": "lintspaces -ntd spaces -i js-comments -s 2 `npm run js-files | tail -n +5`",
-    "js-files": "find . -name '*.js' ! -path './node_modules/*' ! -name 'fetch.js'! -name 'superagent.js' ! -name 'promise.js' ! -name 'indexeddb.shim.min.js'"
+    "lintspaces": "lintspaces -ntd tabs -i js-comments `npm run js-files | tail -n +5`",
+    "js-files": "find . -name '*.js' ! -path './node_modules/*' ! -name 'fetch.js' ! -name 'promise.js' ! -name 'indexeddb.shim.min.js'"
   },
   "repository": {
     "type": "git",
