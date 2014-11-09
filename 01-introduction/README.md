@@ -27,7 +27,6 @@ The structure of this course will be very practical and hands-on focused on buil
 ## What you should get out of today's course
 
 - A few working prototypes.
-- Access to this GitHub repository for 3 months (at least - not sure what to do after that).
 - All the prototypes are on my GitHub (publicly so if you have any problems with any after today - please feel free to raise issues there and I will try to find time to help)
 
 ## Group chat
