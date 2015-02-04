@@ -9,7 +9,7 @@ There are four distinct problems to solve*:
 
 ## Delivering the application
 
-- How do we efficiently cache enough enough of the pieces that make up a website for it to be useful offline?
+- How do we efficiently cache  enough of the pieces that make up a website for it to be useful offline?
 - How do we guarantee that the browser won't delete them?
 
 ## Storing content
