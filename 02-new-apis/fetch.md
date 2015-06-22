@@ -1,6 +1,6 @@
 # Fetch
 
-By now I hope I've convinced you that ES6 Promises are the one and only soluton to asynchronous flow and that — if you're anything like me — will no longer be able to look at a web api built in the Pre-Promise era without cringing.
+By now I hope I've convinced you that ES6 Promises are the one and only solution to asynchronous flow and that — if you're anything like me — will no longer be able to look at a web api built in the Pre-Promise era without cringing.
 
 Let's talk about ajax.
 
