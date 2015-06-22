@@ -25,7 +25,7 @@ There are four distinct problems to solve*:
 
 One of the great things about the web is how easy it is to bring multiple products, widgets and services together onto a single page.
 
-Offline technologies have only just started to be developed - using them enable us to create incredible user experience that previously would have been impossible on the web - but, aslo by using them, you will discover many of the third party components you relied on to build websites don't work well offline.
+Offline technologies have only just started to be developed - using them enable us to create incredible user experience that previously would have been impossible on the web - but, also by using them, you will discover many of the third party components you relied on to build websites don't work well offline.
 
 ### What happens to Google Analytics data?
 
